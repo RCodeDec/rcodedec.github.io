@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded",function(e){const l=e=>{var t=e=>e?"none":"";document.getElementById("btnDecodePro").style.display=t(e),document.getElementById("progressBar").style.display=t(!e)};document.getElementById("btnDecodePro").addEventListener("click",function(){l(!0),fetch("/static/rpoCodes.json").then(e=>e.json()).then(e=>{l(!1);const n=JSON.parse(atob(e.string)).allRpoCodes,t=document.getElementById("inputRpoCodes").value,o=t.split(" ").reduce((e,t)=>e.concat(t.split(",")),[]).map(e=>e.replace(/\s+/g,"").replace(",","").toUpperCase()).filter(e=>0<e.length),d=o.map(t=>{var e=n.filter(e=>e[0]===t).map(e=>e[1]);return{code:t,description:e.length?e:["Not Found"]}});document.getElementById("tableTbody").innerHTML="",d.map(e=>{var t='<ul class="list-unstyled">'+e.description.map(e=>`<li>${e}</li>`)+"</ul>",e=`
+              <tr>
+                <th>${e.code}</th>
+                <td>${t}</td>
+              </tr>
+            `;document.getElementById("tableTbody").innerHTML+=e})})})});
