@@ -6,11 +6,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="RPO Codes Decoder - Find out what options your GM Chevy Buick Cadillac vehicle is equipped with - GM Chevrolet Buick Cadillac - Regular Production Option">
       <meta name="keywords" content="RPO Codes Decoder GM Chevy Buick Cadillac">
-      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="shortcut icon" href="/favicon.ico">
       <title>RPO Codes Decoder - GM Chevrolet Buick Cadillac - Regular Production Option</title>
       <link href="/static/bootstrap.min.css" rel="stylesheet">
       <link href="/static/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="/static/base.css" rel="stylesheet">
+      <script
+         src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body>
       <div class="container">
@@ -46,7 +50,9 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Decoding Results</strong>
+                        <div class="panel-heading">
+                           <strong>Decoding Results</strong>
+                           <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy to Clipboard</button>
                         </div>
                         <table class="table table-striped table-two-col">
                            <tbody id="tableTbody">
@@ -59,7 +65,7 @@
                <hr>
                
                <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
                         <div class="panel-heading"><strong>8** Codes</strong></div>
                         <table class="table table-striped table-two-col">
@@ -82,12 +88,24 @@
           <td>TRIM COMBINATION,CLOTH,SAND</td>
         </tr>
         <tr>
+          <th><a name="80C"></a>80C</th>
+          <td>TRIM COMBINATION CLOTH, BRAZIL BLACK (C) (97)</td>
+        </tr>
+        <tr>
+          <th><a name="80D"></a>80D</th>
+          <td>TRIM COMBINATION CLOTH, BLACK (D) (97) OPEL</td>
+        </tr>
+        <tr>
           <th><a name="80I"></a>80I</th>
           <td>INTERIOR TRIM,SAND</td>
         </tr>
         <tr>
           <th><a name="80L"></a>80L</th>
           <td>SECONDARY COLOR EXTERIOR, MED QUASAR BLUE MET</td>
+        </tr>
+        <tr>
+          <th><a name="80P"></a>80P</th>
+          <td>WHEEL COLOR BRAZIL BLACK (97)</td>
         </tr>
         <tr>
           <th><a name="80Q"></a>80Q</th>
@@ -118,6 +136,10 @@
           <td>TRIM COMBINATION LEATHER, ANTHRACITE, (02) (HOLDENS)</td>
         </tr>
         <tr>
+          <th><a name="815"></a>815</th>
+          <td>TRIM COMBINATION LEATHER, MID ANTHRACITE (5) (05) BEDFORD</td>
+        </tr>
+        <tr>
           <th><a name="81A"></a>81A</th>
           <td>ACCENT STRIPE,TWO-TONE,BLACK/BLUE</td>
         </tr>
@@ -136,6 +158,10 @@
         <tr>
           <th><a name="81C"></a>81C</th>
           <td>TRIM COMBINATION CLOTH, ANTHRACITE BLACK</td>
+        </tr>
+        <tr>
+          <th><a name="81D"></a>81D</th>
+          <td>TRIM COMBINATION CLOTH, ANTHRACITE (D) (98)</td>
         </tr>
         <tr>
           <th><a name="81I"></a>81I</th>
@@ -202,6 +228,10 @@
           <td>TRIM COMBINATION,CLOTH,MEDIUM DARK GRAY</td>
         </tr>
         <tr>
+          <th><a name="82C"></a>82C</th>
+          <td>TRIM COMBINATION CLOTH, MED DK GRAY (C) (91)</td>
+        </tr>
+        <tr>
           <th><a name="82D"></a>82D</th>
           <td>TRIM COMBINATION,CLOTH,GRAY</td>
         </tr>
@@ -234,6 +264,10 @@
           <td>TRIM COMBINATION,VINYL,MEDIUM DARK GRAY</td>
         </tr>
         <tr>
+          <th><a name="82P"></a>82P</th>
+          <td>WHEEL COLOR SATIN SILVER</td>
+        </tr>
+        <tr>
           <th><a name="82Q"></a>82Q</th>
           <td>MOLDING COLOR,MEDIUM ROSEWOOD METALLIC</td>
         </tr>
@@ -260,6 +294,14 @@
         <tr>
           <th><a name="82V"></a>82V</th>
           <td>TRIM COMBINATION,VINYL,DARK MEDIUM GRAY</td>
+        </tr>
+        <tr>
+          <th><a name="82W"></a>82W</th>
+          <td>TRIM COMBINATION VINYL, DK MED GRAY (W)</td>
+        </tr>
+        <tr>
+          <th><a name="82X"></a>82X</th>
+          <td>TRIM COLOR SEAT COLOR GREY (OPEL)</td>
         </tr>
         <tr>
           <th><a name="82Y"></a>82Y</th>
@@ -332,6 +374,10 @@
         <tr>
           <th><a name="83U"></a>83U</th>
           <td>EXTERIOR COLOR,PRIMARY,SKY GREY MET(04) (GMDAT)</td>
+        </tr>
+        <tr>
+          <th><a name="83X"></a>83X</th>
+          <td>TRIM COLOR SEAT COLOR EBONY (OPEL)</td>
         </tr>
         <tr>
           <th><a name="842"></a>842</th>
@@ -428,6 +474,10 @@
         <tr>
           <th><a name="84W"></a>84W</th>
           <td>TRIM COMBINATION VINYL, LT TITANIUM/EBONY</td>
+        </tr>
+        <tr>
+          <th><a name="84X"></a>84X</th>
+          <td>TRIM COLOR SEAT COLOR LIGHT GREY (OPEL)</td>
         </tr>
         <tr>
           <th><a name="852"></a>852</th>
@@ -698,6 +748,10 @@
           <td>LOCK SPARE TIRE, KEYED TWO PIECE HOIST SHAFT</td>
         </tr>
         <tr>
+          <th><a name="8A1"></a>8A1</th>
+          <td>ENGINE SHUTDOWN AUTOMATIC (SEO)</td>
+        </tr>
+        <tr>
           <th><a name="8A2"></a>8A2</th>
           <td>BATTERY 600 CCA & 880 CCA (DUAL) (SEO)</td>
         </tr>
@@ -754,12 +808,68 @@
           <td>COMPONENT RR LH COMPTR SEL SUSP(8AH)</td>
         </tr>
         <tr>
+          <th><a name="8AI"></a>8AI</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AI)</td>
+        </tr>
+        <tr>
+          <th><a name="8AJ"></a>8AJ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AJ)</td>
+        </tr>
+        <tr>
+          <th><a name="8AK"></a>8AK</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AK)</td>
+        </tr>
+        <tr>
+          <th><a name="8AL"></a>8AL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AL)</td>
+        </tr>
+        <tr>
+          <th><a name="8AM"></a>8AM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AM)</td>
+        </tr>
+        <tr>
+          <th><a name="8AN"></a>8AN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AN)</td>
+        </tr>
+        <tr>
+          <th><a name="8AP"></a>8AP</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AP)</td>
+        </tr>
+        <tr>
+          <th><a name="8AR"></a>8AR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AR)</td>
+        </tr>
+        <tr>
           <th><a name="8AS"></a>8AS</th>
           <td>SPRING-COMPTR SELECT RR LH</td>
         </tr>
         <tr>
           <th><a name="8AT"></a>8AT</th>
           <td>SPRING/SUSPENSION - REAR LH (AIR SPRING)</td>
+        </tr>
+        <tr>
+          <th><a name="8AU"></a>8AU</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AU)</td>
+        </tr>
+        <tr>
+          <th><a name="8AV"></a>8AV</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AV)</td>
+        </tr>
+        <tr>
+          <th><a name="8AW"></a>8AW</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AW)</td>
+        </tr>
+        <tr>
+          <th><a name="8AX"></a>8AX</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AX)</td>
+        </tr>
+        <tr>
+          <th><a name="8AY"></a>8AY</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AY)</td>
+        </tr>
+        <tr>
+          <th><a name="8AZ"></a>8AZ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8AZ)</td>
         </tr>
         <tr>
           <th><a name="8B0"></a>8B0</th>
@@ -790,8 +900,80 @@
           <td>INSTRUMENT CLUSTER,SPECIAL ODOMETER</td>
         </tr>
         <tr>
+          <th><a name="8B9"></a>8B9</th>
+          <td>FUEL SENDER ROBUST FUEL SYSTEM (SEO)</td>
+        </tr>
+        <tr>
+          <th><a name="8BA"></a>8BA</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BA)</td>
+        </tr>
+        <tr>
+          <th><a name="8BB"></a>8BB</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BB)</td>
+        </tr>
+        <tr>
+          <th><a name="8BC"></a>8BC</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BC)</td>
+        </tr>
+        <tr>
+          <th><a name="8BD"></a>8BD</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BD)</td>
+        </tr>
+        <tr>
           <th><a name="8BE"></a>8BE</th>
           <td>COMPONENT RR LH - COMPUTER SEL SUSP</td>
+        </tr>
+        <tr>
+          <th><a name="8BF"></a>8BF</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BF)</td>
+        </tr>
+        <tr>
+          <th><a name="8BG"></a>8BG</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BG)</td>
+        </tr>
+        <tr>
+          <th><a name="8BH"></a>8BH</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BH)</td>
+        </tr>
+        <tr>
+          <th><a name="8BJ"></a>8BJ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BJ)</td>
+        </tr>
+        <tr>
+          <th><a name="8BK"></a>8BK</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BK)</td>
+        </tr>
+        <tr>
+          <th><a name="8BL"></a>8BL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BL)</td>
+        </tr>
+        <tr>
+          <th><a name="8BM"></a>8BM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BM)</td>
+        </tr>
+        <tr>
+          <th><a name="8BN"></a>8BN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BN)</td>
+        </tr>
+        <tr>
+          <th><a name="8BP"></a>8BP</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BP)</td>
+        </tr>
+        <tr>
+          <th><a name="8BR"></a>8BR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BR)</td>
+        </tr>
+        <tr>
+          <th><a name="8BS"></a>8BS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BS)</td>
+        </tr>
+        <tr>
+          <th><a name="8BT"></a>8BT</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BT)</td>
+        </tr>
+        <tr>
+          <th><a name="8BU"></a>8BU</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BU)</td>
         </tr>
         <tr>
           <th><a name="8BW"></a>8BW</th>
@@ -800,6 +982,14 @@
         <tr>
           <th><a name="8BX"></a>8BX</th>
           <td>COMPONENT RR LH COMUTER SEL SUSP</td>
+        </tr>
+        <tr>
+          <th><a name="8BY"></a>8BY</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BY)</td>
+        </tr>
+        <tr>
+          <th><a name="8BZ"></a>8BZ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8BZ)</td>
         </tr>
         <tr>
           <th><a name="8C0"></a>8C0</th>
@@ -826,12 +1016,28 @@
           <td>GENERATOR 145 AMP (SEO)</td>
         </tr>
         <tr>
+          <th><a name="8C7"></a>8C7</th>
+          <td>GENERATOR 150 AMP (SEO)</td>
+        </tr>
+        <tr>
+          <th><a name="8C8"></a>8C8</th>
+          <td>HOOK TOW - DELETE</td>
+        </tr>
+        <tr>
           <th><a name="8C9"></a>8C9</th>
           <td>DELETION FRONT SEAT & LAP SHOULDER BELTS</td>
         </tr>
         <tr>
           <th><a name="8CA"></a>8CA</th>
           <td>COMPONENT-COMPUTER SELECT SUSP</td>
+        </tr>
+        <tr>
+          <th><a name="8CB"></a>8CB</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8CB)</td>
+        </tr>
+        <tr>
+          <th><a name="8CC"></a>8CC</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8CC)</td>
         </tr>
         <tr>
           <th><a name="8CD"></a>8CD</th>
@@ -904,6 +1110,10 @@
         <tr>
           <th><a name="8CZ"></a>8CZ</th>
           <td>COMPONENT RR LH COMPUTER SELECTED SUSP (8CZ)</td>
+        </tr>
+        <tr>
+          <th><a name="8D1"></a>8D1</th>
+          <td>WINDOW RR FULL WIDTH, SLIDING (SEO)</td>
         </tr>
         <tr>
           <th><a name="8D2"></a>8D2</th>
@@ -1014,8 +1224,20 @@
           <td>Fuel, additional 3-gallons</td>
         </tr>
         <tr>
+          <th><a name="8E2"></a>8E2</th>
+          <td>SEAT FRT - DELETE</td>
+        </tr>
+        <tr>
+          <th><a name="8E3"></a>8E3</th>
+          <td>BUMPER RR PAINTED, BLACK</td>
+        </tr>
+        <tr>
           <th><a name="8E4"></a>8E4</th>
           <td>Additional fuel, 5 gallons</td>
+        </tr>
+        <tr>
+          <th><a name="8E6"></a>8E6</th>
+          <td>BUMPER RR PAINTED</td>
         </tr>
         <tr>
           <th><a name="8E8"></a>8E8</th>
@@ -1210,6 +1432,10 @@
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8FZ)</td>
         </tr>
         <tr>
+          <th><a name="8G4"></a>8G4</th>
+          <td>STEPS NON-SKID FRONT (UNION CITY)</td>
+        </tr>
+        <tr>
           <th><a name="8G8"></a>8G8</th>
           <td>Cargo Overhead Lamp</td>
         </tr>
@@ -1263,6 +1489,10 @@
         </tr>
         <tr>
           <th><a name="8GR"></a>8GR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8GR)</td>
+        </tr>
+        <tr>
+          <th><a name="8GS"></a>8GS</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8GR)</td>
         </tr>
         <tr>
@@ -1450,6 +1680,10 @@
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8JL)</td>
         </tr>
         <tr>
+          <th><a name="8JM"></a>8JM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8JM)</td>
+        </tr>
+        <tr>
           <th><a name="8JN"></a>8JN</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8JN)</td>
         </tr>
@@ -1574,8 +1808,72 @@
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8KZ)</td>
         </tr>
         <tr>
+          <th><a name="8L2"></a>8L2</th>
+          <td>HOOK TOW, FRT (UNION CITY)</td>
+        </tr>
+        <tr>
+          <th><a name="8L8"></a>8L8</th>
+          <td>LINING BODY INTERIOR ALUMINUM UNION CITY</td>
+        </tr>
+        <tr>
+          <th><a name="8LA"></a>8LA</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LA)</td>
+        </tr>
+        <tr>
           <th><a name="8LB"></a>8LB</th>
           <td>2008 OEM ENGINE PHYSICAL ID 8LB & PRODUCTION NUMBER 12607146</td>
+        </tr>
+        <tr>
+          <th><a name="8LC"></a>8LC</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LC)</td>
+        </tr>
+        <tr>
+          <th><a name="8LD"></a>8LD</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LD)</td>
+        </tr>
+        <tr>
+          <th><a name="8LF"></a>8LF</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LF)</td>
+        </tr>
+        <tr>
+          <th><a name="8LH"></a>8LH</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LH)</td>
+        </tr>
+        <tr>
+          <th><a name="8LI"></a>8LI</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LI)</td>
+        </tr>
+        <tr>
+          <th><a name="8LJ"></a>8LJ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LJ)</td>
+        </tr>
+        <tr>
+          <th><a name="8LK"></a>8LK</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LK)</td>
+        </tr>
+        <tr>
+          <th><a name="8LL"></a>8LL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LL)</td>
+        </tr>
+        <tr>
+          <th><a name="8LM"></a>8LM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LM)</td>
+        </tr>
+        <tr>
+          <th><a name="8LN"></a>8LN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LN)</td>
+        </tr>
+        <tr>
+          <th><a name="8LP"></a>8LP</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LP)</td>
+        </tr>
+        <tr>
+          <th><a name="8LR"></a>8LR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LR)</td>
+        </tr>
+        <tr>
+          <th><a name="8LS"></a>8LS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8LS)</td>
         </tr>
         <tr>
           <th><a name="8LT"></a>8LT</th>
@@ -1646,6 +1944,10 @@
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8MF)</td>
         </tr>
         <tr>
+          <th><a name="8MH"></a>8MH</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8MH)</td>
+        </tr>
+        <tr>
           <th><a name="8MJ"></a>8MJ</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8MJ)</td>
         </tr>
@@ -1690,6 +1992,18 @@
           <td>SPRING COMPTR SELECT - RR LH SPRING COMPTR SELECT - RR LH</td>
         </tr>
         <tr>
+          <th><a name="8MX"></a>8MX</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8MX)</td>
+        </tr>
+        <tr>
+          <th><a name="8MY"></a>8MY</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8MY)</td>
+        </tr>
+        <tr>
+          <th><a name="8MZ"></a>8MZ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8MZ)</td>
+        </tr>
+        <tr>
           <th><a name="8N1"></a>8N1</th>
           <td>COLD CLIMATE PACKAGE,DIESEL,USED WITH ARCTIC GRADE FUEL</td>
         </tr>
@@ -1710,8 +2024,84 @@
           <td>RADIO SPEAKERS DELETE</td>
         </tr>
         <tr>
+          <th><a name="8NA"></a>8NA</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NA)</td>
+        </tr>
+        <tr>
+          <th><a name="8NB"></a>8NB</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NB)</td>
+        </tr>
+        <tr>
+          <th><a name="8NC"></a>8NC</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NC)</td>
+        </tr>
+        <tr>
+          <th><a name="8ND"></a>8ND</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8ND)</td>
+        </tr>
+        <tr>
+          <th><a name="8NF"></a>8NF</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NF)</td>
+        </tr>
+        <tr>
+          <th><a name="8NH"></a>8NH</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NH)</td>
+        </tr>
+        <tr>
+          <th><a name="8NJ"></a>8NJ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NJ)</td>
+        </tr>
+        <tr>
+          <th><a name="8NK"></a>8NK</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NK)</td>
+        </tr>
+        <tr>
+          <th><a name="8NL"></a>8NL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NL)</td>
+        </tr>
+        <tr>
+          <th><a name="8NM"></a>8NM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NM)</td>
+        </tr>
+        <tr>
+          <th><a name="8NN"></a>8NN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NN)</td>
+        </tr>
+        <tr>
+          <th><a name="8NP"></a>8NP</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NP)</td>
+        </tr>
+        <tr>
+          <th><a name="8NR"></a>8NR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NR)</td>
+        </tr>
+        <tr>
+          <th><a name="8NS"></a>8NS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NS)</td>
+        </tr>
+        <tr>
+          <th><a name="8NT"></a>8NT</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NT)</td>
+        </tr>
+        <tr>
+          <th><a name="8NU"></a>8NU</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NU)</td>
+        </tr>
+        <tr>
+          <th><a name="8NW"></a>8NW</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NW)</td>
+        </tr>
+        <tr>
           <th><a name="8NX"></a>8NX</th>
           <td>COMPONENT RR RH COMPUTER SEL SUSP</td>
+        </tr>
+        <tr>
+          <th><a name="8NY"></a>8NY</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NY)</td>
+        </tr>
+        <tr>
+          <th><a name="8NZ"></a>8NZ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8NZ)</td>
         </tr>
         <tr>
           <th><a name="8O1"></a>8O1</th>
@@ -1798,6 +2188,14 @@
           <td>COMPONENT RR LH-COMPUTER SEL SUSP (8PR)</td>
         </tr>
         <tr>
+          <th><a name="8PS"></a>8PS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8PS)</td>
+        </tr>
+        <tr>
+          <th><a name="8PT"></a>8PT</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8PT)</td>
+        </tr>
+        <tr>
           <th><a name="8PU"></a>8PU</th>
           <td>COMPONENT RR LH-COMPUTER SEL SUSP (8PU)</td>
         </tr>
@@ -1826,6 +2224,10 @@
           <td>SEAT,REAR(DELETE)</td>
         </tr>
         <tr>
+          <th><a name="8Q4"></a>8Q4</th>
+          <td>VEHICLE SERVICE PARTS LABEL</td>
+        </tr>
+        <tr>
           <th><a name="8Q5"></a>8Q5</th>
           <td>HVAC SYSTEM AIR CONDITIONER FRONT,MANUAL CONTROLS</td>
         </tr>
@@ -1850,6 +2252,10 @@
           <td>FUEL TANK FILLER NECK, LOWERED (FOR 92 INCH BODY WIDTH)</td>
         </tr>
         <tr>
+          <th><a name="8R1"></a>8R1</th>
+          <td>LINER HEAD - DELETE</td>
+        </tr>
+        <tr>
           <th><a name="8R2"></a>8R2</th>
           <td>Tire valve stems, long, brass, for inside dual rear wheels</td>
         </tr>
@@ -1864,6 +2270,14 @@
         <tr>
           <th><a name="8R3"></a>8R3</th>
           <td>VALVE,STEEL</td>
+        </tr>
+        <tr>
+          <th><a name="8R4"></a>8R4</th>
+          <td>WIRING PROVISIONS VEHICLE SECURITY SYSTEMS</td>
+        </tr>
+        <tr>
+          <th><a name="8R5"></a>8R5</th>
+          <td>HOSE FUEL TANK FILLER SHORTEN</td>
         </tr>
         <tr>
           <th><a name="8R6"></a>8R6</th>
@@ -1902,12 +2316,44 @@
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8RE)</td>
         </tr>
         <tr>
+          <th><a name="8RF"></a>8RF</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RF)</td>
+        </tr>
+        <tr>
           <th><a name="8RH"></a>8RH</th>
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8RH)</td>
         </tr>
         <tr>
           <th><a name="8RJ"></a>8RJ</th>
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8RJ)</td>
+        </tr>
+        <tr>
+          <th><a name="8RK"></a>8RK</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RK)</td>
+        </tr>
+        <tr>
+          <th><a name="8RL"></a>8RL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RL)</td>
+        </tr>
+        <tr>
+          <th><a name="8RM"></a>8RM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RM)</td>
+        </tr>
+        <tr>
+          <th><a name="8RN"></a>8RN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RN)</td>
+        </tr>
+        <tr>
+          <th><a name="8RP"></a>8RP</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RP)</td>
+        </tr>
+        <tr>
+          <th><a name="8RR"></a>8RR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RR)</td>
+        </tr>
+        <tr>
+          <th><a name="8RS"></a>8RS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8RS)</td>
         </tr>
         <tr>
           <th><a name="8RT"></a>8RT</th>
@@ -1998,8 +2444,32 @@
           <td>COMPONENT RR LH-COMPUTER SEL SUSP (8SK)</td>
         </tr>
         <tr>
+          <th><a name="8SL"></a>8SL</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SL)</td>
+        </tr>
+        <tr>
+          <th><a name="8SM"></a>8SM</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SM)</td>
+        </tr>
+        <tr>
+          <th><a name="8SN"></a>8SN</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SN)</td>
+        </tr>
+        <tr>
           <th><a name="8SP"></a>8SP</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8SP)</td>
+        </tr>
+        <tr>
+          <th><a name="8SR"></a>8SR</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SR)</td>
+        </tr>
+        <tr>
+          <th><a name="8SS"></a>8SS</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SS)</td>
+        </tr>
+        <tr>
+          <th><a name="8ST"></a>8ST</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8ST)</td>
         </tr>
         <tr>
           <th><a name="8SU"></a>8SU</th>
@@ -2040,6 +2510,10 @@
         <tr>
           <th><a name="8T2"></a>8T2</th>
           <td>WIRING PROVISIONS RH DOOR DELETE (SEO)</td>
+        </tr>
+        <tr>
+          <th><a name="8T3"></a>8T3</th>
+          <td>VEHICLE INSPECTION PREDELIVERY IN PLANT</td>
         </tr>
         <tr>
           <th><a name="8T4"></a>8T4</th>
@@ -2182,6 +2656,10 @@
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8UC)</td>
         </tr>
         <tr>
+          <th><a name="8UD"></a>8UD</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8UD)</td>
+        </tr>
+        <tr>
           <th><a name="8UF"></a>8UF</th>
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8UF)</td>
         </tr>
@@ -2236,6 +2714,18 @@
         <tr>
           <th><a name="8UW"></a>8UW</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8UW)</td>
+        </tr>
+        <tr>
+          <th><a name="8UX"></a>8UX</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8UX)</td>
+        </tr>
+        <tr>
+          <th><a name="8UY"></a>8UY</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8UY)</td>
+        </tr>
+        <tr>
+          <th><a name="8UZ"></a>8UZ</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8UZ)</td>
         </tr>
         <tr>
           <th><a name="8V0"></a>8V0</th>
@@ -2294,6 +2784,18 @@
           <td>CHASSIS,10,000 LBS GVW</td>
         </tr>
         <tr>
+          <th><a name="8W3"></a>8W3</th>
+          <td>MODIFICATION 50 PSI TIRES</td>
+        </tr>
+        <tr>
+          <th><a name="8W4"></a>8W4</th>
+          <td>MODIFICATION 60 PSI TIRES</td>
+        </tr>
+        <tr>
+          <th><a name="8W5"></a>8W5</th>
+          <td>GENERATOR 105 AMP.</td>
+        </tr>
+        <tr>
           <th><a name="8W6"></a>8W6</th>
           <td>SEAT,BUCKET,DRIVER & PASSENGER,LOW BACK,FRONT,W/HEAD RESTRAINT SYSTEM</td>
         </tr>
@@ -2308,6 +2810,10 @@
         <tr>
           <th><a name="8W9"></a>8W9</th>
           <td>SPRING,FRONT SUSPENSION</td>
+        </tr>
+        <tr>
+          <th><a name="8WA"></a>8WA</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8WA)</td>
         </tr>
         <tr>
           <th><a name="8WC"></a>8WC</th>
@@ -2498,6 +3004,10 @@
           <td>COMPONENT RR LH - COMPUTER SEL SUSP (8XZ)</td>
         </tr>
         <tr>
+          <th><a name="8Y0"></a>8Y0</th>
+          <td>BATTERY DEEP CYCLE CRANKING MOTOR (SEO)</td>
+        </tr>
+        <tr>
           <th><a name="8Y1"></a>8Y1</th>
           <td>ALARM,ENGINE,WITH LIGHT</td>
         </tr>
@@ -2518,6 +3028,10 @@
           <td>BATTERY,690 CCA(DUAL)W/ISOLATOR</td>
         </tr>
         <tr>
+          <th><a name="8Y7"></a>8Y7</th>
+          <td>INTERIOR PACKAGE PLUMBING, HTG & A/C ADSCO(#5118/5119)</td>
+        </tr>
+        <tr>
           <th><a name="8Y8"></a>8Y8</th>
           <td>BATTERY,600 CCA,DUAL</td>
         </tr>
@@ -2528,6 +3042,10 @@
         <tr>
           <th><a name="8YA"></a>8YA</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8YA)</td>
+        </tr>
+        <tr>
+          <th><a name="8YB"></a>8YB</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8YB)</td>
         </tr>
         <tr>
           <th><a name="8YC"></a>8YC</th>
@@ -2666,6 +3184,10 @@
           <td>COMPONENT RR LH-COMPUTER SEL SUSP (8ZT)</td>
         </tr>
         <tr>
+          <th><a name="8ZU"></a>8ZU</th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8ZU)</td>
+        </tr>
+        <tr>
           <th><a name="8ZZ"></a>8ZZ</th>
           <td>COMPONENT RR LH COMPUTER SEL SUSP (8ZZ)</td>
         </tr>
@@ -2673,92 +3195,91 @@
                         </table>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Random Decoded RPO Codes</strong></div>
+                        <div class="panel-heading"><strong>Example Decoded RPO Codes</strong></div>
                         <table class="table table-striped table-two-col">
                            <tbody>
                               
         <tr>
-          <th><a href="/pages/8.html#8T1">8T1</a></th>
-          <td>OIL COOLER,TRANMISSION,AUXILLARY</td>
+          <th><a href="/pages/2.html#23W">23W</a></th>
+          <td>TRIM COMBINATION,VINYL,DUAL GRAIN,BLUE</td>
         </tr>
         <tr>
-          <th><a href="/pages/8.html#8SW">8SW</a></th>
-          <td>COMPONENT RR LH COMPUTER SEL SUSP (8SW)</td>
+          <th><a href="/pages/6.html#609">609</a></th>
+          <td>SEAT BELT COLOR- COGNAC</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#US3">US3</a></th>
-          <td>ANTENNA DIVERSITY</td>
+          <th><a href="/pages/S.html#SBU">SBU</a></th>
+          <td>PRIMARY COLOR EXTERIOR, GREEN WE262A</td>
         </tr>
         <tr>
-          <th><a href="/pages/H.html#H14">H14</a></th>
-          <td>AXLE,REAR,23000 LBS,ROCKWELL RS23160,SINGLE SPEED</td>
+          <th><a href="/pages/O.html#OC7">OC7</a></th>
+          <td>LOCAL GM OF EUROPE OC7</td>
         </tr>
         <tr>
-          <th><a href="/pages/6.html#642">642</a></th>
-          <td>TRIM COMBINATION LEATHER, LT BEIGE</td>
+          <th><a href="/pages/J.html#JFF">JFF</a></th>
+          <td>GVWR, 10,100 lbs. (4581 kg)</td>
         </tr>
         <tr>
-          <th><a href="/pages/R.html#RZ9">RZ9</a></th>
-          <td>LPO, Grille  with body-color surround
-</td>
+          <th><a href="/pages/G.html#GE7">GE7</a></th>
+          <td>FLEET INCENTIVE WOOD COMPANY (H/J/K/N/U/W-TRK G)</td>
         </tr>
         <tr>
-          <th><a href="/pages/8.html#8DU">8DU</a></th>
-          <td>COMPONENT RR LH COMPUTER SEL SUSP (8DU)</td>
+          <th><a href="/pages/E.html#EMQ">EMQ</a></th>
+          <td>TRIM SEAT CLOTH, PANTILE</td>
         </tr>
         <tr>
-          <th><a href="/pages/5.html#5A2">5A2</a></th>
-          <td>MIRROR I/S FRT VAN LH & RH, SUNSHADE, ILLUM (SEO)</td>
+          <th><a href="/pages/B.html#B71">B71</a></th>
+          <td>ORNAMENTATION,EXTERIOR,WHEEL OPENING MOLDING(COLOR)</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#ACG">ACG</a></th>
-          <td>FILLER OPAQUE GLASS, SI RR WDO</td>
+          <th><a href="/pages/X.html#XWO">XWO</a></th>
+          <td>TIRE FRONT 11.00R24.5/G 14PR BL RADIAL TL</td>
         </tr>
         <tr>
-          <th><a href="/pages/M.html#MB2">MB2</a></th>
-          <td>PLUG,FILLER,TRANSMISSION,MAGNETIC</td>
+          <th><a href="/pages/S.html#S2I">S2I</a></th>
+          <td>FLEET INCENTIVE MASTEC, INC (W-TRK CKGMLST)</td>
         </tr>
         <tr>
-          <th><a href="/pages/R.html#RKQ">RKQ</a></th>
-          <td>TIRE ALL 245/45R19 SL 98W BW HW4</td>
+          <th><a href="/pages/9.html#9MK">9MK</a></th>
+          <td>2009 OEM ENGINE PHYSICAL ID 9MK & PRODUCTION NUMBER 94665646</td>
         </tr>
         <tr>
-          <th><a href="/pages/2.html#23E">23E</a></th>
-          <td>INTERIOR COLOR,BLUE</td>
+          <th><a href="/pages/V.html#VAP">VAP</a></th>
+          <td>Ship Thru, Produced in Wentzville and shipped to Knapheide Truck Equipment</td>
         </tr>
         <tr>
-          <th><a href="/pages/R.html#RY2">RY2</a></th>
-          <td>ACCESSORY DECALS/APPLIQUES</td>
+          <th><a href="/pages/Q.html#QNF">QNF</a></th>
+          <td>TIRE ALL P235/75R16 BW R/PE ST TL ALS 106S</td>
         </tr>
         <tr>
-          <th><a href="/pages/J.html#JQF">JQF</a></th>
-          <td>SLACK ADJUSTERS ROCKWELL AUTOMATIC REAR</td>
+          <th><a href="/pages/T.html#TB6">TB6</a></th>
+          <td>MODIFICATION SYRIA, REQUIREMENTS</td>
         </tr>
         <tr>
-          <th><a href="/pages/7.html#7X9">7X9</a></th>
-          <td>SPOTLAMP-PROVISIONS, LH & RH</td>
+          <th><a href="/pages/G.html#GMQ">GMQ</a></th>
+          <td>RADIO AM/FM STEREO, SD NAV, DVD-ROM, CAF, USB, RSA, VOICE REC, AUX JA</td>
         </tr>
         <tr>
-          <th><a href="/pages/T.html#TAY">TAY</a></th>
-          <td>FLEET SALES RYDER GO #R0094 & R0156</td>
+          <th><a href="/pages/D.html#D7J">D7J</a></th>
+          <td>SEAT BACK FLAT, FOLDING, OFFICE PROVISIONS, RH</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#UHG">UHG</a></th>
-          <td>Seat belt indicator, driver</td>
+          <th><a href="/pages/H.html#HCV">HCV</a></th>
+          <td>MERCHANDISED PKG SATURN 1999 HOMECOMING VEHICLE</td>
         </tr>
         <tr>
-          <th><a href="/pages/3.html#34I">34I</a></th>
-          <td>INTERIOR TRIM JET BLACK / KALAHARI</td>
+          <th><a href="/pages/0.html#0DK">0DK</a></th>
+          <td>COMPONENT RR COMPUTER SEL SUSP</td>
         </tr>
         <tr>
-          <th><a href="/pages/J.html#JAG">JAG</a></th>
-          <td>BRAKE PROVISIONS ABS LOCATION</td>
+          <th><a href="/pages/E.html#EEQ">EEQ</a></th>
+          <td>TRIM SEAT CLOTH, PRESS BOX FABRIC</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#G0S">G0S</a></th>
-          <td>Realtree Special Edition</td>
+          <th><a href="/pages/P.html#PDA">PDA</a></th>
+          <td>Texas Edition</td>
         </tr>
                            </tbody>
                         </table>
@@ -2850,9 +3371,6 @@
             <div class="col-sm-12">
                <hr>
                <span class="text-center">
-                  <p>
-                     Created by <a href="kravchina.com" title="kravchina.com">kravchina.com</a>. Contact for support: <a href="mailto:admin@admin.com" title="admin@admin.com">admin@admin.com</a>
-                  </p>
                   <p>
                      2021 - <span id="year"></span> <a href="/" title="RPO Codes decoder">RPO Codes decoder</a>
                   </p>

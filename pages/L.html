@@ -6,11 +6,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="RPO Codes Decoder - Find out what options your GM Chevy Buick Cadillac vehicle is equipped with - GM Chevrolet Buick Cadillac - Regular Production Option">
       <meta name="keywords" content="RPO Codes Decoder GM Chevy Buick Cadillac">
-      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="shortcut icon" href="/favicon.ico">
       <title>RPO Codes Decoder - GM Chevrolet Buick Cadillac - Regular Production Option</title>
       <link href="/static/bootstrap.min.css" rel="stylesheet">
       <link href="/static/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="/static/base.css" rel="stylesheet">
+      <script
+         src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body>
       <div class="container">
@@ -46,7 +50,9 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Decoding Results</strong>
+                        <div class="panel-heading">
+                           <strong>Decoding Results</strong>
+                           <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy to Clipboard</button>
                         </div>
                         <table class="table table-striped table-two-col">
                            <tbody id="tableTbody">
@@ -59,7 +65,7 @@
                <hr>
                
                <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
                         <div class="panel-heading"><strong>L** Codes</strong></div>
                         <table class="table table-striped table-two-col">
@@ -68,6 +74,10 @@
         <tr>
           <th><a name="L01"></a>L01</th>
           <td>ENGINE,1.6L(1.6-6),L4 MFI(SINGLE OVERHEAD CAM)</td>
+        </tr>
+        <tr>
+          <th><a name="L02"></a>L02</th>
+          <td>ENGINE DIESEL, 6 CYL, 8.2L, DI, L6, OHC, 129KW, ISUZU</td>
         </tr>
         <tr>
           <th><a name="L03"></a>L03</th>
@@ -88,6 +98,10 @@
         <tr>
           <th><a name="L05"></a>L05</th>
           <td>ENGINE,5.7L,TBI</td>
+        </tr>
+        <tr>
+          <th><a name="L06"></a>L06</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, MFI, SOHC, BRA</td>
         </tr>
         <tr>
           <th><a name="L07"></a>L07</th>
@@ -114,6 +128,10 @@
           <td>ENGINE GAS, 4 CYL, 1.0L, MFI, OHC</td>
         </tr>
         <tr>
+          <th><a name="L12"></a>L12</th>
+          <td>ENGINE DIESEL, 8 CYL, 6.5L, DI, OHC, TURBO, GM</td>
+        </tr>
+        <tr>
           <th><a name="L13"></a>L13</th>
           <td>ENGINE,140 C.I.D.(140),L4</td>
         </tr>
@@ -124,6 +142,18 @@
         <tr>
           <th><a name="L14"></a>L14</th>
           <td>ENGINE,4 CYLINDER,1.4L,DOHC,MPI,GMDTAC</td>
+        </tr>
+        <tr>
+          <th><a name="L15"></a>L15</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.3L, L4</td>
+        </tr>
+        <tr>
+          <th><a name="L16"></a>L16</th>
+          <td>ENGINE GAS, 6 CYL, 2.8L, DI, DOHC, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="L17"></a>L17</th>
+          <td>ENGINE GAS, 4 CYL, 1.6L, 2BBL</td>
         </tr>
         <tr>
           <th><a name="L18"></a>L18</th>
@@ -150,6 +180,10 @@
           <td>ENGINE,250 C.I.D.(250),L6</td>
         </tr>
         <tr>
+          <th><a name="L23"></a>L23</th>
+          <td>ENGINE DIESEL, 4 CYL, 3.0L, L4, TURBO</td>
+        </tr>
+        <tr>
           <th><a name="L24"></a>L24</th>
           <td>ENGINE GAS, L4, 1.9L,(SATURN ONLY)(1.9-8)</td>
         </tr>
@@ -168,6 +202,10 @@
         <tr>
           <th><a name="L27"></a>L27</th>
           <td>ENGINE,(3.8L)(SFI)V6,HO,231CID</td>
+        </tr>
+        <tr>
+          <th><a name="L28"></a>L28</th>
+          <td>ENGINE DIESEL, 6 CYL, 7.1L, MFI</td>
         </tr>
         <tr>
           <th><a name="L29"></a>L29</th>
@@ -266,6 +304,10 @@
           <td>Engine, TurboMax</td>
         </tr>
         <tr>
+          <th><a name="L3C"></a>L3C</th>
+          <td>ENGINE GAS, 4 CYL, 1.0L, 1BBL, OHC, SUZUKI</td>
+        </tr>
+        <tr>
           <th><a name="L3T"></a>L3T</th>
           <td>Engine, ECOTEC 1.3L Turbo</td>
         </tr>
@@ -276,6 +318,10 @@
         <tr>
           <th><a name="L40"></a>L40</th>
           <td>ENGINE DIESEL, 4 CYL, 1.9L, L4, CRI, HO</td>
+        </tr>
+        <tr>
+          <th><a name="L41"></a>L41</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, MFI, DOHC, RENAULT</td>
         </tr>
         <tr>
           <th><a name="L42"></a>L42</th>
@@ -294,6 +340,10 @@
           <td>ENGINE,4 CYLINDER,1.6L,DOHC,MPI</td>
         </tr>
         <tr>
+          <th><a name="L45"></a>L45</th>
+          <td>ENGINE GAS, 4 CYL, 1.0L, MFI, DOHC</td>
+        </tr>
+        <tr>
           <th><a name="L46"></a>L46</th>
           <td>ENGINE,3.0L,SFI,V6,60DEG,CHINA(EXPORT ONLY)(NAO DESIGN)</td>
         </tr>
@@ -302,12 +352,60 @@
           <td>ENGINE GAS, 8CYL,4.0L,SFI,DOHC</td>
         </tr>
         <tr>
+          <th><a name="L48"></a>L48</th>
+          <td>ENGINE GAS, 4 CYL, 1.4L, MFI, SOHC</td>
+        </tr>
+        <tr>
           <th><a name="L49"></a>L49</th>
           <td>ENGINE,6.5L(6.5P)V8 DIESEL</td>
         </tr>
         <tr>
+          <th><a name="L4A"></a>L4A</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.0L, L4, PERKINS</td>
+        </tr>
+        <tr>
+          <th><a name="L4C"></a>L4C</th>
+          <td>ENGINE DIESEL, 4 CYL, 3.1L, L4, TURBO, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="L4D"></a>L4D</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.0L, L4, TURBO, PERKINS</td>
+        </tr>
+        <tr>
+          <th><a name="L4I"></a>L4I</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.3L, L4, DI, DOHC, TURBO-HIGH</td>
+        </tr>
+        <tr>
+          <th><a name="L4L"></a>L4L</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, DI, ALUM, DOHC, PT-JV</td>
+        </tr>
+        <tr>
+          <th><a name="L4M"></a>L4M</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, DI, ALUM, DOHC, TURBO-HIGH,PT-JV</td>
+        </tr>
+        <tr>
+          <th><a name="L4N"></a>L4N</th>
+          <td>ENGINE GAS, 4 CYL, 1.9L, DI, ALUM, DOHC, PT-JV</td>
+        </tr>
+        <tr>
+          <th><a name="L4Z"></a>L4Z</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, L4, TURBO, OHC, 74KW, INTERCOOLER, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="L50"></a>L50</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, L4, TURBO DI, HO, SOHC, GM</td>
+        </tr>
+        <tr>
+          <th><a name="L51"></a>L51</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, CRI, L4, TURBO DI, DOHC, REN</td>
+        </tr>
+        <tr>
           <th><a name="L52"></a>L52</th>
           <td>ENGINE GAS, 5 CYL, 3.5L, MFI, DOHC, L5, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="L53"></a>L53</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.9L, L4, DI, DOHC, ISUZU</td>
         </tr>
         <tr>
           <th><a name="L54"></a>L54</th>
@@ -342,12 +440,20 @@
           <td>Engine, Duramax 6.6L Turbo-Diesel V8, B20-Diesel compatible</td>
         </tr>
         <tr>
+          <th><a name="L60"></a>L60</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, MFI, ALUM, OHC, OPEL</td>
+        </tr>
+        <tr>
           <th><a name="L61"></a>L61</th>
           <td>ENGINE,2.2L,4CYL,MFI,DOHC</td>
         </tr>
         <tr>
           <th><a name="L62"></a>L62</th>
           <td>ENGINE,368 C.I.D.(368-9),V8</td>
+        </tr>
+        <tr>
+          <th><a name="L63"></a>L63</th>
+          <td>ENGINE GAS, 6 CYL, 3.0L, SFI, V6, OHC, OPEL</td>
         </tr>
         <tr>
           <th><a name="L64"></a>L64</th>
@@ -370,8 +476,16 @@
           <td>ENGINE,2.5L(2.5U),L4,TBI</td>
         </tr>
         <tr>
+          <th><a name="L6Y"></a>L6Y</th>
+          <td>ENGINE DIESEL, 6 CYL, 14.3L, SFI, L6, OHC, 287KW, ISUZU</td>
+        </tr>
+        <tr>
           <th><a name="L70"></a>L70</th>
           <td>ENGINE GAS, 4 CYL, 2.0L, DOHC, TURBO</td>
+        </tr>
+        <tr>
+          <th><a name="L71"></a>L71</th>
+          <td>ENGINE GAS, 4 CYL, 1.2L, TBI</td>
         </tr>
         <tr>
           <th><a name="L72"></a>L72</th>
@@ -388,6 +502,10 @@
         <tr>
           <th><a name="L74"></a>L74</th>
           <td>ENGINE,GAS,455CID,4BBL.</td>
+        </tr>
+        <tr>
+          <th><a name="L75"></a>L75</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, TBI</td>
         </tr>
         <tr>
           <th><a name="L76"></a>L76</th>
@@ -446,8 +564,16 @@
           <td>ENGINE GAS, 8 CYL, 6.2L, SIDI VVT, AFM, E85 MAX, ALUM, GM</td>
         </tr>
         <tr>
+          <th><a name="L87"></a>L87</th>
+          <td>ENGINE GAS, 4 CYL, 2.3L, MFI, DOHC (DUP WITH LD2)</td>
+        </tr>
+        <tr>
           <th><a name="L88"></a>L88</th>
           <td>ENGINE,4 CYLINDER,2.0L,DOHC,MPI</td>
+        </tr>
+        <tr>
+          <th><a name="L89"></a>L89</th>
+          <td>ENGINE GAS, 4 CYL, 1.4L, 1BBL, OHC</td>
         </tr>
         <tr>
           <th><a name="L8T"></a>L8T</th>
@@ -456,6 +582,10 @@
         <tr>
           <th><a name="L8X"></a>L8X</th>
           <td>ENGINE GAS, 8 CYL, 5.3L, SIDI VVT, AFM, LIVC, E85 MAX, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="L90"></a>L90</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, L4, RENAULT</td>
         </tr>
         <tr>
           <th><a name="L91"></a>L91</th>
@@ -498,6 +628,10 @@
           <td>ENGINE FLEXIBLE FUEL, (GAS/ETHANOL), 8 CYL, 6.0L, SFI IRON</td>
         </tr>
         <tr>
+          <th><a name="L97"></a>L97</th>
+          <td>ENGINE GAS, 4 CYL, 1.8L, MFI, DOHC, REDUCED OUTPUT</td>
+        </tr>
+        <tr>
           <th><a name="L98"></a>L98</th>
           <td>ENGINE, 5.7L, (5.7-8) 350 CID, V8, TPI</td>
         </tr>
@@ -518,16 +652,40 @@
           <td>ENGINE FLEXIBLE FUEL, (GAS/ALC), 8 CYL, 6.2L, SFI, ALUM GM</td>
         </tr>
         <tr>
+          <th><a name="LA0"></a>LA0</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, DI, ALUM, DOHC, PT-JV</td>
+        </tr>
+        <tr>
           <th><a name="LA1"></a>LA1</th>
           <td>ENGINE GAS, 6 CYL, 3.4L, MFI, HO</td>
+        </tr>
+        <tr>
+          <th><a name="LA2"></a>LA2</th>
+          <td>ENGINE GAS, 4 CYL, 1.0L, TBI, OHC</td>
         </tr>
         <tr>
           <th><a name="LA3"></a>LA3</th>
           <td>ENGINE GAS, V6, 3.2L(196 CID),DOHC, MFI</td>
         </tr>
         <tr>
+          <th><a name="LA4"></a>LA4</th>
+          <td>ENGINE GAS, 6 CYL, 3.2L, MFI, SOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LA5"></a>LA5</th>
+          <td>ENGINE DIESEL, 6 CYL, 4.2L, TURBO, MWM</td>
+        </tr>
+        <tr>
+          <th><a name="LA6"></a>LA6</th>
+          <td>ENGINE GAS, 6 CYL, 3.0L, MFI, V6, OHC</td>
+        </tr>
+        <tr>
           <th><a name="LA7"></a>LA7</th>
           <td>ENGINE,1.5L(1.5-5),L4(DIESEL)</td>
+        </tr>
+        <tr>
+          <th><a name="LA8"></a>LA8</th>
+          <td>ENGINE DIESEL, 4 CYL, 236 CID L4, *PERKINS* Q.20-4*</td>
         </tr>
         <tr>
           <th><a name="LA9"></a>LA9</th>
@@ -546,8 +704,20 @@
           <td>MODULE CRUISE CONTROL</td>
         </tr>
         <tr>
+          <th><a name="LAE"></a>LAE</th>
+          <td>LOCK CONTROL STEERING WHL</td>
+        </tr>
+        <tr>
           <th><a name="LAF"></a>LAF</th>
           <td>ENGINE GAS, 4 CYL, 2.4L, SIDI, DOHC, VVT, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LAG"></a>LAG</th>
+          <td>FAMILY CODE LABEL</td>
+        </tr>
+        <tr>
+          <th><a name="LAH"></a>LAH</th>
+          <td>IDENTIFICATION HYBRID ENGINE</td>
         </tr>
         <tr>
           <th><a name="LAL"></a>LAL</th>
@@ -566,6 +736,10 @@
           <td>ENGINE GAS, 4 CYL, 1.2L, MFI, L4, DOHC, SGMW</td>
         </tr>
         <tr>
+          <th><a name="LAS"></a>LAS</th>
+          <td>PLANT CODE LANSING, MI, USA (CHASSIS ASM C-LINE)</td>
+        </tr>
+        <tr>
           <th><a name="LAT"></a>LAT</th>
           <td>ENGINE GAS, 4 CYL, 2.4L, MFI, ALUM, DOHC, BAS, ECOTEC</td>
         </tr>
@@ -582,8 +756,20 @@
           <td>ENGINE GAS, 4 CYL, 1.8L, SIDI, DOHC, VVT, ALUM, TOYOTA</td>
         </tr>
         <tr>
+          <th><a name="LB0"></a>LB0</th>
+          <td>ENGINE GAS, 4 CYL, 1.6L, MFI, DOHC, GM-JV</td>
+        </tr>
+        <tr>
           <th><a name="LB1"></a>LB1</th>
           <td>ENGINE,4.3L(4.3N),V6</td>
+        </tr>
+        <tr>
+          <th><a name="LB2"></a>LB2</th>
+          <td>ENGINE GAS, 4 CYL, 1.949L, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LB3"></a>LB3</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 1.6L, MFI, L4, OHC, BRA</td>
         </tr>
         <tr>
           <th><a name="LB4"></a>LB4</th>
@@ -638,6 +824,10 @@
           <td>ENGINE GAS, 6 CYL, IN-LINE, 2.5L, MFI, DOHC, GMDAT</td>
         </tr>
         <tr>
+          <th><a name="LBL"></a>LBL</th>
+          <td>FAMILY CODE LANGUAGE LABEL</td>
+        </tr>
+        <tr>
           <th><a name="LBM"></a>LBM</th>
           <td>ENGINE GAS, 6 CYL, IN-LINE, 2.0L, MFI, DOHC, GMDAT</td>
         </tr>
@@ -648,6 +838,18 @@
         <tr>
           <th><a name="LBS"></a>LBS</th>
           <td>ENGINE DIESEL, 4 CYL, 1.9L, L4, CPI, TURBO, HO, DOHC, 121 KW, FIAT</td>
+        </tr>
+        <tr>
+          <th><a name="LBT"></a>LBT</th>
+          <td>ENGINE PROPANE GAS, 4 CYL, 1.6L, MFI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LBU"></a>LBU</th>
+          <td>ENGINE PROPANE GAS, 4 CYL, 1.4L, MFI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LBV"></a>LBV</th>
+          <td>ENGINE PROPANE GAS, 4 CYL, 1.8L, MFI, DOHC</td>
         </tr>
         <tr>
           <th><a name="LBW"></a>LBW</th>
@@ -718,12 +920,36 @@
           <td>Engine, Cummins B6.7L turbocharged 6-cylinder diesel engine, delivering 260 hp and 660 lb-ft of torque</td>
         </tr>
         <tr>
+          <th><a name="LCC"></a>LCC</th>
+          <td>FAMILY CODE LUGGAGE CARRIER CLR</td>
+        </tr>
+        <tr>
+          <th><a name="LCE"></a>LCE</th>
+          <td>FAMILY CODE LOCK CONTROL, ENTRY</td>
+        </tr>
+        <tr>
+          <th><a name="LCF"></a>LCF</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, MFI, TURBO, DOHC, REDUCED OUTPUT</td>
+        </tr>
+        <tr>
+          <th><a name="LCG"></a>LCG</th>
+          <td>ENGINE DIESEL, 6 CYL, 2.7L, CRI, V6, DOHC, TURBO, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LCH"></a>LCH</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, DI, ALUM, DOHC, OPEL,</td>
+        </tr>
+        <tr>
           <th><a name="LCJ"></a>LCJ</th>
           <td>ENGINE DIESEL, 6 CYL, 2.9L, CRI, V6, DOHC, TURBO VM MORTORI, 184KW</td>
         </tr>
         <tr>
           <th><a name="LCP"></a>LCP</th>
           <td>ENGINE PROPANE GAS, 4 CYL, 1.0L, MFI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LCR"></a>LCR</th>
+          <td>FAMILY CODE LOCK CONTROL, RR CMPT</td>
         </tr>
         <tr>
           <th><a name="LCS"></a>LCS</th>
@@ -754,6 +980,14 @@
           <td>ENGINE GAS, 4 CYL, 2.5L, L4, SIDI, DOHC, VVT, E85 MAX, ALUM, GM</td>
         </tr>
         <tr>
+          <th><a name="LD0"></a>LD0</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.8L, DI, L4, OHC, 130KW, TURBO, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LD1"></a>LD1</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.0L, L4, TURBO-HIGH, HO, OHC</td>
+        </tr>
+        <tr>
           <th><a name="LD2"></a>LD2</th>
           <td>ENGINE,2.3L(2.3D),L4(DUAL OVERHEAD CAM)</td>
         </tr>
@@ -766,8 +1000,16 @@
           <td>ENGINE, V8, 283 CID, 4.6L</td>
         </tr>
         <tr>
+          <th><a name="LD4"></a>LD4</th>
+          <td>ENGINE GAS, 6 CYL, 4.1L, MFI</td>
+        </tr>
+        <tr>
           <th><a name="LD5"></a>LD5</th>
           <td>ENGINE,231 C.I.D.(231A),V6,2BBL.</td>
+        </tr>
+        <tr>
+          <th><a name="LD6"></a>LD6</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, MFI, OHC</td>
         </tr>
         <tr>
           <th><a name="LD7"></a>LD7</th>
@@ -814,8 +1056,16 @@
           <td>ENGINE DIESEL, 4 CYL, 1.3L, L4, DI, DOHC, TURBO, 55KW</td>
         </tr>
         <tr>
+          <th><a name="LDX"></a>LDX</th>
+          <td>ENGINE GAS, 6 CYL, 4.1L, MPFI, L6 (E20)</td>
+        </tr>
+        <tr>
           <th><a name="LE0"></a>LE0</th>
           <td>ENGINE GAS, 6 CYL, 3.6L, SFI, V6, ALUM, 60 DEGREES REDUCED OUTPUT, GM.</td>
+        </tr>
+        <tr>
+          <th><a name="LE1"></a>LE1</th>
+          <td>ENGINE DIESEL, 8 CYL, 6.XL, DI, TURBO, OHC</td>
         </tr>
         <tr>
           <th><a name="LE2"></a>LE2</th>
@@ -884,6 +1134,10 @@
         <tr>
           <th><a name="LF1"></a>LF1</th>
           <td>ENGINE GAS, 6 CYL, 3.0L, SIDI, DOHC, VVT, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LF2"></a>LF2</th>
+          <td>ENGINE GAS, 6 CYL, 3.0L, HIGH PERFORMANCE</td>
         </tr>
         <tr>
           <th><a name="LF3"></a>LF3</th>
@@ -1026,12 +1280,24 @@
           <td>ENGINE,350 C.I.D.(5.7D),V8,OEM DIRECT SALES(MARINE)</td>
         </tr>
         <tr>
+          <th><a name="LGB"></a>LGB</th>
+          <td>ENGINE GAS, 6 CYL, 2.8L, DI, V6, DOHC, ER, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LGC"></a>LGC</th>
+          <td>FAMILY CODE LANGUAGE CONTROL</td>
+        </tr>
+        <tr>
           <th><a name="LGD"></a>LGD</th>
           <td>ENGINE FLEXIBLE FUEL, (GAS/ETHANOL), 6 CYL, 3.9L, V6 SFI, OFFSET BORE, GMNA</td>
         </tr>
         <tr>
           <th><a name="LGH"></a>LGH</th>
           <td>ENGINE DIESEL, 8 CYL, 6.6L, DI, V8, TURBO, DURAMAX</td>
+        </tr>
+        <tr>
+          <th><a name="LGS"></a>LGS</th>
+          <td>FAMILY CODE LIFTGATE SUBASSEMBLY</td>
         </tr>
         <tr>
           <th><a name="LGX"></a>LGX</th>
@@ -1070,12 +1336,24 @@
           <td>ENGINE,3.1L(3.1T),V6(EXPORT)</td>
         </tr>
         <tr>
+          <th><a name="LH1"></a>LH1</th>
+          <td>ENGINE GAS, 8 CYL, 4.6L, SFI, V8, DOHC, ALUM, GM</td>
+        </tr>
+        <tr>
           <th><a name="LH2"></a>LH2</th>
           <td>ENGINE GAS, 8 CYL, 4.6L/(281 CID), SFI, V8, DOHC, HO, ALUM, GM</td>
         </tr>
         <tr>
           <th><a name="LH3"></a>LH3</th>
           <td>ENGINE,DIESEL,8.2L,TURBO</td>
+        </tr>
+        <tr>
+          <th><a name="LH4"></a>LH4</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.6L, DI, L4, TURBO, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LH5"></a>LH5</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.3L, L4, DI, DOHC, TURBO-LOW</td>
         </tr>
         <tr>
           <th><a name="LH6"></a>LH6</th>
@@ -1102,8 +1380,40 @@
           <td>ENGINE GAS, 8 CYL, 5.3L, SFI , E85 MAX, ALUM, GM</td>
         </tr>
         <tr>
+          <th><a name="LHA"></a>LHA</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.75L, DI, L4, OHC, 104KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHB"></a>LHB</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.75L, DI, L4, OHC, 129KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHC"></a>LHC</th>
+          <td>ENGINE DIESEL, 4 CYL, 3.0L, DI, L4, OHV, 96KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
           <th><a name="LHD"></a>LHD</th>
           <td>VEHICLE DRIVE LEFTHAND DRIVE</td>
+        </tr>
+        <tr>
+          <th><a name="LHE"></a>LHE</th>
+          <td>ENGINE DIESEL, 6 CYL, 7.8L, DI, L6, OHC, 141KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHF"></a>LHF</th>
+          <td>ENGINE DIESEL, 6 CYL, 7.8L, DI, L6, OHC, 164KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHG"></a>LHG</th>
+          <td>ENGINE DIESEL, 6 CYL, 7.8L, DI, L6, OHC, 191KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHH"></a>LHH</th>
+          <td>ENGINE DIESEL, 6 CYL, 9.8L, DI, L6, OHC, 206KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
+        </tr>
+        <tr>
+          <th><a name="LHJ"></a>LHJ</th>
+          <td>ENGINE DIESEL, 6 CYL, 15.7L, DI, L6, OHC, 425KW, TURBO, INTERCOOLED, ISUZU, (EURO 3 EMISSION)</td>
         </tr>
         <tr>
           <th><a name="LHQ"></a>LHQ</th>
@@ -1114,6 +1424,10 @@
           <td>ENGINE FLEXIBLE FUEL (GAS/ETHANOL), 2.0L, SIDI, L4, DOHC TURBO, ALUM</td>
         </tr>
         <tr>
+          <th><a name="LIC"></a>LIC</th>
+          <td>FAMILY CODE LABEL INFORMATION</td>
+        </tr>
+        <tr>
           <th><a name="LIH"></a>LIH</th>
           <td>Engine, ECOTEC 1.2L Turbo</td>
         </tr>
@@ -1122,20 +1436,84 @@
           <td>PLANT CODE-LINDEN, NEW JERSEY (CPC)</td>
         </tr>
         <tr>
+          <th><a name="LJ0"></a>LJ0</th>
+          <td>ENGINE GAS, 4 CYL, 1.4L, DI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LJ1"></a>LJ1</th>
+          <td>ENGINE GAS, 4 CYL, 1.8L, MFI, OHC, HO, BRAZIL</td>
+        </tr>
+        <tr>
+          <th><a name="LJ2"></a>LJ2</th>
+          <td>ENGINE GAS, 4 CYL, 1.4L, MFI, DOHC, PORT DEACTIVATION</td>
+        </tr>
+        <tr>
           <th><a name="LJ3"></a>LJ3</th>
           <td>ENGINE GAS, 4 CYL, 2.3L, MFI, DOHC, TURBO HO</td>
+        </tr>
+        <tr>
+          <th><a name="LJ4"></a>LJ4</th>
+          <td>ENGINE GAS, 3 CYL, 1.0L, MFI, DOHC, PORT DEACTIVATION</td>
         </tr>
         <tr>
           <th><a name="LJ5"></a>LJ5</th>
           <td>ENGINE,1.8L(1.8D),DIESEL L4</td>
         </tr>
         <tr>
+          <th><a name="LJ6"></a>LJ6</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.8L, L4, TURBO, INTERCOOLER</td>
+        </tr>
+        <tr>
+          <th><a name="LJ7"></a>LJ7</th>
+          <td>ENGINE GAS, 4 CYL, 1.6L, MFI, DOHC, PORT DEACTIVATION</td>
+        </tr>
+        <tr>
+          <th><a name="LJ8"></a>LJ8</th>
+          <td>ENGINE DIESEL, 4 CYL, 3.9L, L4, TURBO, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LJ9"></a>LJ9</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, L4, DI, RENAULT</td>
+        </tr>
+        <tr>
+          <th><a name="LJK"></a>LJK</th>
+          <td>ENGINE GAS, 6 CYL, 3.5L, SFI, V6, SUZUKI</td>
+        </tr>
+        <tr>
           <th><a name="LK0"></a>LK0</th>
           <td>ENGINE,1.9L L4(SATURN ONLY)(1.9-9)</td>
         </tr>
         <tr>
+          <th><a name="LK1"></a>LK1</th>
+          <td>ENGINE DIESEL, 6 CYL, 9.8L, DI, L6, OHC, 199KW, TURBO, 1SUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LK2"></a>LK2</th>
+          <td>ENGINE GAS, 4 CYL, 1.8L, DI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LK3"></a>LK3</th>
+          <td>ENGINE GAS, 6 CYL, 3.7L, MFI, V6, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LK4"></a>LK4</th>
+          <td>ENGINE DIESEL, 6 CYL, 12.0L, SFI, L6, OHC, 280KW, ISUZU</td>
+        </tr>
+        <tr>
           <th><a name="LK5"></a>LK5</th>
           <td>ENGINE GAS, 4 CYL, 2.8L, DOHC, MFI, AL, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LK6"></a>LK6</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, L4, TURBO</td>
+        </tr>
+        <tr>
+          <th><a name="LK7"></a>LK7</th>
+          <td>ENGINE DIESEL, 6 CYL, 15.7L, DI, L6, OHC, 335KW, ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LK8"></a>LK8</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, DI, TURBO-LOW, HO, DOHC, ISUZU</td>
         </tr>
         <tr>
           <th><a name="LK9"></a>LK9</th>
@@ -1190,8 +1568,16 @@
           <td>ENGINE,2.8L(2.8R),V6</td>
         </tr>
         <tr>
+          <th><a name="LL3"></a>LL3</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.XL, DI, L4, TURBO, OHC, GM</td>
+        </tr>
+        <tr>
           <th><a name="LL4"></a>LL4</th>
           <td>ENGINE,6.2L(6.2J),DIESEL V8</td>
+        </tr>
+        <tr>
+          <th><a name="LL5"></a>LL5</th>
+          <td>ENGINE GAS, 4 CYL, 1.8L, MFI, DI, L4, TURBO-HIGH, ALUM, DOHC, SAAB</td>
         </tr>
         <tr>
           <th><a name="LL6"></a>LL6</th>
@@ -1206,12 +1592,68 @@
           <td>ENGINE,4.2L,DOHC,L,MFI,ALUM, 6 CYL</td>
         </tr>
         <tr>
+          <th><a name="LL9"></a>LL9</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, L4, TURBO DI, SOHC, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LLB"></a>LLB</th>
+          <td>ENGINE GAS, 6 CYL, 3.0L, SFI, H6, VVT, SUBARU</td>
+        </tr>
+        <tr>
+          <th><a name="LLC"></a>LLC</th>
+          <td>ENGINE GAS, 6 CYL, V6, 2.7L, MFI, ALUM, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLD"></a>LLD</th>
+          <td>ENGINE GAS, 4 CYL, 1.3L, SFI, OHC, ALUM, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLE"></a>LLE</th>
+          <td>ENGINE GAS, 4 CYL, L4, 2.0L, MFI, ALUM, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLF"></a>LLF</th>
+          <td>ENGINE GAS, 4 CYL, L4, 1.8L, MFI, ALUM, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLG"></a>LLG</th>
+          <td>ENGINE GAS, 4 CYL, L4, 1.0L, MFI, DOHC, ALUM, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLH"></a>LLH</th>
+          <td>ENGINE DIESEL, 4 CYL, L4, 2.0L, DI, SUZUKI</td>
+        </tr>
+        <tr>
+          <th><a name="LLJ"></a>LLJ</th>
+          <td>ENGINE DIESEL, 4 CYL, 3.0L, L4, TURBO, INTERCOOLER</td>
+        </tr>
+        <tr>
+          <th><a name="LLK"></a>LLK</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.8L, L4, TURBO, ELECTRONIC</td>
+        </tr>
+        <tr>
+          <th><a name="LLM"></a>LLM</th>
+          <td>ENGINE GAS, 4 CYL, 1.6L, DI, DOHC, PT-JV, 96KW</td>
+        </tr>
+        <tr>
+          <th><a name="LLN"></a>LLN</th>
+          <td>ENGINE GAS, 4 CYL, 1.6L, DI, DOHC, PT-JV, 85KW</td>
+        </tr>
+        <tr>
+          <th><a name="LLP"></a>LLP</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, DI, ALUM, DOHC, PT-JV, 132KW</td>
+        </tr>
+        <tr>
           <th><a name="LLQ"></a>LLQ</th>
           <td>ENGINE GAS, 4 CYL, 1.6L, SFI, OHC</td>
         </tr>
         <tr>
           <th><a name="LLR"></a>LLR</th>
           <td>ENGINE GAS, 5 CYL, 3.7L, MFI, L5, ALUM, VVT, DOHC, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LLS"></a>LLS</th>
+          <td>ENGINE GAS, 5 CYL, 3.6L, MFI, L5, ALUM, VVT, DOHC, TURBO,GM</td>
         </tr>
         <tr>
           <th><a name="LLT"></a>LLT</th>
@@ -1230,8 +1672,24 @@
           <td>ENGINE DIESEL, 4 CYL, L4, 2.0L, CRI, SOHC, TURBO, GMDAT</td>
         </tr>
         <tr>
+          <th><a name="LLX"></a>LLX</th>
+          <td>ENGINE FLEXIBLE FUEL, (GAS/ETHANOL), 6 CYL, 3.5L, SFI, V6, GM</td>
+        </tr>
+        <tr>
           <th><a name="LLY"></a>LLY</th>
           <td>ENGINE DIESEL, 8 CYL, 6.6L, DI, V8, TURBO-HIGH, DURAMAX</td>
+        </tr>
+        <tr>
+          <th><a name="LLZ"></a>LLZ</th>
+          <td>ENGINE FLEXIBLE FUEL, (GAS/ETHANOL), 6 CYL, 3.5L, SFI, V6, CYLINDER DEACTIVATION, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LM0"></a>LM0</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.5L, L4, TURBO, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LM1"></a>LM1</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, DI, DOHC, ISU</td>
         </tr>
         <tr>
           <th><a name="LM2"></a>LM2</th>
@@ -1250,6 +1708,14 @@
           <td>ENGINE GAS, 8 CYL, 5.3L, SFI, ALUM, GM</td>
         </tr>
         <tr>
+          <th><a name="LM5"></a>LM5</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 2.2L, MFI, L4, SOHC, BRA</td>
+        </tr>
+        <tr>
+          <th><a name="LM6"></a>LM6</th>
+          <td>ENGINE GAS, 4 CYL, 2.4L, MFI</td>
+        </tr>
+        <tr>
           <th><a name="LM7"></a>LM7</th>
           <td>ENGINE GAS, 8 CYL, 5.3L, MFI</td>
         </tr>
@@ -1260,6 +1726,14 @@
         <tr>
           <th><a name="LM9"></a>LM9</th>
           <td>ENGINE,3.8L(231-9),V6,SFI,TURBO</td>
+        </tr>
+        <tr>
+          <th><a name="LMB"></a>LMB</th>
+          <td>ENGINE FLEXIBLE FUEL, (GAS/ALC), 4 CYL, 2.4L, MFI, L4, DOHC, BRA</td>
+        </tr>
+        <tr>
+          <th><a name="LMC"></a>LMC</th>
+          <td>ENGINE FLEXIBLE FUEL, (GAS/ALC), 4 CYL, 2.0L, MFI, L4, SOHC, BRA</td>
         </tr>
         <tr>
           <th><a name="LMD"></a>LMD</th>
@@ -1276,6 +1750,10 @@
         <tr>
           <th><a name="LMG"></a>LMG</th>
           <td>ENGINE FLEXIBLE FUEL, (GAS/ALC), 8 CYL, 5.3L, SFI, V8 OHV, CYL DEACTIVATION, IRON, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LMH"></a>LMH</th>
+          <td>ENGINE FLEXIBLE FUEL, (GAS/ALC), 8 CYL, 6.0L, SFI, V8, OHV, ALUM, GM</td>
         </tr>
         <tr>
           <th><a name="LMK"></a>LMK</th>
@@ -1330,12 +1808,44 @@
           <td>ENGINE,DIESEL,6 CYL,7.1 L,TURBO</td>
         </tr>
         <tr>
+          <th><a name="LN5"></a>LN5</th>
+          <td>ENGINE GAS, 6 CYL, 3.2L, DI, DOHC, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LN6"></a>LN6</th>
+          <td>ENGINE GAS, 4 CYL, 1.5L, 2BBL, OHC</td>
+        </tr>
+        <tr>
           <th><a name="LN7"></a>LN7</th>
           <td>ENGINE,3.0L(3.0L),V6(HI OUTPUT),MFI</td>
         </tr>
         <tr>
           <th><a name="LN8"></a>LN8</th>
           <td>ENGINE,2.5L(2.5E),L4 TBI                                          40</td>
+        </tr>
+        <tr>
+          <th><a name="LN9"></a>LN9</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.3L, L4, DI, DOHC, FIAT-GM</td>
+        </tr>
+        <tr>
+          <th><a name="LNA"></a>LNA</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 125 GROSS HP, @ 3,000 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LNB"></a>LNB</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 135 GROSS HP, @ 3,000 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LNC"></a>LNC</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 148 GROSS HP, @ 3,000 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LND"></a>LND</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 168 GROSS HP, @ 3,400 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LNE"></a>LNE</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 180 GROSS HP, @ 3,400 RPM</td>
         </tr>
         <tr>
           <th><a name="LNF"></a>LNF</th>
@@ -1374,6 +1884,14 @@
           <td>PLANT CODE - LORDSTOWN, OH, BOC PLANT CODE - LORDSTOWN, OH, BOC</td>
         </tr>
         <tr>
+          <th><a name="LOK"></a>LOK</th>
+          <td>FAMILY CODE LOCK</td>
+        </tr>
+        <tr>
+          <th><a name="LP0"></a>LP0</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, L4, TURBO, OHC, ISUZU</td>
+        </tr>
+        <tr>
           <th><a name="LP1"></a>LP1</th>
           <td>ENGINE GAS, 6 CYL, 2.8L, SFI, V6, DOHC, ALUM, 60 DEG, GM</td>
         </tr>
@@ -1388,6 +1906,18 @@
         <tr>
           <th><a name="LP4"></a>LP4</th>
           <td>ENGINE GAS, 8 CYL, 7.4L (7.4D),MFI</td>
+        </tr>
+        <tr>
+          <th><a name="LP5"></a>LP5</th>
+          <td>ENGINE GAS, 4 CYL, 1.0L, 1BBL</td>
+        </tr>
+        <tr>
+          <th><a name="LP6"></a>LP6</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.3L, L4, TURBO</td>
+        </tr>
+        <tr>
+          <th><a name="LP7"></a>LP7</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 1.6L, 2BBL, L4, GM</td>
         </tr>
         <tr>
           <th><a name="LP8"></a>LP8</th>
@@ -1414,8 +1944,24 @@
           <td>POWER OPTION ISUZU, 7.8L, 215 GROSS HP @ 2400 RPM</td>
         </tr>
         <tr>
+          <th><a name="LPF"></a>LPF</th>
+          <td>FAMILY CODE LICENSE PLATE FRONT</td>
+        </tr>
+        <tr>
           <th><a name="LPG"></a>LPG</th>
           <td>PROVISIONS LIQUID PROPANE GAS</td>
+        </tr>
+        <tr>
+          <th><a name="LPH"></a>LPH</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, L4, TURBO-HIGH, HO, OHC</td>
+        </tr>
+        <tr>
+          <th><a name="LPI"></a>LPI</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, MFI, TURBO, DOHC, OPEL</td>
+        </tr>
+        <tr>
+          <th><a name="LPJ"></a>LPJ</th>
+          <td>POWER OPTION MWM 6.07, 4.2L, 155 GROSS HP, @ 3,400 RPM</td>
         </tr>
         <tr>
           <th><a name="LPK"></a>LPK</th>
@@ -1450,6 +1996,14 @@
           <td>POWER OPTION DURAMAX, 7.8L, 215 GROSS HP @ 2, 200 RPM, LOW TORQ</td>
         </tr>
         <tr>
+          <th><a name="LPY"></a>LPY</th>
+          <td>ENGINE DIESEL, 6 CYL, 8.2L, DI, L6, OHC, 147KW, 1SUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LPZ"></a>LPZ</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, CRI, TURBO-HIGH, DOHC</td>
+        </tr>
+        <tr>
           <th><a name="LQ0"></a>LQ0</th>
           <td>ENGINE GAS, 4 CYL, 2.6L, MFI, ISUZU</td>
         </tr>
@@ -1460,6 +2014,10 @@
         <tr>
           <th><a name="LQ2"></a>LQ2</th>
           <td>ENGINE,0.8L(0.8-4),L3,SOHC,MPI</td>
+        </tr>
+        <tr>
+          <th><a name="LQ3"></a>LQ3</th>
+          <td>ENGINE GAS, 6 CYL, 2.6L, MFI, V6, DOHC, GM</td>
         </tr>
         <tr>
           <th><a name="LQ4"></a>LQ4</th>
@@ -1502,6 +2060,14 @@
           <td>POWER OPTION ISUZU, 7.8L, 230 GROSS H.P. @ 2400 RPM</td>
         </tr>
         <tr>
+          <th><a name="LQD"></a>LQD</th>
+          <td>POWER OPTION GMPT V8, 8.1L, 370 NET HP @ 4,400 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LQE"></a>LQE</th>
+          <td>POWER OPTION GMPT V8, 8.1L, 415 NET HP @ 5,000 RPM</td>
+        </tr>
+        <tr>
           <th><a name="LQF"></a>LQF</th>
           <td>POWER OPTION DURAMAX, 7.8L, 300HP/860LB FT @ 2200 RPM</td>
         </tr>
@@ -1512,6 +2078,22 @@
         <tr>
           <th><a name="LQH"></a>LQH</th>
           <td>POWER OPTION ISUZU, 7.8L, 275 GROSS HP @ 2400 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LQK"></a>LQK</th>
+          <td>POWER OPTION DURAMAX, 7.2L, 190 GROSS HP @ 2,400 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LQL"></a>LQL</th>
+          <td>POWER OPTION DURAMAX, 7.2L, 210 GROSS HP @ 2,400 RPM.</td>
+        </tr>
+        <tr>
+          <th><a name="LQM"></a>LQM</th>
+          <td>POWER OPTION GMPT V8, 6.5L, 175 GROSS HP @ 2,800 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LQN"></a>LQN</th>
+          <td>POWER OPTION GMPT V8, 6.5L, 190 GROSS HP @ 2,800 RPM</td>
         </tr>
         <tr>
           <th><a name="LQQ"></a>LQQ</th>
@@ -1570,20 +2152,52 @@
           <td>ENGINE,2.8L(2.8B),V6</td>
         </tr>
         <tr>
+          <th><a name="LR3"></a>LR3</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 1.8L, MFI, L4, BRA</td>
+        </tr>
+        <tr>
           <th><a name="LR4"></a>LR4</th>
           <td>ENGINE GAS, 8 CYL, 4.8L, MFI</td>
+        </tr>
+        <tr>
+          <th><a name="LR5"></a>LR5</th>
+          <td>ENGINE GAS, 6 CYL, 3.0L, MFI, TURBO-LOW, DOHC, OPEL</td>
+        </tr>
+        <tr>
+          <th><a name="LR6"></a>LR6</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, DI, TURBO-HIGH, HO, DOHC,ISUZU</td>
+        </tr>
+        <tr>
+          <th><a name="LR7"></a>LR7</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, GDI, L4, TURBO, ALUM, DOHC, SCC,SAAB</td>
         </tr>
         <tr>
           <th><a name="LR8"></a>LR8</th>
           <td>ENGINE,2.5L(2.5R),L4,TBI</td>
         </tr>
         <tr>
+          <th><a name="LR9"></a>LR9</th>
+          <td>ENGINE GAS, 4 CYL, 2.0L, 2BBL</td>
+        </tr>
+        <tr>
           <th><a name="LRB"></a>LRB</th>
           <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, CRI, TURBO, DOHC, ISUZU</td>
         </tr>
         <tr>
+          <th><a name="LRC"></a>LRC</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, CRI, TURBO, DOHC,</td>
+        </tr>
+        <tr>
           <th><a name="LRD"></a>LRD</th>
           <td>ENGINE DIESEL, 4 CYL, 2.0L, L4, CRI, TURBO, HO, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LRE"></a>LRE</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, L4, TURBO DI, SOHC, REDUCED OUTPUT</td>
+        </tr>
+        <tr>
+          <th><a name="LRF"></a>LRF</th>
+          <td>ENGINE GAS, 4 CYL, 1.8L, DI, DOHC, REDUCED OUTPUT</td>
         </tr>
         <tr>
           <th><a name="LRK"></a>LRK</th>
@@ -1690,8 +2304,20 @@
           <td>Engine, 1.5L Turbo DOHC 4-cylinder, SIDI, VVT</td>
         </tr>
         <tr>
+          <th><a name="LSG"></a>LSG</th>
+          <td>POWER OPTION DURAMAX, 7.2L, 210 GROSS HP @ 2,400 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LSH"></a>LSH</th>
+          <td>POWER OPTION DURAMAX, 6.6L, 250 GROSS HP @ 3,750 RPM</td>
+        </tr>
+        <tr>
           <th><a name="LSJ"></a>LSJ</th>
           <td>ENGINE GAS, 4 CYL, 2.0L, MFI, L4, DOHC, SC, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LSL"></a>LSL</th>
+          <td>ENGINE GAS, 8 CYL, 5.3L, MFI, IRON, HO, GM</td>
         </tr>
         <tr>
           <th><a name="LSM"></a>LSM</th>
@@ -1732,6 +2358,10 @@
         <tr>
           <th><a name="LSZ"></a>LSZ</th>
           <td>POWER OPTION CATERPILLAR 3126, 7.2L, 230 GROSS H.P. @ 2200 RPM</td>
+        </tr>
+        <tr>
+          <th><a name="LT0"></a>LT0</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 2.0L, TBI, L4, OHC, BRA</td>
         </tr>
         <tr>
           <th><a name="LT1"></a>LT1</th>
@@ -1834,6 +2464,14 @@
           <td>POWER OPTION (8.2T), 210 GROSS HP @ 2800 RPM</td>
         </tr>
         <tr>
+          <th><a name="LTT"></a>LTT</th>
+          <td>ENGINE GAS, 12 CYL, 7.5L, SFI, V12, DOHC, VVT, ALUM, TURBO, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LU0"></a>LU0</th>
+          <td>ENGINE GAS, 4 CYL, 2.6L, MFI, OHC</td>
+        </tr>
+        <tr>
           <th><a name="LU1"></a>LU1</th>
           <td>ENGINE GAS, 6 CYL, 3.2L, SFI, V6, ALUM, 60 DEGREES, GM</td>
         </tr>
@@ -1850,8 +2488,24 @@
           <td>ENGINE GAS, 4 CYL, 2.3L, MFI, LOW PRESSURE TURBO, DOHC</td>
         </tr>
         <tr>
+          <th><a name="LU5"></a>LU5</th>
+          <td>ENGINE GAS, 4 CYL, 2.2L, MFI, DOHC, REDUCED OUTPUT</td>
+        </tr>
+        <tr>
+          <th><a name="LU6"></a>LU6</th>
+          <td>ENGINE GAS, 4 CYL, 2.4L, MFI.</td>
+        </tr>
+        <tr>
+          <th><a name="LU7"></a>LU7</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, OPEL</td>
+        </tr>
+        <tr>
           <th><a name="LU8"></a>LU8</th>
           <td>ENGINE,4.9L TURBOCHARGED(LU8)(301 CID, 4 BBL)(F-CAR ONLY)</td>
+        </tr>
+        <tr>
+          <th><a name="LU9"></a>LU9</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.8L, L4, TURBO</td>
         </tr>
         <tr>
           <th><a name="LUD"></a>LUD</th>
@@ -1866,12 +2520,20 @@
           <td>POWER OPTION,8.2 T/C 210 HP @ 2800 RPM</td>
         </tr>
         <tr>
+          <th><a name="LUG"></a>LUG</th>
+          <td>FAMILY CODE LUGGAGE CARRIER</td>
+        </tr>
+        <tr>
           <th><a name="LUJ"></a>LUJ</th>
           <td>ENGINE GAS, 4 CYL, L4, 1.4L, MFI, DOHC, TURBO HO, ALUM GME</td>
         </tr>
         <tr>
           <th><a name="LUK"></a>LUK</th>
           <td>ENGINE GAS, 4 CYL, 2.4L, DI, ALUM, DOHC, BAS, ECOTEC</td>
+        </tr>
+        <tr>
+          <th><a name="LUT"></a>LUT</th>
+          <td>PLANT CODE LUTON, ENGLAND</td>
         </tr>
         <tr>
           <th><a name="LUU"></a>LUU</th>
@@ -1894,12 +2556,20 @@
           <td>ENGINE DIESEL, 2.0L, CRI, L4, DOHC, VGT</td>
         </tr>
         <tr>
+          <th><a name="LV0"></a>LV0</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.8L, DI, L4, OHC, 145KW, TURBO, ISUZU</td>
+        </tr>
+        <tr>
           <th><a name="LV1"></a>LV1</th>
           <td>Engine, 4.3L V6</td>
         </tr>
         <tr>
           <th><a name="LV1"></a>LV1</th>
           <td>ENGINE GAS, 6 CYL, 4.3L, SIDI, V6, VVT, E85 MAX, IRON</td>
+        </tr>
+        <tr>
+          <th><a name="LV2"></a>LV2</th>
+          <td>ENGINE DIESEL, 6 CYL, 3.0L, DI, V6, DOHC, TURBO,</td>
         </tr>
         <tr>
           <th><a name="LV3"></a>LV3</th>
@@ -1944,6 +2614,14 @@
         <tr>
           <th><a name="LVC"></a>LVC</th>
           <td>ENGINE DIESEL, 4 CYL, 2.8L, CRI, DOHC, TURBO, SENTO</td>
+        </tr>
+        <tr>
+          <th><a name="LVG"></a>LVG</th>
+          <td>EMISSION OVERRIDE ENGINE PREBUILD</td>
+        </tr>
+        <tr>
+          <th><a name="LVH"></a>LVH</th>
+          <td>FILTER OIL, FRAM, BY-PASS TYPE</td>
         </tr>
         <tr>
           <th><a name="LVJ"></a>LVJ</th>
@@ -1998,8 +2676,20 @@
           <td>ENGINE,1.6L(1.6-5),L4(DUEL OVERHEAD CAM)</td>
         </tr>
         <tr>
+          <th><a name="LW1"></a>LW1</th>
+          <td>ENGINE DIESEL, 4 CYL, 1.5L, L4, OPEL</td>
+        </tr>
+        <tr>
           <th><a name="LW2"></a>LW2</th>
           <td>ENGINE,4.5L(4.5-3),V8,MFI</td>
+        </tr>
+        <tr>
+          <th><a name="LW3"></a>LW3</th>
+          <td>ENGINE GAS, 3 CYL, 1.0L, MFI, DOHC</td>
+        </tr>
+        <tr>
+          <th><a name="LW4"></a>LW4</th>
+          <td>ENGINE GAS, 4 CYL, 1.2L, MFI, DOHC</td>
         </tr>
         <tr>
           <th><a name="LW5"></a>LW5</th>
@@ -2008,6 +2698,14 @@
         <tr>
           <th><a name="LW6"></a>LW6</th>
           <td>ENGINE,GAS,4 CYL</td>
+        </tr>
+        <tr>
+          <th><a name="LW7"></a>LW7</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.3L, L4</td>
+        </tr>
+        <tr>
+          <th><a name="LW8"></a>LW8</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.2L, L4, TURBO, HOL</td>
         </tr>
         <tr>
           <th><a name="LW9"></a>LW9</th>
@@ -2042,12 +2740,20 @@
           <td>ENGINE,DIESEL,6 CYL,6.6L,L6,TURBO</td>
         </tr>
         <tr>
+          <th><a name="LX1"></a>LX1</th>
+          <td>ENGINE GAS, 4 CYL, 1.3L, DI, DOHC, OPEL</td>
+        </tr>
+        <tr>
           <th><a name="LX2"></a>LX2</th>
           <td>ENGINE,8.2L(8.2),V8(T.B.I.)</td>
         </tr>
         <tr>
           <th><a name="LX3"></a>LX3</th>
           <td>ENGINE, CHEVROLET, 1.4L-I, L4</td>
+        </tr>
+        <tr>
+          <th><a name="LX4"></a>LX4</th>
+          <td>ENGINE ALCOHOL, 4 CYL, 1.4L, 2BBL, L4, BRA</td>
         </tr>
         <tr>
           <th><a name="LX5"></a>LX5</th>
@@ -2060,6 +2766,10 @@
         <tr>
           <th><a name="LX6"></a>LX6</th>
           <td>ENGINE,L4,1.5L,SOHC,MPI</td>
+        </tr>
+        <tr>
+          <th><a name="LX7"></a>LX7</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.0L, L4, TURBO, MWM</td>
         </tr>
         <tr>
           <th><a name="LX8"></a>LX8</th>
@@ -2078,8 +2788,20 @@
           <td>ENGINE GAS, 4 CYL, 1.6L, MFI, DOHC, PT-JV, VARIABLE CAMSHAFT TIMING</td>
         </tr>
         <tr>
+          <th><a name="LY0"></a>LY0</th>
+          <td>ENGINE GAS, 6 CYL, 2.6L, MFI, L6</td>
+        </tr>
+        <tr>
+          <th><a name="LY1"></a>LY1</th>
+          <td>ENGINE GAS, 4 CYL, 1.3L, MFI</td>
+        </tr>
+        <tr>
           <th><a name="LY2"></a>LY2</th>
           <td>ENGINE GAS, 8 CYL, 4.8L, SFI, IRON, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LY3"></a>LY3</th>
+          <td>ENGINE GAS, 4 CYL, 2.4L, MFI, L4, ALUM, DOHC, GM</td>
         </tr>
         <tr>
           <th><a name="LY4"></a>LY4</th>
@@ -2134,8 +2856,16 @@
           <td>MODEL CONVERSION BUICK REGAL CXL-T OSHAWA ASSEMBLY</td>
         </tr>
         <tr>
+          <th><a name="LZ0"></a>LZ0</th>
+          <td>ENGINE DIESEL, 4 CYL, 2.5L, DI, L4, BRA</td>
+        </tr>
+        <tr>
           <th><a name="LZ1"></a>LZ1</th>
           <td>ENGINE FLEXIBLE FUEL (GAS/ETHANOL), 8 CYL, 6.0L, SFI LIVC, DOD, ALUM, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LZ2"></a>LZ2</th>
+          <td>ENGINE DIESEL, 6 CYL, 7.2L, L6, DOHC, TURBO, ISUZU</td>
         </tr>
         <tr>
           <th><a name="LZ3"></a>LZ3</th>
@@ -2144,6 +2874,14 @@
         <tr>
           <th><a name="LZ4"></a>LZ4</th>
           <td>ENGINE GAS, 6 CYL, 3.5L, SFI, V6, OFFSET BORE, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LZ5"></a>LZ5</th>
+          <td>ENGINE GAS, 6 CYL, 3.5L, MFI, V6, CYLINDER DEACTIVATION, OFFSET BORE</td>
+        </tr>
+        <tr>
+          <th><a name="LZ6"></a>LZ6</th>
+          <td>ENGINE GAS, 6 CYL, 4.4L, MFI, L6, ALUM, DOHC, VVT, GM</td>
         </tr>
         <tr>
           <th><a name="LZ7"></a>LZ7</th>
@@ -2156,6 +2894,10 @@
         <tr>
           <th><a name="LZ9"></a>LZ9</th>
           <td>ENGINE GAS, 6 CYL, 3.9L, SFI, V6, OFFSET BORE, GM</td>
+        </tr>
+        <tr>
+          <th><a name="LZA"></a>LZA</th>
+          <td>ENGINE DIESEL, 4 CYL, 4.0L, L4, TURBO, CUMMINS</td>
         </tr>
         <tr>
           <th><a name="LZC"></a>LZC</th>
@@ -2181,91 +2923,91 @@
                         </table>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Random Decoded RPO Codes</strong></div>
+                        <div class="panel-heading"><strong>Example Decoded RPO Codes</strong></div>
                         <table class="table table-striped table-two-col">
                            <tbody>
                               
         <tr>
-          <th><a href="/pages/U.html#UI7">UI7</a></th>
-          <td>RADIO AM/FM/XM, TOUCHSCREEN, NAVIGATION, CONNECTED, CD DVD, AUX JACK, USB PORT, DVD, RSE</td>
+          <th><a href="/pages/Z.html#ZJ2">ZJ2</a></th>
+          <td>FLEET INCENTIVE PHILLIPS PETROLEUM (B/C/H/N/U/W-TRK CKGMLST)</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#U1Q">U1Q</a></th>
-          <td>RADIO AM STEREO/FM STEREO/WX/TV, SEEK/SCAN, CD, EQUALIZER, CLOCK, ETR</td>
+          <th><a href="/pages/H.html#HJT">HJT</a></th>
+          <td>INTERIOR TRIM CONFIG LEATHER, LEVEL 2, JET BLACK/LIGHT NEUTRAL</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#UBJ">UBJ</a></th>
-          <td>RADIO AM/FM STEREO, SEEK/SCAN, CD, AUTO TONE, CLOCK, ETR AUDIO/INPUT JACK</td>
+          <th><a href="/pages/E.html#EYK">EYK</a></th>
+          <td>ORNAMENTATION EXT EMBLEM, NAMEPLATE, CHROME, PACKAGE</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#GST">GST</a></th>
-          <td>PRIMARY COLOR EXTERIOR, MIRAGE GLOW (719U)</td>
+          <th><a href="/pages/L.html#LKR">LKR</a></th>
+          <td>ENGINE DIESEL, 4 CYL, 1.7L, L4, CRI, DOHC, VGT, 81KW, GME</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#AKO">AKO</a></th>
-          <td>Glass, privacy</td>
+          <th><a href="/pages/Z.html#ZFT">ZFT</a></th>
+          <td>TIRE SPARE P205/75R14/N BL R/PE ST TL ALS (9590957)</td>
         </tr>
         <tr>
-          <th><a href="/pages/6.html#6J4">6J4</a></th>
-          <td>Wiring, horn and siren circuit</td>
+          <th><a href="/pages/P.html#P0G">P0G</a></th>
+          <td> GM Commercial Link</td>
         </tr>
         <tr>
-          <th><a href="/pages/K.html#K39">K39</a></th>
-          <td>CRUISE CONTROL AUTOMATIC - DELETE</td>
+          <th><a href="/pages/N.html#NLF">NLF</a></th>
+          <td>FUEL TANK 304L, 80 GAL, LH FILL WITH AUXILIARY PORTS</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#GGZ">GGZ</a></th>
-          <td>PRIMARY COLOR EXTERIOR, SHEER SILVER MET</td>
+          <th><a href="/pages/P.html#PZ4">PZ4</a></th>
+          <td>WHEEL 18 X 7.5 ALUMINUM, POLISHED</td>
         </tr>
         <tr>
-          <th><a href="/pages/F.html#FV6">FV6</a></th>
-          <td>RATIO TRANSAXLE FINAL DRIVE 4.24</td>
+          <th><a href="/pages/O.html#OS4">OS4</a></th>
+          <td>LOCAL GM OF EUROPE OS4</td>
         </tr>
         <tr>
-          <th><a href="/pages/W.html#WJP">WJP</a></th>
-          <td>Escalade Sport Edition</td>
+          <th><a href="/pages/4.html#414">414</a></th>
+          <td>TRIM COMBINATION LEATHER, VERY LIGHT LINEN/COCOA (4) (08)</td>
         </tr>
         <tr>
-          <th><a href="/pages/N.html#N16">N16</a></th>
-          <td>TAILPIPE EXTENSION, 4 PIPE</td>
+          <th><a href="/pages/E.html#E6H">E6H</a></th>
+          <td>COUNTRY OMAN</td>
         </tr>
         <tr>
-          <th><a href="/pages/M.html#M3L">M3L</a></th>
-          <td>TRANSMISSION MAN 6 SPD</td>
+          <th><a href="/pages/K.html#K61">K61</a></th>
+          <td>GENERATOR,105 AMP,DUAL INTERNAL FAN,ENHANCED IDLE OUTPUT</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#GJ2">GJ2</a></th>
-          <td>PLANT CODE BEKASI, INDONESIA</td>
+          <th><a href="/pages/7.html#7YB">7YB</a></th>
+          <td>COMPONENT FRT RH COMPTR SEL SUSP(7YB)</td>
         </tr>
         <tr>
-          <th><a href="/pages/B.html#BPP">BPP</a></th>
-          <td>FIRST POSITION PROP HANGER,BOC,HEIGHT A</td>
+          <th><a href="/pages/I.html#ILN">ILN</a></th>
+          <td>TRIM INTERIOR DESIGN (LN)</td>
         </tr>
         <tr>
-          <th><a href="/pages/R.html#RSG">RSG</a></th>
-          <td>FRONT WHEEL,24.5X8.25 10 HOLE 11.25 BC BS DCT (BUDD 87650)</td>
+          <th><a href="/pages/T.html#TEH">TEH</a></th>
+          <td>DISCOUNT HANDICAP DRIVER, VAR 5</td>
         </tr>
         <tr>
-          <th><a href="/pages/T.html#T56">T56</a></th>
-          <td>SPOILER RR, ROOF, SPORT</td>
+          <th><a href="/pages/U.html#UQG">UQG</a></th>
+          <td>Audio system, 7-speaker system</td>
         </tr>
         <tr>
-          <th><a href="/pages/J.html#JH9">JH9</a></th>
-          <td>BRAKE HYD POWER, 4 WHL DISC, 14, 050 LBS</td>
+          <th><a href="/pages/8.html#8S4">8S4</a></th>
+          <td>MIRROR,OUTSIDE,WEST COAST TYPE,WITH 6' CONVEX</td>
         </tr>
         <tr>
-          <th><a href="/pages/Q.html#QAN">QAN</a></th>
-          <td>TIRE ALL P265/70R17 BW R/PE ST TL AL2 113S</td>
+          <th><a href="/pages/Q.html#Q4Y">Q4Y</a></th>
+          <td>FLEET INCENTIVE FESSENDEN HALL, INC. (B/S/U/V/W-TRK CKGST)</td>
         </tr>
         <tr>
-          <th><a href="/pages/J.html#JQZ">JQZ</a></th>
-          <td>BRAKE RATING FRT AIR ARVIN MERITOR R301,NON-ASBESTOS,5.5 INCH SLACK</td>
+          <th><a href="/pages/A.html#AB5">AB5</a></th>
+          <td>LOCK,SIDE DOOR ELECTRIC(KEY ACTIVATED)</td>
         </tr>
         <tr>
-          <th><a href="/pages/5.html#513">513</a></th>
-          <td>TRIM COMBINATION LEATHER,TOREADOR RED (3) (97)</td>
+          <th><a href="/pages/9.html#9KD">9KD</a></th>
+          <td>COMPONENT RR RH COMPUTER SEL SUSP (9KD)</td>
         </tr>
                            </tbody>
                         </table>
@@ -2357,9 +3099,6 @@
             <div class="col-sm-12">
                <hr>
                <span class="text-center">
-                  <p>
-                     Created by <a href="kravchina.com" title="kravchina.com">kravchina.com</a>. Contact for support: <a href="mailto:admin@admin.com" title="admin@admin.com">admin@admin.com</a>
-                  </p>
                   <p>
                      2021 - <span id="year"></span> <a href="/" title="RPO Codes decoder">RPO Codes decoder</a>
                   </p>

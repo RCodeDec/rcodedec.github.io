@@ -6,11 +6,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="RPO Codes Decoder - Find out what options your GM Chevy Buick Cadillac vehicle is equipped with - GM Chevrolet Buick Cadillac - Regular Production Option">
       <meta name="keywords" content="RPO Codes Decoder GM Chevy Buick Cadillac">
-      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="shortcut icon" href="/favicon.ico">
       <title>RPO Codes Decoder - GM Chevrolet Buick Cadillac - Regular Production Option</title>
       <link href="/static/bootstrap.min.css" rel="stylesheet">
       <link href="/static/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="/static/base.css" rel="stylesheet">
+      <script
+         src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body>
       <div class="container">
@@ -46,7 +50,9 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Decoding Results</strong>
+                        <div class="panel-heading">
+                           <strong>Decoding Results</strong>
+                           <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy to Clipboard</button>
                         </div>
                         <table class="table table-striped table-two-col">
                            <tbody id="tableTbody">
@@ -59,7 +65,7 @@
                <hr>
                
                <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
                         <div class="panel-heading"><strong>U** Codes</strong></div>
                         <table class="table table-striped table-two-col">
@@ -126,12 +132,96 @@
           <td>HORN,FOUR NOTE</td>
         </tr>
         <tr>
+          <th><a name="U0A"></a>U0A</th>
+          <td>TRIM CLOTH, ULTRA DELUXE</td>
+        </tr>
+        <tr>
+          <th><a name="U0B"></a>U0B</th>
+          <td>PACKAGE BRA MARKET-CORSA SUPER</td>
+        </tr>
+        <tr>
+          <th><a name="U0C"></a>U0C</th>
+          <td>PARTS PKG AIR CONDITIONING</td>
+        </tr>
+        <tr>
+          <th><a name="U0D"></a>U0D</th>
+          <td>PARTS PKG HEATER</td>
+        </tr>
+        <tr>
+          <th><a name="U0E"></a>U0E</th>
+          <td>VEHICLE APPLICATION SHIPPED LOOSE PARTS (GMB CORSA WIND) PACKAGE</td>
+        </tr>
+        <tr>
           <th><a name="U0F"></a>U0F</th>
           <td>Audio system, AM/FM stereo with MP3 player</td>
         </tr>
         <tr>
+          <th><a name="U0G"></a>U0G</th>
+          <td>PARTS PKG MISCELLANEOUS PARTS FOR EXPORT</td>
+        </tr>
+        <tr>
           <th><a name="U0H"></a>U0H</th>
           <td>Audio system, AM/FM stereo with MP3 player and USB port</td>
+        </tr>
+        <tr>
+          <th><a name="U0I"></a>U0I</th>
+          <td>IDENTIFICATION BREAKING POINT 98 1/2 M.Y.</td>
+        </tr>
+        <tr>
+          <th><a name="U0J"></a>U0J</th>
+          <td>PARTS PKG TAUMEL SEAT ADJUSTER</td>
+        </tr>
+        <tr>
+          <th><a name="U0K"></a>U0K</th>
+          <td>IDENTIFICATION BREAKING POINT 97 1/2 M.Y.</td>
+        </tr>
+        <tr>
+          <th><a name="U0M"></a>U0M</th>
+          <td>CONVENIENCE PKG SUPER DELUXE</td>
+        </tr>
+        <tr>
+          <th><a name="U0O"></a>U0O</th>
+          <td>PARTS PKG GMB MODELS MECHANICAL IMPROVEMENT VAR. 2</td>
+        </tr>
+        <tr>
+          <th><a name="U0P"></a>U0P</th>
+          <td>CONVENIENCE PKG COMFORT</td>
+        </tr>
+        <tr>
+          <th><a name="U0Q"></a>U0Q</th>
+          <td>PARTS PKG PICK-UP SINGLE CAB 4 X 4 DIESEL ENGINE</td>
+        </tr>
+        <tr>
+          <th><a name="U0R"></a>U0R</th>
+          <td>PARTS PKG FAM I ENGINES W/DIRECT IGNITION SYS GENERATION II</td>
+        </tr>
+        <tr>
+          <th><a name="U0S"></a>U0S</th>
+          <td>PACKAGE GMB-CORSA PIQUET</td>
+        </tr>
+        <tr>
+          <th><a name="U0T"></a>U0T</th>
+          <td>PARTS PKG GMB MODELS MECHANICAL IMPROVEMENT VAR. 1</td>
+        </tr>
+        <tr>
+          <th><a name="U0U"></a>U0U</th>
+          <td>IDENTIFICATION BREAKING POINT 98 1/4 M.Y.</td>
+        </tr>
+        <tr>
+          <th><a name="U0V"></a>U0V</th>
+          <td>PARTS PKG GMB MODELS FACE LIFT VAR. 1</td>
+        </tr>
+        <tr>
+          <th><a name="U0X"></a>U0X</th>
+          <td>PARTS PKG GMB MODELS IMPROVEMENT VAR. 1</td>
+        </tr>
+        <tr>
+          <th><a name="U0Y"></a>U0Y</th>
+          <td>PARTS PKG GMB MODELS IMPROVEMENT VAR. 2</td>
+        </tr>
+        <tr>
+          <th><a name="U10"></a>U10</th>
+          <td>SPEAKER SYSTEM 10, QUAD FRT DR MTD, QUAD RR DR MTD, 2 PKG SHELF SUBWOOFERS & AMPLIFIER</td>
         </tr>
         <tr>
           <th><a name="U11"></a>U11</th>
@@ -214,6 +304,10 @@
           <td>RADIO,AM/FM STEREO,SEEK/SCAN</td>
         </tr>
         <tr>
+          <th><a name="U1H"></a>U1H</th>
+          <td>RADIO AM/FM STEREO, SEEK/SCAN, AUTO REV MUSIC SEARCH CASS, CD, CLOCK, EQLZR, RDS, ETR, MP3</td>
+        </tr>
+        <tr>
           <th><a name="U1J"></a>U1J</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, AUTO REV MUSIC SEARCH CASS, CD, CLOCK, ETR</td>
         </tr>
@@ -224,6 +318,10 @@
         <tr>
           <th><a name="U1L"></a>U1L</th>
           <td>RADIO - AM STEREO/FM STEREO, SEEK/SCAN, AUTO/REV MUSIC SEARCH CASS, CLOCK, ETR</td>
+        </tr>
+        <tr>
+          <th><a name="U1M"></a>U1M</th>
+          <td>RADIO AM/FM/LW/SW STEREO, SEEK/SCAN, CD, RDS, DSP, SPD-VOL CNTL, ETR, NAVIGATION, PHONE PROV</td>
         </tr>
         <tr>
           <th><a name="U1N"></a>U1N</th>
@@ -262,6 +360,10 @@
           <td>RADIO AM/FM STEREO, SEEK/SCAN, COMPACT DISC, HPS, CLOCK, ETR</td>
         </tr>
         <tr>
+          <th><a name="U1U"></a>U1U</th>
+          <td>RADIO AM/FM STEREO, SEEK/SCAN, MULTI CD, ETR, I/P, AUTO TONE</td>
+        </tr>
+        <tr>
           <th><a name="U1V"></a>U1V</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, MULTI CD, CLOCK, ETR AUTO TONE</td>
         </tr>
@@ -272,6 +374,10 @@
         <tr>
           <th><a name="U1X"></a>U1X</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, MULTI CD, CLOCK, ETR HPS, AUTO TONE</td>
+        </tr>
+        <tr>
+          <th><a name="U1Y"></a>U1Y</th>
+          <td>RADIO AM/FM STEREO, SEEK/SCAN, MULTI CD, ETR, HPS, I/P, AUTO TONE</td>
         </tr>
         <tr>
           <th><a name="U1Z"></a>U1Z</th>
@@ -292,6 +398,10 @@
         <tr>
           <th><a name="U23"></a>U23</th>
           <td>SPEEDOMETER,INCLUDES TRIP ODOMETER</td>
+        </tr>
+        <tr>
+          <th><a name="U24"></a>U24</th>
+          <td>LAMP INTR, I/P COMPT, COURTESY - DELETE</td>
         </tr>
         <tr>
           <th><a name="U25"></a>U25</th>
@@ -354,6 +464,10 @@
           <td>CLUSTER INST, COOL TEMP, TRIP ODOM, DIGITAL</td>
         </tr>
         <tr>
+          <th><a name="U2H"></a>U2H</th>
+          <td>CLUSTER INST, OIL, COOL TEMP, TRIP ODOM, TACH, DR INFO CTR, COMPASS, TURBO BOOST, ANALOG</td>
+        </tr>
+        <tr>
           <th><a name="U2I"></a>U2I</th>
           <td>CLUSTER INST, ANALOG, MILES</td>
         </tr>
@@ -404,6 +518,18 @@
         <tr>
           <th><a name="U2M"></a>U2M</th>
           <td>DIGITAL AUDIO SYSTEM S-BAND AND HD</td>
+        </tr>
+        <tr>
+          <th><a name="U2N"></a>U2N</th>
+          <td>ANTENNA WINDSHIELD, RR WINDOW, RADIO, TELEVISION (TV)</td>
+        </tr>
+        <tr>
+          <th><a name="U2O"></a>U2O</th>
+          <td>PANEL CENTER INSTRUMENT , SILVER PAINTED INSERT</td>
+        </tr>
+        <tr>
+          <th><a name="U2P"></a>U2P</th>
+          <td>PANEL CENTER INSTRUMENT , PAINTED INSERT</td>
         </tr>
         <tr>
           <th><a name="U2Q"></a>U2Q</th>
@@ -458,12 +584,20 @@
           <td>ENTERTAINMENT PKG REAR SEAT, PLAYER, DVD</td>
         </tr>
         <tr>
+          <th><a name="U33"></a>U33</th>
+          <td>LIGHTER CIGARETTE - DELETE</td>
+        </tr>
+        <tr>
           <th><a name="U34"></a>U34</th>
           <td>DISPLAY CELSIUS TEMPERATURE</td>
         </tr>
         <tr>
           <th><a name="U35"></a>U35</th>
           <td>CLOCK,ANALOG</td>
+        </tr>
+        <tr>
+          <th><a name="U36"></a>U36</th>
+          <td>CLOCK - DELETE</td>
         </tr>
         <tr>
           <th><a name="U37"></a>U37</th>
@@ -482,8 +616,64 @@
           <td>RADIO AM/FM STEREO, NAV, DVD-ROM, CAF, USB, RSA (CHINA VERSION)</td>
         </tr>
         <tr>
+          <th><a name="U3A"></a>U3A</th>
+          <td>DISPLAY LANGUAGE GERMAN</td>
+        </tr>
+        <tr>
+          <th><a name="U3B"></a>U3B</th>
+          <td>DISPLAY LANGUAGE ITALIAN</td>
+        </tr>
+        <tr>
+          <th><a name="U3C"></a>U3C</th>
+          <td>DISPLAY LANGUAGE DUTCH</td>
+        </tr>
+        <tr>
+          <th><a name="U3D"></a>U3D</th>
+          <td>DISPLAY LANGUAGE FRENCH</td>
+        </tr>
+        <tr>
+          <th><a name="U3E"></a>U3E</th>
+          <td>DISPLAY LANGUAGE SPANISH</td>
+        </tr>
+        <tr>
+          <th><a name="U3F"></a>U3F</th>
+          <td>DISPLAY LANGUAGE ENGLISH</td>
+        </tr>
+        <tr>
+          <th><a name="U3G"></a>U3G</th>
+          <td>DISPLAY LANGUAGE SWEDISH</td>
+        </tr>
+        <tr>
+          <th><a name="U3H"></a>U3H</th>
+          <td>DISPLAY LANGUAGE PORTUGUESE</td>
+        </tr>
+        <tr>
+          <th><a name="U3I"></a>U3I</th>
+          <td>FLEET INCENTIVE AMERICAN GENERAL FINANCE (B/H/W-TRK ST)</td>
+        </tr>
+        <tr>
+          <th><a name="U3J"></a>U3J</th>
+          <td>DISPLAY LANGUAGE NORWEGIAN</td>
+        </tr>
+        <tr>
+          <th><a name="U3K"></a>U3K</th>
+          <td>DISPLAY LANGUAGE FINNISH</td>
+        </tr>
+        <tr>
           <th><a name="U3L"></a>U3L</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, CD, AUTO TONE, CLOCK ETR, MP3</td>
+        </tr>
+        <tr>
+          <th><a name="U3M"></a>U3M</th>
+          <td>DISPLAY LANGUAGE DANISH</td>
+        </tr>
+        <tr>
+          <th><a name="U3N"></a>U3N</th>
+          <td>DISPLAY LANGUAGE GREEK</td>
+        </tr>
+        <tr>
+          <th><a name="U3P"></a>U3P</th>
+          <td>DISPLAY LANGUAGE POLISH</td>
         </tr>
         <tr>
           <th><a name="U3Q"></a>U3Q</th>
@@ -498,8 +688,28 @@
           <td>RADIO AM/FM STEREO, LW, SEEK/SCAN, CD, DVD, NAV, CLOCK DSP, RDS, W/VOICE REC MICRO</td>
         </tr>
         <tr>
+          <th><a name="U3T"></a>U3T</th>
+          <td>DISPLAY LANGUAGE TURKISH</td>
+        </tr>
+        <tr>
           <th><a name="U3U"></a>U3U</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, DVD, CD, CLOCK ETR, NAVIGATION, VOICE REC, MP3</td>
+        </tr>
+        <tr>
+          <th><a name="U3V"></a>U3V</th>
+          <td>RADIO INTEGRATED MOBILE TELEPHONE, AEC</td>
+        </tr>
+        <tr>
+          <th><a name="U3W"></a>U3W</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, SEARCH, ETR, PHONE, FADER, AEC</td>
+        </tr>
+        <tr>
+          <th><a name="U3X"></a>U3X</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, SEARCH, MULTI CD, ETR, PHONE, FADER, AEC</td>
+        </tr>
+        <tr>
+          <th><a name="U3Y"></a>U3Y</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, SEARCH, MULTI CD, ETR, HPS, PHONE, FADER, AEC</td>
         </tr>
         <tr>
           <th><a name="U3Z"></a>U3Z</th>
@@ -546,12 +756,24 @@
           <td>DISPLAY VIDEO SYSTEM</td>
         </tr>
         <tr>
+          <th><a name="U49"></a>U49</th>
+          <td>INDICATOR DISTANCE CONT</td>
+        </tr>
+        <tr>
           <th><a name="U4B"></a>U4B</th>
           <td>IDENTIFICATION #1 BAR FORM CHANGE</td>
         </tr>
         <tr>
+          <th><a name="U4C"></a>U4C</th>
+          <td>MODIFICATION JAN. 2000 SIDE IMPACT REQT'S</td>
+        </tr>
+        <tr>
           <th><a name="U4D"></a>U4D</th>
           <td>DIGITAL AUDIO SYSTEM BROADCAST, MULTIMEDIA</td>
+        </tr>
+        <tr>
+          <th><a name="U4F"></a>U4F</th>
+          <td>PARTS FLOOR REVISIONS</td>
         </tr>
         <tr>
           <th><a name="U4G"></a>U4G</th>
@@ -566,8 +788,44 @@
           <td>B PILLAR INTERIM SIDE INTRUSION PROTECTION NEW FRT SEATBELT RETRACTOR</td>
         </tr>
         <tr>
+          <th><a name="U4J"></a>U4J</th>
+          <td>KIT AFTER MARKET HBD POWER ANTENNA</td>
+        </tr>
+        <tr>
+          <th><a name="U4K"></a>U4K</th>
+          <td>KIT AFTER MARKET HBD CRUISE CONTROL(AUTO ONLY)</td>
+        </tr>
+        <tr>
+          <th><a name="U4L"></a>U4L</th>
+          <td>KIT AFTER MARKET HBD SPOILER TYPE 1</td>
+        </tr>
+        <tr>
+          <th><a name="U4M"></a>U4M</th>
+          <td>KIT AFTER MARKET HBD SPOILER TYPE 2</td>
+        </tr>
+        <tr>
+          <th><a name="U4N"></a>U4N</th>
+          <td>KIT AFTER MARKET HBD SPOILER TYPE 3</td>
+        </tr>
+        <tr>
           <th><a name="U4P"></a>U4P</th>
           <td>SPEEDOMETER INST, MILES & KILO, MILES ODOMETER, RHD</td>
+        </tr>
+        <tr>
+          <th><a name="U4S"></a>U4S</th>
+          <td>KIT AFTER MARKET HBD SPORTS GRILLE(UTE)</td>
+        </tr>
+        <tr>
+          <th><a name="U4T"></a>U4T</th>
+          <td>PARTS PKG SERIES 1 COUPE AT VY SOP</td>
+        </tr>
+        <tr>
+          <th><a name="U4W"></a>U4W</th>
+          <td>PARTS PKG 'NCAP' CHANGES AT 'VY'</td>
+        </tr>
+        <tr>
+          <th><a name="U4X"></a>U4X</th>
+          <td>KIT AFTER MARKET HBD AUDIBLE ALARM</td>
         </tr>
         <tr>
           <th><a name="U50"></a>U50</th>
@@ -588,6 +846,18 @@
         <tr>
           <th><a name="U52"></a>U52</th>
           <td>CLUSTER,INSTRUMENT(ELECTRONIC)</td>
+        </tr>
+        <tr>
+          <th><a name="U53"></a>U53</th>
+          <td>DISPLAY FUEL ECONOMY, GALLONS, MPH, MPG</td>
+        </tr>
+        <tr>
+          <th><a name="U54"></a>U54</th>
+          <td>DISPLAY FUEL ECONOMY, LITER, KM/H, KM/LITER</td>
+        </tr>
+        <tr>
+          <th><a name="U55"></a>U55</th>
+          <td>DISPLAY FUEL ECONOMY, LITER, KM/H, L/100KM</td>
         </tr>
         <tr>
           <th><a name="U56"></a>U56</th>
@@ -614,8 +884,28 @@
           <td>5G Wi-Fi Hotspot capable</td>
         </tr>
         <tr>
+          <th><a name="U5I"></a>U5I</th>
+          <td>TRAILER PROVISIONS LIGHT DUTY</td>
+        </tr>
+        <tr>
           <th><a name="U5J"></a>U5J</th>
           <td>CALIBRATION TELEMATICS, HOLDEN ASSIST/ONSTAR</td>
+        </tr>
+        <tr>
+          <th><a name="U5V"></a>U5V</th>
+          <td>FLOOR EURO 2 FLOOR REVISIONS</td>
+        </tr>
+        <tr>
+          <th><a name="U5X"></a>U5X</th>
+          <td>PARTS PKG TONNEAU COVER FOR SPORTS BAR</td>
+        </tr>
+        <tr>
+          <th><a name="U5Y"></a>U5Y</th>
+          <td>PARTS PKG EURO 2 EMISSIONS CHANGE</td>
+        </tr>
+        <tr>
+          <th><a name="U60"></a>U60</th>
+          <td>RADIO AM/FM STEREO, SEEK/SCAN, AUTO REV CASS, MULTI CD PROVISION, HPS, LED INDICATOR, REMOVABLE PNL, ETR</td>
         </tr>
         <tr>
           <th><a name="U61"></a>U61</th>
@@ -674,6 +964,110 @@
           <td>RADIO,AM/FM STEREO,CD PLAYER W/MULTI CD PROV,HPS,LED,REMOVABLE PNL,ETR</td>
         </tr>
         <tr>
+          <th><a name="U6A"></a>U6A</th>
+          <td>CKD OPTION #1 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6B"></a>U6B</th>
+          <td>CKD OPTION #2 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6C"></a>U6C</th>
+          <td>CKD OPTION #3 CANEXPO CKD VE-01</td>
+        </tr>
+        <tr>
+          <th><a name="U6D"></a>U6D</th>
+          <td>CKD OPTION #4 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6E"></a>U6E</th>
+          <td>CKD OPTION #5 AFRICA TOGO</td>
+        </tr>
+        <tr>
+          <th><a name="U6F"></a>U6F</th>
+          <td>CKD OPTION #6 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6G"></a>U6G</th>
+          <td>CKD OPTION #7 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6H"></a>U6H</th>
+          <td>CKD OPTION #8 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6I"></a>U6I</th>
+          <td>CKD OPTION #9 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6J"></a>U6J</th>
+          <td>CKD OPTION #10 CANEXPO CKD VE-15</td>
+        </tr>
+        <tr>
+          <th><a name="U6K"></a>U6K</th>
+          <td>CKD OPTION #11 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6L"></a>U6L</th>
+          <td>CKD OPTION #12 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6M"></a>U6M</th>
+          <td>CKD OPTION #13 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6N"></a>U6N</th>
+          <td>CKD OPTION #14 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6P"></a>U6P</th>
+          <td>CKD OPTION #16 CANEXPO CKD VE-24</td>
+        </tr>
+        <tr>
+          <th><a name="U6Q"></a>U6Q</th>
+          <td>CKD OPTION #17 CANEXPO CKD VE-25</td>
+        </tr>
+        <tr>
+          <th><a name="U6R"></a>U6R</th>
+          <td>CKD OPTION #18 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U6S"></a>U6S</th>
+          <td>CKD OPTION #19 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6T"></a>U6T</th>
+          <td>CKD OPTION #20 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6U"></a>U6U</th>
+          <td>CKD OPTION #21 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6V"></a>U6V</th>
+          <td>CKD OPTION #22 NIGERIA</td>
+        </tr>
+        <tr>
+          <th><a name="U6W"></a>U6W</th>
+          <td>CKD OPTION #23 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6X"></a>U6X</th>
+          <td>CKD OPTION #24 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U6Y"></a>U6Y</th>
+          <td>CKD OPTION #25 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U6Z"></a>U6Z</th>
+          <td>CKD OPTION #26 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U70"></a>U70</th>
+          <td>RADIO PROVISIONS, TWO WAY</td>
+        </tr>
+        <tr>
           <th><a name="U71"></a>U71</th>
           <td>ANTENNA,ROOF,RADIO</td>
         </tr>
@@ -720,6 +1114,102 @@
         <tr>
           <th><a name="U79"></a>U79</th>
           <td>SPEAKER SYSTEM,4,DUAL FRONT COAX,DUAL EXTENDED RANGE PACKAGE SHELF</td>
+        </tr>
+        <tr>
+          <th><a name="U7A"></a>U7A</th>
+          <td>CKD OPTION #27 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7B"></a>U7B</th>
+          <td>CKD OPTION #28 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7C"></a>U7C</th>
+          <td>CKD OPTION #29 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7D"></a>U7D</th>
+          <td>CKD OPTION #30 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7E"></a>U7E</th>
+          <td>CKD OPTION #31 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7F"></a>U7F</th>
+          <td>CKD OPTION #32 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7G"></a>U7G</th>
+          <td>CKD OPTION #33 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7H"></a>U7H</th>
+          <td>CKD OPTION #34 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7J"></a>U7J</th>
+          <td>CKD OPTION #36 CHILE</td>
+        </tr>
+        <tr>
+          <th><a name="U7K"></a>U7K</th>
+          <td>CKD OPTION #37 CHILE</td>
+        </tr>
+        <tr>
+          <th><a name="U7L"></a>U7L</th>
+          <td>CKD OPTION #38 CANEXPO CKD VE-16</td>
+        </tr>
+        <tr>
+          <th><a name="U7M"></a>U7M</th>
+          <td>CKD OPTION #39 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7N"></a>U7N</th>
+          <td>CKD OPTION #40 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U7P"></a>U7P</th>
+          <td>CKD OPTION #42 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7Q"></a>U7Q</th>
+          <td>CKD OPTION #43 CANEXPO CKD VE-02</td>
+        </tr>
+        <tr>
+          <th><a name="U7R"></a>U7R</th>
+          <td>CKD OPTION #44 CANEXPO CKD VE-03</td>
+        </tr>
+        <tr>
+          <th><a name="U7S"></a>U7S</th>
+          <td>CKD OPTION #45 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7T"></a>U7T</th>
+          <td>CKD OPTION #46 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U7U"></a>U7U</th>
+          <td>CKD OPTION #47 CANEXPO CKD VE-04</td>
+        </tr>
+        <tr>
+          <th><a name="U7V"></a>U7V</th>
+          <td>CKD OPTION #48 CANEXPO CKD VE-05</td>
+        </tr>
+        <tr>
+          <th><a name="U7W"></a>U7W</th>
+          <td>CKD OPTION #49 CANEXPO CKD VE-13</td>
+        </tr>
+        <tr>
+          <th><a name="U7X"></a>U7X</th>
+          <td>CKD OPTION #50 CANEXPO CKD VE-14</td>
+        </tr>
+        <tr>
+          <th><a name="U7Y"></a>U7Y</th>
+          <td>CKD OPTION #51 CANEXPO CKD VE-20</td>
+        </tr>
+        <tr>
+          <th><a name="U7Z"></a>U7Z</th>
+          <td>CKD OPTION IPC-MASTER SPEC DESIGNATOR #26</td>
         </tr>
         <tr>
           <th><a name="U80"></a>U80</th>
@@ -790,8 +1280,104 @@
           <td>WIRING HARNESS,5-WIRE TRAILER</td>
         </tr>
         <tr>
+          <th><a name="U8A"></a>U8A</th>
+          <td>CKD OPTION #53 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8B"></a>U8B</th>
+          <td>CKD OPTION #54 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8C"></a>U8C</th>
+          <td>CKD OPTION #55 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U8D"></a>U8D</th>
+          <td>CKD OPTION #56 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8E"></a>U8E</th>
+          <td>CKD OPTION #57 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8F"></a>U8F</th>
+          <td>CKD OPTION #58 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8G"></a>U8G</th>
+          <td>CKD OPTION #59 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U8H"></a>U8H</th>
+          <td>CKD OPTION #60 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8I"></a>U8I</th>
+          <td>CKD OPTION #61 CANEXPO CKD CO-26</td>
+        </tr>
+        <tr>
+          <th><a name="U8J"></a>U8J</th>
+          <td>CKD OPTION #62 CANEXPO CKD CO-27</td>
+        </tr>
+        <tr>
+          <th><a name="U8K"></a>U8K</th>
+          <td>CKD OPTION #63 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8L"></a>U8L</th>
+          <td>CKD OPTION #64 VENEZUELA</td>
+        </tr>
+        <tr>
           <th><a name="U8M"></a>U8M</th>
           <td>CKD OPTION #65 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8N"></a>U8N</th>
+          <td>CKD OPTION #66 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U8P"></a>U8P</th>
+          <td>CKD OPTION #68 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U8Q"></a>U8Q</th>
+          <td>CKD OPTION #69 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8R"></a>U8R</th>
+          <td>CKD OPTION #70 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8S"></a>U8S</th>
+          <td>CKD OPTION #71 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8T"></a>U8T</th>
+          <td>CKD OPTION #72 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8U"></a>U8U</th>
+          <td>CKD OPTION #73 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U8V"></a>U8V</th>
+          <td>CKD OPTION #74 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U8W"></a>U8W</th>
+          <td>CKD OPTION #75 CHINA</td>
+        </tr>
+        <tr>
+          <th><a name="U8X"></a>U8X</th>
+          <td>CKD OPTION #76 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U8Y"></a>U8Y</th>
+          <td>CKD OPTION #77 AFRICA SUDAN</td>
+        </tr>
+        <tr>
+          <th><a name="U8Z"></a>U8Z</th>
+          <td>CKD OPTION #78 AFRICA BOTSWANA</td>
         </tr>
         <tr>
           <th><a name="U90"></a>U90</th>
@@ -842,6 +1428,106 @@
           <td>SPEAKER SYSTEM 9, DUAL F/D 2 TWEET & 2 WOOF, DUAL EXTD RGE RR DRS, DUAL SUBWOOF PKG SHELF, CTR I/P, AMPL</td>
         </tr>
         <tr>
+          <th><a name="U9A"></a>U9A</th>
+          <td>CKD OPTION #79 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9B"></a>U9B</th>
+          <td>CKD OPTION #80 INDONESIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9C"></a>U9C</th>
+          <td>CKD OPTION #81 INDONESIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9D"></a>U9D</th>
+          <td>CKD OPTION #82 NIGERIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9E"></a>U9E</th>
+          <td>CKD OPTION #83 NIGERIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9F"></a>U9F</th>
+          <td>CKD OPTION #84 ANGOLA</td>
+        </tr>
+        <tr>
+          <th><a name="U9G"></a>U9G</th>
+          <td>CKD OPTION #85 AFRICA</td>
+        </tr>
+        <tr>
+          <th><a name="U9H"></a>U9H</th>
+          <td>CKD OPTION #86 AFRICA</td>
+        </tr>
+        <tr>
+          <th><a name="U9J"></a>U9J</th>
+          <td>CKD OPTION #88 NIGERIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9K"></a>U9K</th>
+          <td>CKD OPTION #89 NIGERIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9L"></a>U9L</th>
+          <td>CKD OPTION #90 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9M"></a>U9M</th>
+          <td>CKD OPTION #91 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9N"></a>U9N</th>
+          <td>CKD OPTION #92 CANEXPO CKD VE-21</td>
+        </tr>
+        <tr>
+          <th><a name="U9O"></a>U9O</th>
+          <td>CKD OPTION #93 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9P"></a>U9P</th>
+          <td>CKD OPTION #94 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9Q"></a>U9Q</th>
+          <td>CKD OPTION #95 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9R"></a>U9R</th>
+          <td>CKD OPTION #96 CANEXPO CKD VE-08</td>
+        </tr>
+        <tr>
+          <th><a name="U9S"></a>U9S</th>
+          <td>CKD OPTION #97 CANEXPO CKD VE-09</td>
+        </tr>
+        <tr>
+          <th><a name="U9T"></a>U9T</th>
+          <td>CKD OPTION #98 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9U"></a>U9U</th>
+          <td>CKD OPTION #99 COLOMBIA</td>
+        </tr>
+        <tr>
+          <th><a name="U9V"></a>U9V</th>
+          <td>CKD OPTION #100 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9W"></a>U9W</th>
+          <td>CKD OPTION #101 VENEZUELA</td>
+        </tr>
+        <tr>
+          <th><a name="U9X"></a>U9X</th>
+          <td>CKD OPTION #102 CANEXPO CKD VE-07</td>
+        </tr>
+        <tr>
+          <th><a name="U9Y"></a>U9Y</th>
+          <td>CKD OPTION #103 AFRICA</td>
+        </tr>
+        <tr>
+          <th><a name="U9Z"></a>U9Z</th>
+          <td>CKD OPTION #104 AFRICA</td>
+        </tr>
+        <tr>
           <th><a name="UA1"></a>UA1</th>
           <td>Battery, heavy-duty 770 cold-cranking amps</td>
         </tr>
@@ -880,6 +1566,14 @@
         <tr>
           <th><a name="UA8"></a>UA8</th>
           <td>THEFT DETERENT SYS EUROPEAN SPECIFIC</td>
+        </tr>
+        <tr>
+          <th><a name="UA9"></a>UA9</th>
+          <td>BATTERY MOUNTING REINFORCED</td>
+        </tr>
+        <tr>
+          <th><a name="UAA"></a>UAA</th>
+          <td>EQUIPMENT CLUSTER PKG-TACH,TRIP, ODOM,VOLTS,OIL,DIC</td>
         </tr>
         <tr>
           <th><a name="UAB"></a>UAB</th>
@@ -1006,8 +1700,16 @@
           <td>CLUSTER,INST(OIL,COOL TEMP,VOLTS,TACH,TRIP ODOM)(EXPORT,CANADA)</td>
         </tr>
         <tr>
+          <th><a name="UB4"></a>UB4</th>
+          <td>LAMP SIDE MARKER, BOXED FOR SHIPMENT</td>
+        </tr>
+        <tr>
           <th><a name="UB5"></a>UB5</th>
           <td>TELEPHONE MOBILE VOICE CONTROL UNIT, WITH HANDSET</td>
+        </tr>
+        <tr>
+          <th><a name="UB6"></a>UB6</th>
+          <td>CLUSTER INST, OIL, VOLTS, TACH</td>
         </tr>
         <tr>
           <th><a name="UB7"></a>UB7</th>
@@ -1024,6 +1726,10 @@
         <tr>
           <th><a name="UB8"></a>UB8</th>
           <td>HORN,HIGH NOTE 'C'</td>
+        </tr>
+        <tr>
+          <th><a name="UB9"></a>UB9</th>
+          <td>TELEPHONE MOBILE VOICE CONTROL UNIT, W/O HANDSET</td>
         </tr>
         <tr>
           <th><a name="UBA"></a>UBA</th>
@@ -1118,6 +1824,10 @@
           <td>DIGITAL AUDIO SYSTEM BROADCAST, TEXT</td>
         </tr>
         <tr>
+          <th><a name="UBU"></a>UBU</th>
+          <td>RADIO AM/FM STEREO, SEEK, CASSETTE, ETR, FADER</td>
+        </tr>
+        <tr>
           <th><a name="UBV"></a>UBV</th>
           <td>COMMUNICATION EQUIP TPEG</td>
         </tr>
@@ -1198,6 +1908,14 @@
           <td>RADIO AM/FM STEREO, SEEK/SCAN, RDS, MULTIPLE COMPACT DISC, AUTO TONE CONTROL, CLOCK, ETR</td>
         </tr>
         <tr>
+          <th><a name="UC7"></a>UC7</th>
+          <td>CLUSTER INST, TEMP, TACH, SPEED, FUEL, DVR INFO CTR</td>
+        </tr>
+        <tr>
+          <th><a name="UC8"></a>UC8</th>
+          <td>SPEAKER SYSTEM 11, PREMIUM</td>
+        </tr>
+        <tr>
           <th><a name="UC9"></a>UC9</th>
           <td>CLUSTER INST, OIL, COOL TEMP, TRIP ODOM, TACH, SUPER CHARGER BOOST</td>
         </tr>
@@ -1206,8 +1924,32 @@
           <td>WIRING HARNESS TRUCK TRAILER, 4 WIRE</td>
         </tr>
         <tr>
+          <th><a name="UCD"></a>UCD</th>
+          <td>RADIO AM/FM STEREO, SEEK, CD, ETR, PHONE, NAVIGATION, FADER, DVD, VOICE CONTROL, MP3</td>
+        </tr>
+        <tr>
+          <th><a name="UCE"></a>UCE</th>
+          <td>RADIO AM/FM STEREO, SEEK, CD, NAVI, ETR, FADER</td>
+        </tr>
+        <tr>
+          <th><a name="UCF"></a>UCF</th>
+          <td>RADIO AM/FM STEREO, SEEK, CD, TELEMATIC, PHONE, ETR, FADER, MP3, VOICE CONTROL, GPS</td>
+        </tr>
+        <tr>
+          <th><a name="UCG"></a>UCG</th>
+          <td>RADIO AM/FM STEREO, SEEK, CD, TELEMATIC, PHONE, ETR, FADER, MP3, VOICE CONTROL</td>
+        </tr>
+        <tr>
           <th><a name="UCH"></a>UCH</th>
           <td>RADIO AM/FM STEREO, SEEK, CD, ETR, FADER, MP3</td>
+        </tr>
+        <tr>
+          <th><a name="UCJ"></a>UCJ</th>
+          <td>RADIO AM/FM STEREO, SEEK, MCD, TELEMATIC, PHONE, ETR, FADER, MP3, VOICE CONTROL, GPS</td>
+        </tr>
+        <tr>
+          <th><a name="UCK"></a>UCK</th>
+          <td>RADIO AM/FM STEREO, SEEK, MCD, ETR, FADER</td>
         </tr>
         <tr>
           <th><a name="UCN"></a>UCN</th>
@@ -1258,6 +2000,10 @@
           <td>ALARM,VEHICLE SPEED(105 KPH)(EXPORT)</td>
         </tr>
         <tr>
+          <th><a name="UD3"></a>UD3</th>
+          <td>TACHOMETER ENGINE, MECHANICAL W/HOUR METER</td>
+        </tr>
+        <tr>
           <th><a name="UD4"></a>UD4</th>
           <td>ALARM,VEHICLE SPEED(120 KPH)</td>
         </tr>
@@ -1296,6 +2042,10 @@
         <tr>
           <th><a name="UD8"></a>UD8</th>
           <td>CLOCK,VACUUM FLORESCENT DIGITAL</td>
+        </tr>
+        <tr>
+          <th><a name="UD9"></a>UD9</th>
+          <td>TACHOMETER ENGINE - DELETE</td>
         </tr>
         <tr>
           <th><a name="UDA"></a>UDA</th>
@@ -1542,6 +2292,10 @@
           <td>COMMUNICATION SYSTEM VEHICLE INFORMATION</td>
         </tr>
         <tr>
+          <th><a name="UEA"></a>UEA</th>
+          <td>TAIL LAMP - DELETE</td>
+        </tr>
+        <tr>
           <th><a name="UEB"></a>UEB</th>
           <td>SENSOR INDICATOR OBSTACLE PRESENCE DETECTION, WITH COLLISION AVOIDANCE</td>
         </tr>
@@ -1552,6 +2306,14 @@
         <tr>
           <th><a name="UEC"></a>UEC</th>
           <td>SENSOR INDICATOR AUTOMATIC AIR RECIRCULATION</td>
+        </tr>
+        <tr>
+          <th><a name="UED"></a>UED</th>
+          <td>SENSOR INDICATOR HEAT/MOTION DETECTION - DELETE</td>
+        </tr>
+        <tr>
+          <th><a name="UEG"></a>UEG</th>
+          <td>PROVISIONS ELECTRICAL-BODY BUILDER</td>
         </tr>
         <tr>
           <th><a name="UEH"></a>UEH</th>
@@ -1646,6 +2408,10 @@
           <td>RADIO AM/FM STEREO, SD NAV, CD-ROM, CAF, USB, RSA (EUROP E VERSION)</td>
         </tr>
         <tr>
+          <th><a name="UF0"></a>UF0</th>
+          <td>SPEAKER SYSTEM 13, DELUXE</td>
+        </tr>
+        <tr>
           <th><a name="UF1"></a>UF1</th>
           <td>DISPLAY TIME, DATE</td>
         </tr>
@@ -1692,6 +2458,14 @@
         <tr>
           <th><a name="UF7"></a>UF7</th>
           <td>RADIO,AM/FM STEREO,SEEK/SCAN,ETR,CLOCK DSP,MP3/WMA USB,AUX/IN,WI-FI</td>
+        </tr>
+        <tr>
+          <th><a name="UF8"></a>UF8</th>
+          <td>DISPLAY TIME, DATE, EXTERNAL TEMP</td>
+        </tr>
+        <tr>
+          <th><a name="UF9"></a>UF9</th>
+          <td>DISPLAY TIME, DATE, EXTERNAL TEMP, RADIO</td>
         </tr>
         <tr>
           <th><a name="UFA"></a>UFA</th>
@@ -1770,6 +2544,10 @@
           <td>SENSOR INDICATOR FRONT & REAR OBSTACLE DETECTION</td>
         </tr>
         <tr>
+          <th><a name="UFS"></a>UFS</th>
+          <td>SENSOR INDICATOR FRONT, REAR, & SIDE OBSTACLE DETECTION</td>
+        </tr>
+        <tr>
           <th><a name="UFT"></a>UFT</th>
           <td>Side Blind Zone Alert</td>
         </tr>
@@ -1826,12 +2604,20 @@
           <td>GAGE FUEL, METHANOL</td>
         </tr>
         <tr>
+          <th><a name="UG6"></a>UG6</th>
+          <td>COMMUNICATION SYSTEM VEHICLE, G.P.S. 2</td>
+        </tr>
+        <tr>
           <th><a name="UG7"></a>UG7</th>
           <td>COMMUNICATION SYSTEM VEHICLE, G.P.S. 4</td>
         </tr>
         <tr>
           <th><a name="UG7"></a>UG7</th>
           <td>THEFT DETERENT VEHICLE TRACKING AND RESTART PREVENTION</td>
+        </tr>
+        <tr>
+          <th><a name="UG9"></a>UG9</th>
+          <td>GAGE ENGINE, HOUR METER (OPERATED BY PARK BRAKE REL)</td>
         </tr>
         <tr>
           <th><a name="UGA"></a>UGA</th>
@@ -2178,6 +2964,14 @@
           <td>Infotainment display, 8" diagonal touchscreen</td>
         </tr>
         <tr>
+          <th><a name="UIK"></a>UIK</th>
+          <td>FLEET INCENTIVE KYOCERA MITA AMERICA (C/D/H/N/W)</td>
+        </tr>
+        <tr>
+          <th><a name="UIL"></a>UIL</th>
+          <td>FLEET INCENTIVE UIL HOLDINGS COMPANY (TRK CKGST)</td>
+        </tr>
+        <tr>
           <th><a name="UIM"></a>UIM</th>
           <td>Infotainment display, 10.2" diagonal multi-color touchscreen</td>
         </tr>
@@ -2236,6 +3030,10 @@
         <tr>
           <th><a name="UJ6"></a>UJ6</th>
           <td>INDICATOR,LOW TIRE PRESS</td>
+        </tr>
+        <tr>
+          <th><a name="UJ7"></a>UJ7</th>
+          <td>INDICATOR BRAKE LINING WEAR</td>
         </tr>
         <tr>
           <th><a name="UJ8"></a>UJ8</th>
@@ -2310,6 +3108,10 @@
           <td>SWITCH JUNCTION BOX, STROBE LIGHT</td>
         </tr>
         <tr>
+          <th><a name="UJT"></a>UJT</th>
+          <td>FAMILY CODE JOINT MAIN</td>
+        </tr>
+        <tr>
           <th><a name="UK0"></a>UK0</th>
           <td>LEVER DIRECTIONAL SIGNAL, INCLUDES MULTI FUNCTIONS, JAPAN APPROVED</td>
         </tr>
@@ -2358,8 +3160,16 @@
           <td>RADIO CONTROL REAR SEAT & EARPHONE JACKS</td>
         </tr>
         <tr>
+          <th><a name="UK7"></a>UK7</th>
+          <td>RADIO AM/FM STEREO, SEEK/SCAN, AUTO REV CASS, LED SECURITY, CODED DETACHABLE PANEL, DISPLAY</td>
+        </tr>
+        <tr>
           <th><a name="UK8"></a>UK8</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, AUTO REV CASS, LED SECURITY, CODED DETACHABLE PANEL</td>
+        </tr>
+        <tr>
+          <th><a name="UK9"></a>UK9</th>
+          <td>COMMUNICATION EQUIP MOBILE COMMUNICATION</td>
         </tr>
         <tr>
           <th><a name="UKA"></a>UKA</th>
@@ -2706,12 +3516,20 @@
           <td>WIRING HARNESS 8 WIRE TRAILER</td>
         </tr>
         <tr>
+          <th><a name="UNB"></a>UNB</th>
+          <td>WIRING HARNESS 8 WIRE TRAILER W/O BODY DOME LIGHT</td>
+        </tr>
+        <tr>
           <th><a name="UNC"></a>UNC</th>
           <td>PLANT CODE, UNION CITY,IN,USA</td>
         </tr>
         <tr>
           <th><a name="UNE"></a>UNE</th>
           <td>SWITCH TRANSMISSION INTERLOCK</td>
+        </tr>
+        <tr>
+          <th><a name="UNG"></a>UNG</th>
+          <td>LAMP ABS TRAILER WARNING</td>
         </tr>
         <tr>
           <th><a name="UNH"></a>UNH</th>
@@ -2732,6 +3550,10 @@
         <tr>
           <th><a name="UNM"></a>UNM</th>
           <td>RADIO AM/FM STEREO, SEEK/SCAN, CD, ETR, MP3/WMA, USB, AUX/IN, WIRELESS</td>
+        </tr>
+        <tr>
+          <th><a name="UNP"></a>UNP</th>
+          <td>LAMP ROOF, OFF-ROAD</td>
         </tr>
         <tr>
           <th><a name="UNR"></a>UNR</th>
@@ -2844,6 +3666,10 @@
         <tr>
           <th><a name="UPM"></a>UPM</th>
           <td>GAUGE,FILTERMINDER AIR CLEANER RESTRICTION,DASH MOUNTED</td>
+        </tr>
+        <tr>
+          <th><a name="UPN"></a>UPN</th>
+          <td>PROVISIONS GAGE FILTERMINDER AIR CLNR RESTRICTION DASH MTD</td>
         </tr>
         <tr>
           <th><a name="UPP"></a>UPP</th>
@@ -3194,6 +4020,14 @@
           <td>INDICATOR,LOW ENGINE OIL LEVEL</td>
         </tr>
         <tr>
+          <th><a name="UR6"></a>UR6</th>
+          <td>RADIO AM/FM STEREO, SEEK, CD, ETR, HPS, PHONE, NAVIGATION, FADER</td>
+        </tr>
+        <tr>
+          <th><a name="UR7"></a>UR7</th>
+          <td>RADIO AM/FM STEREO, SEEK, MULTI CD, ETR, PHONE, NAVIGATION, FADER</td>
+        </tr>
+        <tr>
           <th><a name="UR8"></a>UR8</th>
           <td>ASHTRAY,FRONT W/LAMP</td>
         </tr>
@@ -3354,6 +4188,10 @@
           <td>Sensor, air quality indicator</td>
         </tr>
         <tr>
+          <th><a name="USP"></a>USP</th>
+          <td>FLEET SALES U.S. POSTAL SERVICE</td>
+        </tr>
+        <tr>
           <th><a name="USR"></a>USR</th>
           <td>USB data ports, 4</td>
         </tr>
@@ -3452,6 +4290,10 @@
         <tr>
           <th><a name="UT8"></a>UT8</th>
           <td>ANTENNA,ROOF,PASSIVE,800MM</td>
+        </tr>
+        <tr>
+          <th><a name="UT9"></a>UT9</th>
+          <td>BATTERY 60 AH (USE TM7)</td>
         </tr>
         <tr>
           <th><a name="UTA"></a>UTA</th>
@@ -3680,6 +4522,10 @@
         <tr>
           <th><a name="UUQ"></a>UUQ</th>
           <td>Antenna, roof-mounted shark fin</td>
+        </tr>
+        <tr>
+          <th><a name="UUS"></a>UUS</th>
+          <td>PLANT CODE UUSIKAUPUNKI, FINLAND</td>
         </tr>
         <tr>
           <th><a name="UV1"></a>UV1</th>
@@ -3978,8 +4824,20 @@
           <td>RADIO,AM/FM STEREO,WEATHER,CASSETTE,EQUALIZER,ETR,INCLUDES CLOCK</td>
         </tr>
         <tr>
+          <th><a name="UX2"></a>UX2</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, ETR.</td>
+        </tr>
+        <tr>
           <th><a name="UX3"></a>UX3</th>
           <td>RADIO AM/FM STEREO, SEEK, ETR</td>
+        </tr>
+        <tr>
+          <th><a name="UX4"></a>UX4</th>
+          <td>SPEAKER SYSTEM 4, DELUXE</td>
+        </tr>
+        <tr>
+          <th><a name="UX5"></a>UX5</th>
+          <td>RADIO AM STEREO/FM STEREO, SEEK, AUTO REV MUSIC SEARCH CASS, CLOCK, COMPACT DISC PROVISIONS</td>
         </tr>
         <tr>
           <th><a name="UX6"></a>UX6</th>
@@ -4020,6 +4878,10 @@
         <tr>
           <th><a name="UXB"></a>UXB</th>
           <td>RECEPTACLE,TRAILER,7 WIRE GENERIC</td>
+        </tr>
+        <tr>
+          <th><a name="UXD"></a>UXD</th>
+          <td>RADIO AM/FM STEREO, SEEK, ETR (ELECTRONIC TUNING)</td>
         </tr>
         <tr>
           <th><a name="UXE"></a>UXE</th>
@@ -4214,6 +5076,10 @@
           <td>TELEPHONE,PROVISIONS FOR INTEGRATED MOBILE TELEPHONE</td>
         </tr>
         <tr>
+          <th><a name="UZ2"></a>UZ2</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, SEARCH, MULTI CD, ETR, PHONE, FADER</td>
+        </tr>
+        <tr>
           <th><a name="UZ3"></a>UZ3</th>
           <td>TELEPHONE,MOBILE KEYPAD CONTROL</td>
         </tr>
@@ -4238,8 +5104,16 @@
           <td>SPEAKER SYSTEM 8, PREMIUM, QUAD F/D MTD, QUAD RR PKG SHLF, AMPLIFIER</td>
         </tr>
         <tr>
+          <th><a name="UZ9"></a>UZ9</th>
+          <td>RADIO AM/FM STEREO, SEEK, AUTO REV CASS, SEARCH, MULTI CD, ETR, HPS, PHONE, FADER</td>
+        </tr>
+        <tr>
           <th><a name="UZA"></a>UZA</th>
           <td>MARKER LAMP,DELETE</td>
+        </tr>
+        <tr>
+          <th><a name="UZB"></a>UZB</th>
+          <td>LAMP MARKER, SIDE, REAR, WHITE</td>
         </tr>
         <tr>
           <th><a name="UZD"></a>UZD</th>
@@ -4273,91 +5147,91 @@
                         </table>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Random Decoded RPO Codes</strong></div>
+                        <div class="panel-heading"><strong>Example Decoded RPO Codes</strong></div>
                         <table class="table table-striped table-two-col">
                            <tbody>
                               
         <tr>
-          <th><a href="/pages/W.html#WN3">WN3</a></th>
-          <td>Ship Thru, Produced in San Luis Potosi and shipped to Kerr Industries in Livonia, MI and returned to Lansing Delta assembly for shipping to final destination</td>
+          <th><a href="/pages/Q.html#QFC">QFC</a></th>
+          <td>TIRE ALL LT265/60R20 E 121/XXX S YYY AT</td>
         </tr>
         <tr>
-          <th><a href="/pages/6.html#6PU">6PU</a></th>
-          <td>COMPONENT FRT LH COMPTR SEL SUSP(6PU)</td>
+          <th><a href="/pages/V.html#VNM">VNM</a></th>
+          <td>GOVERNOR VEHICLE SPEED - 70 MPH</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#UH7">UH7</a></th>
-          <td>RADIO AM/FM STEREO,SEEK/SCAN,CD,ETR,CLOCK DSP,MP3/WMA,USB,AUX/IN,WI-FI</td>
+          <th><a href="/pages/2.html#2K3">2K3</a></th>
+          <td>FLEET INCENTIVE GOLD KIST, INC. (H/W-TRK CKG)</td>
         </tr>
         <tr>
-          <th><a href="/pages/V.html#V4L">V4L</a></th>
-          <td>PANEL CENTER DUAL FOIL LIQUID PALLADIUM/DARK MATRIX</td>
+          <th><a href="/pages/O.html#OOE">OOE</a></th>
+          <td>LOCAL OOE</td>
         </tr>
         <tr>
-          <th><a href="/pages/9.html#9NF">9NF</a></th>
-          <td>COMPONENT RR RH COMPUTER SEL SUSP (9NF)</td>
+          <th><a href="/pages/5.html#51I">51I</a></th>
+          <td>INTERIOR TRIM TOREADOR RED(97)</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#G40">G40</a></th>
-          <td>SUSPENSION,REAR,AIR,19000 LBS</td>
+          <th><a href="/pages/6.html#65T">65T</a></th>
+          <td>VINYL TOP COLOR,DARK SABLE METALLIC</td>
         </tr>
         <tr>
-          <th><a href="/pages/9.html#9K6">9K6</a></th>
-          <td>PACKAGE AM/FM STEREO RADIO</td>
+          <th><a href="/pages/A.html#AIS">AIS</a></th>
+          <td>IDENTIFICATION EFFECTIVE POINT CONTROL - INTERIOR, ONE-COAT PAINTING</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#AU3">AU3</a></th>
-          <td>LOCK,SIDE DOOR,ELECTRIC(EXPORT,CANADA)</td>
+          <th><a href="/pages/S.html#SHZ">SHZ</a></th>
+          <td>ACCESSORY DISPLAY MODULE - PARKING SENSOR</td>
         </tr>
         <tr>
-          <th><a href="/pages/8.html#8U0">8U0</a></th>
-          <td>MODIFICATION REAR FLOOR</td>
+          <th><a href="/pages/O.html#OGN">OGN</a></th>
+          <td>LOCAL GM OF EUROPE OGN</td>
         </tr>
         <tr>
-          <th><a href="/pages/3.html#38U">38U</a></th>
-          <td>EXTERIOR COLOR,PRIMARY,CHAMPANGE</td>
+          <th><a href="/pages/R.html#RIK">RIK</a></th>
+          <td>LPO, Gloss Black CT5 nameplate</td>
         </tr>
         <tr>
-          <th><a href="/pages/D.html#DL4">DL4</a></th>
-          <td>DECAL,TWO-TONE PAINT SCHEME</td>
+          <th><a href="/pages/Y.html#YCJ">YCJ</a></th>
+          <td>TIRE REAR P255/70R16 WOL R/PE ST TL ALS</td>
         </tr>
         <tr>
-          <th><a href="/pages/P.html#PDC">PDC</a></th>
-          <td>Z71 Convenience Package III</td>
+          <th><a href="/pages/R.html#RW3">RW3</a></th>
+          <td>ACCESSORY BED RAILS, CHROME</td>
         </tr>
         <tr>
-          <th><a href="/pages/G.html#GQH">GQH</a></th>
-          <td>THIRD POSITION PROP HANGER, ANGLE 95.75, HEIGHT B</td>
+          <th><a href="/pages/M.html#ML0">ML0</a></th>
+          <td>TRANSMISSION,MAN 5 SPD,FULLER FS6105B,7.22 1ST,1.27 4TH,D/DRIVE</td>
         </tr>
         <tr>
-          <th><a href="/pages/V.html#VP1">VP1</a></th>
-          <td>SPOILER,LOWER FRONT(USED WITH TROFEO SPORT COUPE WL3)</td>
+          <th><a href="/pages/6.html#6TY">6TY</a></th>
+          <td>COMPONENT FRT LH COMPUTER SEL SUSP (6TY)</td>
         </tr>
         <tr>
-          <th><a href="/pages/D.html#D43">D43</a></th>
-          <td>MIRROR,INSIDE,REARVIEW,TILT,AUTOMATIC,INCREASED VISIBILITY(EXPORT)</td>
+          <th><a href="/pages/T.html#TZH">TZH</a></th>
+          <td>FLEET SALES BUDGET GO# F6898</td>
         </tr>
         <tr>
-          <th><a href="/pages/2.html#23L">23L</a></th>
-          <td>EXTERIOR COLOR,SECONDARY,MEDIUM BLUE</td>
+          <th><a href="/pages/9.html#9N2">9N2</a></th>
+          <td>GVWR, 10,050 lbs. (4559 kg)</td>
         </tr>
         <tr>
-          <th><a href="/pages/S.html#SR2">SR2</a></th>
-          <td>LPO, Rear seat infotainment system without DVD player</td>
+          <th><a href="/pages/C.html#C5J">C5J</a></th>
+          <td>GVW RATING(6000 LBS)</td>
         </tr>
         <tr>
-          <th><a href="/pages/C.html#CBN">CBN</a></th>
-          <td>APPEARANCE PACKAGE STREET PAK II</td>
+          <th><a href="/pages/W.html#W16">W16</a></th>
+          <td>MERCHANDISED PKG PGA SPECIAL EDITION</td>
         </tr>
         <tr>
-          <th><a href="/pages/E.html#EME">EME</a></th>
-          <td>TRIM SEAT CLOTH, CREST</td>
+          <th><a href="/pages/B.html#BN6">BN6</a></th>
+          <td>FLEET INCENTIVE EXXON CORP (H/J/K/N/U/W-TRK CKGPMLST)</td>
         </tr>
         <tr>
-          <th><a href="/pages/I.html#IWE">IWE</a></th>
-          <td>Sueded Microfiber-Wrapped Upper Interior Trim Package</td>
+          <th><a href="/pages/7.html#76L">76L</a></th>
+          <td>EXTERIOR COLOR, SECONDARY,DK BRONZEMIST MET</td>
         </tr>
                            </tbody>
                         </table>
@@ -4449,9 +5323,6 @@
             <div class="col-sm-12">
                <hr>
                <span class="text-center">
-                  <p>
-                     Created by <a href="kravchina.com" title="kravchina.com">kravchina.com</a>. Contact for support: <a href="mailto:admin@admin.com" title="admin@admin.com">admin@admin.com</a>
-                  </p>
                   <p>
                      2021 - <span id="year"></span> <a href="/" title="RPO Codes decoder">RPO Codes decoder</a>
                   </p>
