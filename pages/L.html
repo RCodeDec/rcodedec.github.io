@@ -9,8 +9,8 @@
       <link rel="shortcut icon" href="/favicon.ico">
       <title>RPO Codes Decoder - GM Chevrolet Buick Cadillac - Regular Production Option</title>
       <link href="/static/bootstrap.min.css" rel="stylesheet">
-      <link href="/static/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="/static/base.css" rel="stylesheet">
+      <script type="text/javascript" src="/static/app.js"></script>
       <script
          src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
          crossorigin="anonymous">
@@ -19,7 +19,7 @@
          Sentry.onLoad(function() {
             Sentry.init({
                dsn: "https://291debcf920fd697490276315952da19@o4506033871585280.ingest.sentry.io/4506033874796544",
-               replaysSessionSampleRate: 1.0,
+               replaysSessionSampleRate: 0.0,
                replaysOnErrorSampleRate: 1.0,
 
                integrations: [
@@ -32,126 +32,246 @@
             });
          });
      </script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XX599J1NJ"></script>
+     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+  
+        gtag('config', 'G-3XX599J1NJ');
+     </script>
    </head>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-3XX599J1NJ');
-   </script>
    <body>
-      <div class="container">
-         <div class="jumbotron text-center gradient">
+      <div class="container pt-2">
+         <div class="main-header text-center gradient">
             <div class="row">
                <div class="col-md-12">
                   <h1><a href="/" title="RPO Codes Decoder">RPO Codes Decoder</a></h1>
                   <h2>Decode RPO code for GM Chevy Buick Cadillac</h2>
                </div>
-               <div class="col-md-offset-3 col-md-6">
-                  <!-- <form id="decoder" name="decoder"> -->
-                     <div class="form-group">
-                        <label>
-                           <h3>type or paste <strong>RPO Codes</strong> here</h3>
-                           <p>use comma or space delimiter</p>
-                        </label>
-                        <input type="text" class="form-control text-center" id="inputRpoCodes" placeholder="AG2,AR9 CJ2 DM8 DRZ EB1" />
-                     </div>
-                     <button id="btnDecodePro" class="btn btn-info">Decode RPO</button>
-                     <div class="progress-bar progress-bar-striped active" id="progressBar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%; display: none">
-                        Please wait...
-                        <span class="sr-only">Please wait...</span>
-                     </div>
-                  <!-- </form> -->
-               </div>
             </div>
          </div>
       </div>
 
-      <div class="container">
+      <div class="container fw-light">
          <div class="row">
-            <div class="col-sm-8 col-sm-push-4">
+            <div class="col-lg-4  mt-2">
                <div class="row">
-                  <div class="col-md-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                           <strong>Decoding Results</strong>
-                           <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy to Clipboard</button>
+                  <div class="col-12">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">What do RPO Codes Means?</h5>
+                           <p class="card-text"> A <b>Regular Production Option</b> is a General Motors standard coding for vehicle configuration options
+                              Each <b>RPO</b> code is a combination of three alphanumeric characters (like <b>Z71</b>) that refers to a specific option or modification to the vehicle as built during production
+                              and can be used to identify specific vehicle options or modifications such as paint colors, engine types, interior options, wheel types, etc.
+                           </p>
                         </div>
-                        <table class="table table-striped table-two-col">
-                           <tbody id="tableTbody">
-                           </tbody>
-                        </table>
+                     </div>
+                  </div>
+
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">Where are the RPO Codes Located?</h5>
+                           <p class="card-text">
+                              Beginning with the 2018 model year, a QR code was added to the Certification label on all Buick, Cadillac, Chevrolet and GMC models. The new QR code includes the Vehicle Identification Number (VIN), RPO codes and other information that identify the content of the vehicle. In previous model years, the Service Parts Identification (SPID) label, often located in the trunk or glovebox of a vehicle, included this information.
+                              <img src="/static/1.jpeg" class="img-fluid" alt="Example of RPO codes label">
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">Where are the RPO Codes Located before 2018?</h5>
+                           <p class="card-text">
+                              The RPO Codes can be found on a placard labeled “Service Parts Identification” in the glove box, on the trunk floor or inside the driver's door panel.
+                              <ul>
+                                 <li>Bravada is found in the glove box</li>
+                                 <li>Cobalt is found on the trunk floor</li>
+                                 <li>Envoy is found in the glove box</li>
+                                 <li>Camaro is found on the trunk floor</li>
+                                 <li>Rainier is found in the glove box</li>
+                                 <li>Silverado/Sierra is found in the glove box</li>
+                              </ul>
+                              <img src="/static/2.jpeg"  class="img-fluid" alt="Example of RPO codes label">
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                        <h5 class="card-title">QR Code Reader</h5>
+                        <p class="card-text">
+                           Software to read the QR code is commonly available for any Android, iPhone. 
+                           <p>
+                              For iPhone you can use the builtin Camera app. For Android many basic applications can be downloaded for free. Tested QR code readers that are easy to use include NeoReader by NM LLC, i-nigma by 3GVision, QR Scanner by Honestly App, QR Droid by DroidLa and Bar-Code by PW2.
+                           </p>
+                           <p>
+                              Once the QR code is scanned, the vehicle information will appear in the following order: VIN, Model Year, Model, Build Month, Year, Engineering Book, Vehicle Order Number, 3 Digit RPO Codes sorted alphanumerically, and the Paint Code.
+                           </p>
+                           <p>
+                              For example, here's the information as shown from a scanned QR code:
+                           </p>
+                           <blockquote class="blockquote">
+                              <p>
+                                 1GYKPGRS8LZ150076,2020,6NX26,12,19,N,XHTBDW,AR9 AXP AYG A2X A7K CJ2 C3U DRZ DYX EB1 EF7 FE5 FHO F48 G1W H1Y IOT I20 JL9 KW7 LGX MAH M3W NE1 NE1 NP5 NUC QNU Q6Q RTI SSH TC2 UHS UQP UV6 U2K V8D V92 WML ZCD 1SF 1SF 4AA 6X1 7X1 8X2 9X2,,,,,
+                              </p>
+                            </blockquote>
+                           <p>
+                              Just copy scanned value and paste it here!
+                           </p>
+                        </p>
+                        </div>
                      </div>
                   </div>
                </div>
+            </div>
 
-               <hr>
 
+            <div class="col-lg-8  mt-2 order-lg-last order-first">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>RPO codes Navigator</strong></div>
-                        <table class="table table-striped table-two-col">
-                           <tbody>
-                              <tr>
-                                 <td><a href="/pages/0.html">0**</a></td>
-                                 <td><a href="/pages/1.html">1**</a></td>
-                                 <td><a href="/pages/2.html">2**</a></td>
-                                 <td><a href="/pages/3.html">3**</a></td>
-                                 <td><a href="/pages/4.html">4**</a></td>
-                                 <td><a href="/pages/5.html">5**</a></td>
-                                 <td><a href="/pages/6.html">6**</a></td>
-                                 <td><a href="/pages/7.html">7**</a></td>
-                                 <td><a href="/pages/8.html">8**</a></td>
-                                 <td><a href="/pages/9.html">9**</a></td>
-                                 <td><a href="/pages/A.html">A**</a></td>
-                                 <td><a href="/pages/B.html">B**</a></td>
-                              </tr>
-                              <tr>
-                                 <td><a href="/pages/C.html">C**</a></td>
-                                 <td><a href="/pages/D.html">D**</a></td>
-                                 <td><a href="/pages/E.html">E**</a></td>
-                                 <td><a href="/pages/F.html">F**</a></td>
-                                 <td><a href="/pages/G.html">G**</a></td>
-                                 <td><a href="/pages/H.html">H**</a></td>
-                                 <td><a href="/pages/I.html">I**</a></td>
-                                 <td><a href="/pages/J.html">J**</a></td>
-                                 <td><a href="/pages/K.html">K**</a></td>
-                                 <td><a href="/pages/L.html">L**</a></td>
-                                 <td><a href="/pages/M.html">M**</a></td>
-                                 <td><a href="/pages/N.html">N**</a></td>
-                              </tr>
-                              <tr>
-                                 <td><a href="/pages/O.html">O**</a></td>
-                                 <td><a href="/pages/P.html">P**</a></td>
-                                 <td><a href="/pages/Q.html">Q**</a></td>
-                                 <td><a href="/pages/R.html">R**</a></td>
-                                 <td><a href="/pages/S.html">S**</a></td>
-                                 <td><a href="/pages/T.html">T**</a></td>
-                                 <td><a href="/pages/U.html">U**</a></td>
-                                 <td><a href="/pages/V.html">V**</a></td>
-                                 <td><a href="/pages/W.html">W**</a></td>
-                                 <td><a href="/pages/X.html">X**</a></td>
-                                 <td><a href="/pages/Y.html">Y**</a></td>
-                                 <td><a href="/pages/X.html">X**</a></td>
-                              </tr>
-
-                           </tbody>
-                        </table>
-                     </div>
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="/">Home</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Full Codes List</li>
+                           <li class="breadcrumb-item active" aria-current="page">L** Codes</li>
+                        </ol>
+                        </nav>
                   </div>
-               </div>
-               
-               <hr>
-               
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>L** Codes</strong></div>
-                        <table class="table table-striped table-two-col">
-                           <tbody>
+
+                  <div class="col-12">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">Decoder</h5>
+                           <p class="card-text">
+                              <div class="row">
+                                 <div class="col">
+                                    <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
+                                 </div>
+                              </div>
                               
+                              <form class="row g-2 mt-1" id="RPOCodesForm">
+                                 <div class="col-9">
+                                    <input type="text" class="form-control" id="inputRpoCodes"
+                                     placeholder="Example RPO: AG2 AR9 CJ2 DM8">
+                                 </div>
+                                 <div class="col-3">
+                                   <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
+                                 </div>
+                               </form>
+                           </p>
+                           <h6 class="card-title">Decoding results</h6>
+                           <p class="card-text">
+                              <div class="container text-center" id="emptyLabel">
+                                 <div class="row">
+                                   <div class="col">
+                                     Empty
+                                   </div>
+                                 </div>
+                              </div>
+
+                              <div class="container text-center" style="display:none" id="progressBar">
+                                 <div class="row">
+                                   <div class="col">
+                                    <div class="spinner-border text-primary" role="status">
+                                       <span class="visually-hidden">Loading...</span>
+                                     </div> 
+                                   </div>
+                                 </div>
+                              </div>
+
+                              <div class="row" id="resultTable" style="display:none">
+                                 <div class="col">
+                                    <table class="table table-striped table-bordered table-hover">
+                                       <thead>
+                                         <tr>
+                                           <th scope="col">RPO</th>
+                                           <th scope="col">Description <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy All</button></th>
+                                         </tr>
+                                       </thead>
+                                       <tbody id="tableTbody">
+                                       </tbody>
+                                     </table>
+                                 </div>
+                              </div>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">RPO codes Navigator</h5>
+                           <p class="card-text">
+                              <div class="table-responsive">
+                                 <table class="table table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <td><a href="/pages/0.html">0**</a></td>
+                                          <td><a href="/pages/1.html">1**</a></td>
+                                          <td><a href="/pages/2.html">2**</a></td>
+                                          <td><a href="/pages/3.html">3**</a></td>
+                                          <td><a href="/pages/4.html">4**</a></td>
+                                          <td><a href="/pages/5.html">5**</a></td>
+                                          <td><a href="/pages/6.html">6**</a></td>
+                                          <td><a href="/pages/7.html">7**</a></td>
+                                          <td><a href="/pages/8.html">8**</a></td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="/pages/9.html">9**</a></td>
+                                          <td><a href="/pages/A.html">A**</a></td>
+                                          <td><a href="/pages/B.html">B**</a></td>
+                                          <td><a href="/pages/C.html">C**</a></td>
+                                          <td><a href="/pages/D.html">D**</a></td>
+                                          <td><a href="/pages/E.html">E**</a></td>
+                                          <td><a href="/pages/F.html">F**</a></td>
+                                          <td><a href="/pages/G.html">G**</a></td>
+                                          <td><a href="/pages/H.html">H**</a></td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="/pages/I.html">I**</a></td>
+                                          <td><a href="/pages/J.html">J**</a></td>
+                                          <td><a href="/pages/K.html">K**</a></td>
+                                          <td><a href="/pages/L.html">L**</a></td>
+                                          <td><a href="/pages/M.html">M**</a></td>
+                                          <td><a href="/pages/N.html">N**</a></td>
+                                          <td><a href="/pages/O.html">O**</a></td>
+                                          <td><a href="/pages/P.html">P**</a></td>
+                                          <td><a href="/pages/Q.html">Q**</a></td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="/pages/R.html">R**</a></td>
+                                          <td><a href="/pages/S.html">S**</a></td>
+                                          <td><a href="/pages/T.html">T**</a></td>
+                                          <td><a href="/pages/U.html">U**</a></td>
+                                          <td><a href="/pages/V.html">V**</a></td>
+                                          <td><a href="/pages/W.html">W**</a></td>
+                                          <td><a href="/pages/X.html">X**</a></td>
+                                          <td><a href="/pages/Y.html">Y**</a></td>
+                                          <td><a href="/pages/X.html">X**</a></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </p>     
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">L** Codes</h5>
+                           <p class="card-text">
+                              <table class="table table-striped table-bordered table-hover">
+                                 <tbody>
+                                    
         <tr>
           <th><a name="L01"></a>L01</th>
           <td>ENGINE,1.6L(1.6-6),L4 MFI(SINGLE OVERHEAD CAM)</td>
@@ -3000,179 +3120,111 @@
           <th><a name="LZY"></a>LZY</th>
           <td>ELECTRONIC ENGINE CONTROL SYSTEM</td>
         </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-                  <div class="col-md-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Example Decoded RPO Codes</strong></div>
-                        <table class="table table-striped table-two-col">
-                           <tbody>
-                              
-        <tr>
-          <th><a href="/pages/N.html#NA1">NA1</a></th>
-          <td>EMISSION SYSTEM,LESS THAN 8500 LB GVW</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/H.html#HBW">HBW</a></th>
-          <td>VIN FORMAT CHINA TYPE</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/6.html#6DF">6DF</a></th>
-          <td>COMPONENT FRT LH COMPUTER SEL SUSP (6DF)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/Z.html#ZV3">ZV3</a></th>
-          <td>STATEMENT OF ORIGIN MANUFACTURES GROSS VEHICLE WEIGHT</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/L.html#L37">L37</a></th>
-          <td>ENGINE,4.6L,V8,DOHC,SFI,281C.I.D.(NORTHSTAR)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/Z.html#Z54">Z54</a></th>
-          <td>CORSICA 'LTZ'(1LT69 & Z54 = 1LZ69)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/J.html#JA6">JA6</a></th>
-          <td>BRAKE SYSTEM,MANUAL,EXTRA LIGHT WEIGHT</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/T.html#TEF">TEF</a></th>
-          <td>DISCOUNT HANDICAP DRIVER, VAR 3</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/2.html#2IN">2IN</a></th>
-          <td>FLEET INCENTIVE BERMUDEZ & LONGO (TRK CKGST)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/E.html#ET5">ET5</a></th>
-          <td>EQUIPMENT ADDITIONAL TOGO</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/L.html#LUW">LUW</a></th>
-          <td>ENGINE GAS/ETHANOL, 4 CYL, 1.8L, MFI, 103KW, DOHC, E85</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/5.html#5BC">5BC</a></th>
-          <td>ACCESSORY WHEEL - 17' X 6.5 - J - ALUMINUM - DESIGN 3</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/K.html#K41">K41</a></th>
-          <td>PROVISIONS ENGINE BRAKE, EXHAUST</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/8.html#8WR">8WR</a></th>
-          <td>COMPONENT RR LH COMPUTER SEL SUSP (8WR)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/B.html#BT8">BT8</a></th>
-          <td>FLEET INCENTIVE MIKE ALBERT (J/H/N/U/W-TRK CKGML)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/D.html#D97">D97</a></th>
-          <td>PAINT - DELETE</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/N.html#N32">N32</a></th>
-          <td>STEERING WHEEL,2-SPOKE(DELUXE)(USED WITH TROFEO SPORT COUPE WL3)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/R.html#RKO">RKO</a></th>
-          <td>TIRE ALL 215/45R18 SL 89H BW HW3</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/P.html#PNI">PNI</a></th>
-          <td>PANEL CONVENIENCE, RR COMPT, DISPLAY</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/P.html#PG5">PG5</a></th>
-          <td>WHEEL 15 X 6, ALUMINUM CAST</td>
-        </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-
-            <div class="col-sm-4 col-sm-pull-8">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>What do RPO Codes Means?</strong></div>
-                        <div class="panel-body">
-                           <p>
-                              Find out what options your GM Chevy Buick Cadillac vehicle is equipped with.
-                           </p>
-                           <p>
-                              A <b>Regular Production Option</b> is a General Motors standard coding for vehicle configuration options
-                              Each <b>RPO</b> code is a combination of three alphanumeric characters (like <b>Z71</b>) that refers to a specific option or modification to the vehicle as built during production
-                              and can be used to identify specific vehicle options or modifications such as paint colors, engine types, interior options, wheel types, etc.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  
-                  <div class="col-sm-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Where are the RPO Codes Located?</strong></div>
-                        <div class="panel-body">
-                           Beginning with the 2018 model year, a QR code was added to the Certification label on all Buick, Cadillac, Chevrolet and GMC models. The new QR code includes the Vehicle Identification Number (VIN), RPO codes and other information that identify the content of the vehicle. In previous model years, the Service Parts Identification (SPID) label, often located in the trunk or glovebox of a vehicle, included this information.
-                           <img src="/static/1.jpeg" class="img-responsive" alt="Example of RPO codes label"/>
+                                 </tbody>
+                              </table>
+                           </p>     
                         </div>
                      </div>
                   </div>
 
-                  <div class="col-sm-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>Where are the RPO Codes Located before 2018?</strong></div>
-                        <div class="panel-body">
-                           The RPO Codes can be found on a placard labeled “Service Parts Identification” in the glove box, on the trunk floor or inside the driver's door panel.
-                           <ul>
-                              <li>Bravada is found in the glove box</li>
-                              <li>Cobalt is found on the trunk floor</li>
-                              <li>Envoy is found in the glove box</li>
-                              <li>Camaro is found on the trunk floor</li>
-                              <li>Rainier is found in the glove box</li>
-                              <li>Silverado/Sierra is found in the glove box</li>
-                           </ul>
-                           <img src="/static/2.jpeg" class="img-responsive" alt="Example of RPO codes label"/>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-sm-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading"><strong>QR Code Reader</strong></div>
-                        <div class="panel-body">
-                           Software to read the QR code is commonly available for any Android, iPhone. 
-                           <p>
-                              For iPhone you can use the builtin Camera app. For Android many basic applications can be downloaded for free. Tested QR code readers that are easy to use include NeoReader by NM LLC, i-nigma by 3GVision, QR Scanner by Honestly App, QR Droid by DroidLa and Bar-Code by PW2.
-                           </p>
-                           <p>
-                              Once the QR code is scanned, the vehicle information will appear in the following order: VIN, Model Year, Model, Build Month, Year, Engineering Book, Vehicle Order Number, 3 Digit RPO Codes sorted alphanumerically, and the Paint Code.
-                           </p>
-                           <p>
-                              For example, here's the information as shown from a scanned QR code:
-                           </p>
-                           <blockquote>
-                              <p>
-                                 1GYKPGRS8LZ150076,2020,6NX26,12,19,N,XHTBDW,AR9 AXP AYG A2X A7K CJ2 C3U DRZ DYX EB1 EF7 FE5 FHO F48 G1W H1Y IOT I20 JL9 KW7 LGX MAH M3W NE1 NE1 NP5 NUC QNU Q6Q RTI SSH TC2 UHS UQP UV6 U2K V8D V92 WML ZCD 1SF 1SF 4AA 6X1 7X1 8X2 9X2,,,,,
-                              </p>
-                            </blockquote>
-                           <p>
-                              Just copy scanned value and paste it here!
-                           </p>
+                  <div class="col-12 mt-2">
+                     <div class="card" >
+                        <div class="card-body">
+                           <h5 class="card-title">Example codes</h5>
+                           <p class="card-text">
+                              <table class="table table-striped table-bordered table-hover">
+                                 <tbody>
+                                    
+        <tr>
+          <th><a href="/pages/Z.html#ZQ7">ZQ7</a></th>
+          <td>CHASSIS SEQUENCE DELIVERY, FLEETWOOD CALIFORNIA</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/U.html#UQ5">UQ5</a></th>
+          <td>SPEAKER SYSTEM,4,DUAL FRONT DOOR MOUNTED,DUAL EXTENDED RANGE QUARTER MOUNTED</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/T.html#TC2">TC2</a></th>
+          <td>Liftgate, rear power, hands free</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/O.html#OAU">OAU</a></th>
+          <td>LOCAL GM OF EUROPE OAU</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/Z.html#Z84">Z84</a></th>
+          <td>CHEYENNE,HIGH SIERRA</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/S.html#S8T">S8T</a></th>
+          <td>DIRECT SALES GENERAL SAFETY</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/P.html#PDW">PDW</a></th>
+          <td>LPO, Assist Step and Tonneau Value Package</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/Y.html#YRR">YRR</a></th>
+          <td>TIRE REAR 11.00R20/G 14PR BL RADIAL TT</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/O.html#OYU">OYU</a></th>
+          <td>LOCAL GM OF EUROPE (OYU)</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/7.html#7NX">7NX</a></th>
+          <td>COMPONENT FRT LH COMPUTER SEL SUSP (7NX)</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/V.html#VWD">VWD</a></th>
+          <td>LPO, Gloss Black wheel center caps with Silver bowtie</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/B.html#B4Z">B4Z</a></th>
+          <td>Performance Traction Management</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/Z.html#Z85">Z85</a></th>
+          <td>Suspension Package, Standard</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/T.html#T1G">T1G</a></th>
+          <td>VEHICLE MILITARY PERSONNEL DELIVERY</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/V.html#V3I">V3I</a></th>
+          <td>FUEL FILL CHARGE BACK</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/7.html#7YR">7YR</a></th>
+          <td>COMPONENT FRT RH COMPUTER SEL SUSP (7YR)</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/H.html#HE4">HE4</a></th>
+          <td>AXLE,REAR,3.40 RATIO</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/S.html#SDN">SDN</a></th>
+          <td>ACCESSORY VALVE STEM CAP, EXTENSION</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/2.html#28U">28U</a></th>
+          <td>PRIMARY COLOR EXTERIOR, INFERNO ORANGE MET</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/P.html#PY7">PY7</a></th>
+          <td>WHEEL 14 X 4.5, ALUMINUM</td>
+        </tr>
+                                 </tbody>
+                              </table>
+                           </p>     
                         </div>
                      </div>
                   </div>
 
                </div>
             </div>
-
+         </div>
          </div>
       </div>
       <div class="container">
@@ -3190,7 +3242,6 @@
             </div>
          </div>
       </div>
-      <script type="text/javascript" src="/static/app.js"></script>
       <script type="text/javascript">
          var year = (new Date()).getFullYear();
          year = year < 2018 ? 2018 : year;
