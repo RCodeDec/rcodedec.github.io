@@ -11,6 +11,7 @@
       <link href="/static/bootstrap.min.css" rel="stylesheet">
       <link href="/static/base.css" rel="stylesheet">
       <script type="text/javascript" src="/static/app.js"></script>
+      <script type="text/javascript" src="/static/bootstrap.bundle.min.js"></script>
       <script
          src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
          crossorigin="anonymous">
@@ -144,63 +145,74 @@
                         </nav>
                   </div>
 
-                  <div class="col-12">
-                     <div class="card" >
-                        <div class="card-body">
-                           <h5 class="card-title">Decoder</h5>
-                           <p class="card-text">
-                              <div class="row">
-                                 <div class="col">
-                                    <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
-                                 </div>
-                              </div>
-                              
-                              <form class="row g-2 mt-1" id="RPOCodesForm">
-                                 <div class="col-9">
-                                    <input type="text" class="form-control" id="inputRpoCodes"
-                                     placeholder="Example RPO: AG2 AR9 CJ2 DM8">
-                                 </div>
-                                 <div class="col-3">
-                                   <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
-                                 </div>
-                               </form>
-                           </p>
-                           <h6 class="card-title">Decoding results</h6>
-                           <p class="card-text">
-                              <div class="container text-center" id="emptyLabel">
-                                 <div class="row">
-                                   <div class="col">
-                                     Empty
-                                   </div>
-                                 </div>
-                              </div>
+                  <div class="col-12 mt-2">
+                     <div class="col-12">
+                        <div class="accordion" id="accordionDecoder">
+                           <div class="accordion-item">
+                             <h2 class="accordion-header">
+                               <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                                 data-bs-target="#collapseDecoder" aria-expanded="false" aria-controls="collapseDecoder">
+                                 Decoder
+                               </button>
+                             </h2>
+                             <div id="collapseDecoder" class="accordion-collapse collapse" data-bs-parent="#accordionDecoder">
+                                 <div class="accordion-body">
+               
+                                    <div class="row">
+                                       <div class="col">
+                                          <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
+                                       </div>
+                                    </div>
+                                    
+                                    <form class="row g-2 mt-1" id="RPOCodesForm">
+                                       <div class="col-9">
+                                          <input type="text" class="form-control" id="inputRpoCodes"
+                                             placeholder="Example RPO: AG2 AR9 CJ2 DM8">
+                                       </div>
+                                       <div class="col-3">
+                                          <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
+                                       </div>
+                                       </form>
+                             
+                                    <h6 class="card-title">Decoding results</h6>
+                                    
+                                    <div class="container text-center" id="emptyLabel">
+                                       <div class="row">
+                                          <div class="col">
+                                             Empty
+                                          </div>
+                                       </div>
+                                    </div>
+      
+                                    <div class="container text-center" style="display:none" id="progressBar">
+                                       <div class="row">
+                                          <div class="col">
+                                          <div class="spinner-border text-primary" role="status">
+                                             <span class="visually-hidden">Loading...</span>
+                                             </div> 
+                                          </div>
+                                       </div>
+                                    </div>
+      
+                                    <div class="row" id="resultTable" style="display:none">
+                                       <div class="col">
+                                          <table class="table table-striped table-bordered table-hover">
+                                             <thead>
+                                                <tr>
+                                                   <th scope="col">RPO</th>
+                                                   <th scope="col">Description <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy All</button></th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="tableTbody">
+                                             </tbody>
+                                             </table>
+                                       </div>
+                                    </div>
 
-                              <div class="container text-center" style="display:none" id="progressBar">
-                                 <div class="row">
-                                   <div class="col">
-                                    <div class="spinner-border text-primary" role="status">
-                                       <span class="visually-hidden">Loading...</span>
-                                     </div> 
-                                   </div>
                                  </div>
-                              </div>
-
-                              <div class="row" id="resultTable" style="display:none">
-                                 <div class="col">
-                                    <table class="table table-striped table-bordered table-hover">
-                                       <thead>
-                                         <tr>
-                                           <th scope="col">RPO</th>
-                                           <th scope="col">Description <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy All</button></th>
-                                         </tr>
-                                       </thead>
-                                       <tbody id="tableTbody">
-                                       </tbody>
-                                     </table>
-                                 </div>
-                              </div>
-                           </p>
-                        </div>
+                             </div>
+                           </div>
+                         </div>
                      </div>
                   </div>
 
@@ -269,6 +281,7 @@
                         <div class="card-body">
                            <h5 class="card-title">2** Codes</h5>
                            <p class="card-text">
+                              <div class="clearfix">
                               <table class="table table-striped table-bordered table-hover">
                                  <tbody>
                                     
@@ -2622,6 +2635,7 @@
         </tr>
                                  </tbody>
                               </table>
+                              </div>
                            </p>     
                         </div>
                      </div>
@@ -2636,84 +2650,84 @@
                                  <tbody>
                                     
         <tr>
-          <th><a href="/pages/D.html#DTD">DTD</a></th>
-          <td>MIRROR AUX O/S, 8 IN, FENDER MOUNTED</td>
+          <th><a href="/pages/B.html#B8M">B8M</a></th>
+          <td>VEHICLE GM PROD WEEK 01</td>
         </tr>
         <tr>
-          <th><a href="/pages/K.html#KKM">KKM</a></th>
-          <td>ORNAMENTATION NAME PLATE 'TACUMA'</td>
+          <th><a href="/pages/C.html#C4G">C4G</a></th>
+          <td>GVW RATING(4935 LBS)</td>
         </tr>
         <tr>
-          <th><a href="/pages/8.html#8L8">8L8</a></th>
-          <td>LINING BODY INTERIOR ALUMINUM UNION CITY</td>
+          <th><a href="/pages/S.html#S5B">S5B</a></th>
+          <td>DIRECT SALES FLINT POWERTRAIN</td>
         </tr>
         <tr>
-          <th><a href="/pages/F.html#FPN">FPN</a></th>
-          <td>Wheelbase, 231" (586.7 cm)</td>
+          <th><a href="/pages/P.html#PEQ">PEQ</a></th>
+          <td>TRIM CLOTH, ELBA</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#AL9">AL9</a></th>
-          <td>Seat, driver power lumbar control</td>
+          <th><a href="/pages/A.html#AN4">AN4</a></th>
+          <td>RESTRAINT PROVISIONS,CHILD(CANADIAN)</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#ARD">ARD</a></th>
-          <td>RESTRAINT PROVISIONS D RING, RR SEAT</td>
+          <th><a href="/pages/Y.html#YQK">YQK</a></th>
+          <td>TIRE REAR 8.25R16 14PR BL R/ST TT HWY (OVERSEAS) (DUP WITH YQM</td>
         </tr>
         <tr>
-          <th><a href="/pages/S.html#SHN">SHN</a></th>
-          <td>WHEEL SPARE 14 X 4.0, T, STEEL, DESIGN 1</td>
+          <th><a href="/pages/M.html#MKA">MKA</a></th>
+          <td>TRANSMISSION AUTOMATIC, ELECTRONIC RATIO SELECT, GM, STRONG HYB RID, EVT, PLUG IN</td>
         </tr>
         <tr>
-          <th><a href="/pages/W.html#WAO">WAO</a></th>
-          <td>ORNAMENTATION,NAME PLATE 'WAVE'</td>
+          <th><a href="/pages/L.html#LZY">LZY</a></th>
+          <td>ELECTRONIC ENGINE CONTROL SYSTEM</td>
         </tr>
         <tr>
-          <th><a href="/pages/O.html#OP2">OP2</a></th>
-          <td>LOCAL GM OF EUROPE OP2</td>
+          <th><a href="/pages/V.html#VWI">VWI</a></th>
+          <td>ACCESSORY LADDER RACK - ROOF MOUNTED</td>
         </tr>
         <tr>
-          <th><a href="/pages/Z.html#ZBL">ZBL</a></th>
-          <td>TIRE SPARE P265/70R17-113H BW TL ST OOR</td>
+          <th><a href="/pages/O.html#OF4">OF4</a></th>
+          <td>LOCAL GM OF EUROPE OF4</td>
         </tr>
         <tr>
-          <th><a href="/pages/D.html#DE2">DE2</a></th>
-          <td>Mirrors, outside manual, Black</td>
+          <th><a href="/pages/J.html#JTN">JTN</a></th>
+          <td>BRAKE,REAR,AIR EATON,ESB541 LINING,6.0 INCH SLACK,16.5X7</td>
         </tr>
         <tr>
-          <th><a href="/pages/C.html#C7N">C7N</a></th>
-          <td>GVWR, 12,300 lbs. (5579 kg)</td>
+          <th><a href="/pages/O.html#OU0">OU0</a></th>
+          <td>LOCAL GM OF EUROPE OU0</td>
         </tr>
         <tr>
-          <th><a href="/pages/P.html#PAZ">PAZ</a></th>
-          <td>PANEL (OPEL) TRIM, INNER, TUNIS</td>
+          <th><a href="/pages/C.html#CAP">CAP</a></th>
+          <td>FLEET PROCESSING VEHICLE ORDER MANAGEMENT, CAP CODE PROCESSING ALL VEHICLES MODEL YEAR 2002 & BEYOND</td>
         </tr>
         <tr>
-          <th><a href="/pages/T.html#TYE">TYE</a></th>
-          <td>FLEET SALES ASPLUNDH TREE GO# E0906, ETC</td>
+          <th><a href="/pages/E.html#EIE">EIE</a></th>
+          <td>LOCAL WHL & TYRE ASM-155/80 R13 5 SPOKE</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#UF7">UF7</a></th>
-          <td>RADIO,AM/FM STEREO,SEEK/SCAN,ETR,CLOCK DSP,MP3/WMA USB,AUX/IN,WI-FI</td>
+          <th><a href="/pages/P.html#PCM">PCM</a></th>
+          <td>Convenience Package II</td>
         </tr>
         <tr>
-          <th><a href="/pages/L.html#LLV">LLV</a></th>
-          <td>ENGINE GAS, 4 CYL, 2.9L, MFI, L4, ALUM, VVT, DOHC, GM</td>
+          <th><a href="/pages/T.html#TMP">TMP</a></th>
+          <td>FLEET SALES PENSKE TRUCK LEASING, GO# A9409.</td>
         </tr>
         <tr>
-          <th><a href="/pages/M.html#MTW">MTW</a></th>
-          <td>TRANSMISSION AUTO 5 SPD, ALLISON, LCT 2400, W/PTO DRIVE GEAR</td>
+          <th><a href="/pages/S.html#SB9">SB9</a></th>
+          <td>LPO, Body Decal Package</td>
         </tr>
         <tr>
-          <th><a href="/pages/D.html#D5A">D5A</a></th>
-          <td>CONSOLE ROOF INTERIOR, EXTENDED</td>
+          <th><a href="/pages/U.html#UTU">UTU</a></th>
+          <td>Theft deterrent sensor, vehicle inclination</td>
         </tr>
         <tr>
-          <th><a href="/pages/D.html#D6K">D6K</a></th>
-          <td>Seatback, passenger side, flat-folding</td>
+          <th><a href="/pages/T.html#TNV">TNV</a></th>
+          <td>FLEET SALES RYDER/BUDGET GO# S4589</td>
         </tr>
         <tr>
-          <th><a href="/pages/F.html#FG2">FG2</a></th>
-          <td>SHOCK ABSORBER,FRONT AND REAR,FIRM RIDE</td>
+          <th><a href="/pages/8.html#85U">85U</a></th>
+          <td>PAINT,EXTERIOR,DARK SAPPHIRE,SOLID</td>
         </tr>
                                  </tbody>
                               </table>

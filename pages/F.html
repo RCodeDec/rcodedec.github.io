@@ -11,6 +11,7 @@
       <link href="/static/bootstrap.min.css" rel="stylesheet">
       <link href="/static/base.css" rel="stylesheet">
       <script type="text/javascript" src="/static/app.js"></script>
+      <script type="text/javascript" src="/static/bootstrap.bundle.min.js"></script>
       <script
          src="https://js.sentry-cdn.com/291debcf920fd697490276315952da19.min.js"
          crossorigin="anonymous">
@@ -144,63 +145,74 @@
                         </nav>
                   </div>
 
-                  <div class="col-12">
-                     <div class="card" >
-                        <div class="card-body">
-                           <h5 class="card-title">Decoder</h5>
-                           <p class="card-text">
-                              <div class="row">
-                                 <div class="col">
-                                    <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
-                                 </div>
-                              </div>
-                              
-                              <form class="row g-2 mt-1" id="RPOCodesForm">
-                                 <div class="col-9">
-                                    <input type="text" class="form-control" id="inputRpoCodes"
-                                     placeholder="Example RPO: AG2 AR9 CJ2 DM8">
-                                 </div>
-                                 <div class="col-3">
-                                   <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
-                                 </div>
-                               </form>
-                           </p>
-                           <h6 class="card-title">Decoding results</h6>
-                           <p class="card-text">
-                              <div class="container text-center" id="emptyLabel">
-                                 <div class="row">
-                                   <div class="col">
-                                     Empty
-                                   </div>
-                                 </div>
-                              </div>
+                  <div class="col-12 mt-2">
+                     <div class="col-12">
+                        <div class="accordion" id="accordionDecoder">
+                           <div class="accordion-item">
+                             <h2 class="accordion-header">
+                               <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                                 data-bs-target="#collapseDecoder" aria-expanded="false" aria-controls="collapseDecoder">
+                                 Decoder
+                               </button>
+                             </h2>
+                             <div id="collapseDecoder" class="accordion-collapse collapse" data-bs-parent="#accordionDecoder">
+                                 <div class="accordion-body">
+               
+                                    <div class="row">
+                                       <div class="col">
+                                          <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
+                                       </div>
+                                    </div>
+                                    
+                                    <form class="row g-2 mt-1" id="RPOCodesForm">
+                                       <div class="col-9">
+                                          <input type="text" class="form-control" id="inputRpoCodes"
+                                             placeholder="Example RPO: AG2 AR9 CJ2 DM8">
+                                       </div>
+                                       <div class="col-3">
+                                          <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
+                                       </div>
+                                       </form>
+                             
+                                    <h6 class="card-title">Decoding results</h6>
+                                    
+                                    <div class="container text-center" id="emptyLabel">
+                                       <div class="row">
+                                          <div class="col">
+                                             Empty
+                                          </div>
+                                       </div>
+                                    </div>
+      
+                                    <div class="container text-center" style="display:none" id="progressBar">
+                                       <div class="row">
+                                          <div class="col">
+                                          <div class="spinner-border text-primary" role="status">
+                                             <span class="visually-hidden">Loading...</span>
+                                             </div> 
+                                          </div>
+                                       </div>
+                                    </div>
+      
+                                    <div class="row" id="resultTable" style="display:none">
+                                       <div class="col">
+                                          <table class="table table-striped table-bordered table-hover">
+                                             <thead>
+                                                <tr>
+                                                   <th scope="col">RPO</th>
+                                                   <th scope="col">Description <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy All</button></th>
+                                                </tr>
+                                             </thead>
+                                             <tbody id="tableTbody">
+                                             </tbody>
+                                             </table>
+                                       </div>
+                                    </div>
 
-                              <div class="container text-center" style="display:none" id="progressBar">
-                                 <div class="row">
-                                   <div class="col">
-                                    <div class="spinner-border text-primary" role="status">
-                                       <span class="visually-hidden">Loading...</span>
-                                     </div> 
-                                   </div>
                                  </div>
-                              </div>
-
-                              <div class="row" id="resultTable" style="display:none">
-                                 <div class="col">
-                                    <table class="table table-striped table-bordered table-hover">
-                                       <thead>
-                                         <tr>
-                                           <th scope="col">RPO</th>
-                                           <th scope="col">Description <button id="btnCopyResult" class="btn btn-success btn-sm btn-copy-result">Copy All</button></th>
-                                         </tr>
-                                       </thead>
-                                       <tbody id="tableTbody">
-                                       </tbody>
-                                     </table>
-                                 </div>
-                              </div>
-                           </p>
-                        </div>
+                             </div>
+                           </div>
+                         </div>
                      </div>
                   </div>
 
@@ -269,6 +281,7 @@
                         <div class="card-body">
                            <h5 class="card-title">F** Codes</h5>
                            <p class="card-text">
+                              <div class="clearfix">
                               <table class="table table-striped table-bordered table-hover">
                                  <tbody>
                                     
@@ -4178,6 +4191,7 @@
         </tr>
                                  </tbody>
                               </table>
+                              </div>
                            </p>     
                         </div>
                      </div>
@@ -4192,84 +4206,84 @@
                                  <tbody>
                                     
         <tr>
-          <th><a href="/pages/T.html#T33">T33</a></th>
-          <td>JACK HYDRAULIC, 4 TON</td>
+          <th><a href="/pages/8.html#8UW">8UW</a></th>
+          <td>COMPONENT RR LH COMPUTER SEL SUSP (8UW)</td>
         </tr>
         <tr>
-          <th><a href="/pages/U.html#U3K">U3K</a></th>
-          <td>DISPLAY LANGUAGE FINNISH</td>
+          <th><a href="/pages/D.html#DVR">DVR</a></th>
+          <td>CLUSTER COLOR INST, BLACK, TRANSLUCENT RINGS W/CHROME TOP</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#AP9">AP9</a></th>
-          <td>NET,CONVENIENCE</td>
+          <th><a href="/pages/B.html#B3K">B3K</a></th>
+          <td>TIRE ALL- P145/80 R12/N BL R/PE ST TL ALS.</td>
         </tr>
         <tr>
-          <th><a href="/pages/Q.html#QUB">QUB</a></th>
-          <td>TIRE ALL P255/50R20-104V BW TL AL3</td>
+          <th><a href="/pages/K.html#KB5">KB5</a></th>
+          <td>CONTROL ECM GRADE BRAKING</td>
         </tr>
         <tr>
-          <th><a href="/pages/0.html#01C">01C</a></th>
-          <td>TRIM COLOR SEAT LT TITANIUM</td>
+          <th><a href="/pages/S.html#SPL">SPL</a></th>
+          <td>FAMILY CODE SPOTLAMP</td>
         </tr>
         <tr>
-          <th><a href="/pages/M.html#MM7">MM7</a></th>
-          <td>TRANSMISSION,MANUAL 6-SPD,EATON BOOS SYNC 9.01 1ST,660 FT LBS D/DRIVE</td>
+          <th><a href="/pages/Y.html#YGR">YGR</a></th>
+          <td>TIRE REAR P235/50R17-95S BW TL AL2</td>
         </tr>
         <tr>
-          <th><a href="/pages/M.html#M6M">M6M</a></th>
-          <td>WARRANTY MANUAL DUTCH - RENAULT</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/5.html#5Y3">5Y3</a></th>
-          <td>ACCESSORY TOW BALL - TRAILER HITCH</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/Y.html#YRB">YRB</a></th>
-          <td>TIRE REAR 9.00-20/G 14PR BW BIAS TT</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/8.html#8GM">8GM</a></th>
-          <td>COMPONENT RR LH COMPUTER SEL SUSP (8GM)</td>
-        </tr>
-        <tr>
-          <th><a href="/pages/S.html#SES">SES</a></th>
-          <td>LPO, 22" (55.9 cm) Split 7-spoke alloy wheels with Chrome finish</td>
+          <th><a href="/pages/K.html#K55">K55</a></th>
+          <td>FUEL SENDER ASM, LOW LUBRICITY</td>
         </tr>
         <tr>
           <th><a href="/pages/P.html#PCH">PCH</a></th>
-          <td>Motorhome Package</td>
+          <td>LPO, Floor Liner Package</td>
         </tr>
         <tr>
-          <th><a href="/pages/W.html#W21">W21</a></th>
-          <td>APPEARANCE PACKAGE CADILLAC PLATINUM EDITION</td>
+          <th><a href="/pages/T.html#TI7">TI7</a></th>
+          <td>FLEET INCENTIVE INLAND PAPERBOARD & PKG. (U/W-TRK ST)</td>
         </tr>
         <tr>
-          <th><a href="/pages/Z.html#Z40">Z40</a></th>
-          <td>EQUIPMENT GM OF CANADA PROCESSING OPTION FOR TRUCK</td>
+          <th><a href="/pages/7.html#7WX">7WX</a></th>
+          <td>COMPONENT FRT RH COMPUTER SEL SUSP (7WX)</td>
         </tr>
         <tr>
-          <th><a href="/pages/B.html#B0D">B0D</a></th>
-          <td>VEHICLE GM PROD WEEK 22</td>
+          <th><a href="/pages/S.html#S24">S24</a></th>
+          <td>FLEET INCENTIVE DHL AIRWAYS (TRK GH)</td>
         </tr>
         <tr>
-          <th><a href="/pages/9.html#9NZ">9NZ</a></th>
-          <td>COMPONENT RR RH COMPUTER SEL SUSP (9NZ)</td>
+          <th><a href="/pages/T.html#TQR">TQR</a></th>
+          <td>MOUNT ROOF, SIGN, TAXI, VERSION 2</td>
         </tr>
         <tr>
-          <th><a href="/pages/A.html#A85">A85</a></th>
-          <td>SEAT BACK FOLDING</td>
+          <th><a href="/pages/X.html#XT8">XT8</a></th>
+          <td>KIT AFTER MARKET 16X7.5 T SER ALLOY WHEEL & TIRE</td>
         </tr>
         <tr>
-          <th><a href="/pages/S.html#SGM">SGM</a></th>
-          <td>LPO, 22" (55.9 cm) High Gloss Black wheels</td>
+          <th><a href="/pages/Y.html#Y2Q">Y2Q</a></th>
+          <td>SEO COLOR CAMEL</td>
         </tr>
         <tr>
-          <th><a href="/pages/N.html#N06">N06</a></th>
-          <td>Steering column, lock control</td>
+          <th><a href="/pages/A.html#AHD">AHD</a></th>
+          <td>CONTROL SEAT, POWER CUSHION EXTN, DRIVER</td>
         </tr>
         <tr>
-          <th><a href="/pages/S.html#SJ9">SJ9</a></th>
-          <td>LPO, Black finish grille</td>
+          <th><a href="/pages/H.html#HCX">HCX</a></th>
+          <td>INTERIOR TRIM CONFIG LEATHER, LEVEL 1, VAR 2 JET BLK / LT TITANIUM / JE T BLK</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/1.html#14U">14U</a></th>
+          <td>EXTERIOR COLOR,STORM GRAY MET</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/5.html#5QA">5QA</a></th>
+          <td>INTERIOR PACKAGE CUSTOM SEATING</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/R.html#RKS">RKS</a></th>
+          <td>TIRE SPARE 215/70R16 SL 100T BW HWY</td>
+        </tr>
+        <tr>
+          <th><a href="/pages/9.html#9D4">9D4</a></th>
+          <td>Governor, electronic speed sensor set to 55 MPH</td>
         </tr>
                                  </tbody>
                               </table>
