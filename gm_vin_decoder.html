@@ -90,7 +90,7 @@
                                </li>
                          
                                <li>
-                                 <a href="/reverse_lookup.html" class="nav-link ml-2  active ">
+                                 <a href="/reverse_lookup.html" class="nav-link ml-2  link-dark ">
                                    Reverse search
                                  </a>
                                </li>
@@ -238,7 +238,7 @@
                                  </li>
                            
                                  <li>
-                                   <a href="/reverse_lookup.html" class="nav-link ml-2  active ">
+                                   <a href="/reverse_lookup.html" class="nav-link ml-2  link-dark ">
                                      Reverse search
                                    </a>
                                  </li>
@@ -277,30 +277,33 @@
                  <div class="col-12">
                      <div class="card" >
                        <div class="card-body">
-                           <h5 class="card-title">Reverse RPO Codes search tool</h5>
+                           <h5 class="card-title">GM VIN Equipment Decoder</h5>
                            <p class="card-text">
                              <div class="row">
                                  <div class="col">
-                                   <label for="inputRpoCodes">Type here a few keywords to find the related RPO codes</label>
+                                   <label for="inputRpoCodes">
+                                     <p>Decode RPO Listing by VIN code. </p>
+                                     <p>Please provide your 17 character VIN to view and print your vehicle equipment sheet, which contains the standard and optional equipment when the vehicle was built.</p>
+                                   </label>
                                  </div>
                              </div>
                              
-                             <form class="row g-2 mt-1" id="RPOEncodeForm">
+                             <form class="row g-2 mt-1" id="GmVinCodeForm">
                                  <div class="col-9">
-                                   <input type="search" class="form-control" id="inputRpoCodes"
-                                     placeholder="Example: Front Tire 17">
+                                   <input type="search" class="form-control" id="inputGmVinCode" value="1GBHK34N8LE219367"
+                                     placeholder="Example VIN: 2C3CDZBT6HH548819">
                                  </div>
                                  <div class="col-3">
                                    <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Search</button>
                                  </div>
                                </form>
                            </p>
-                           <h6 class="card-title">Decoding results</h6>
+                           <p class="card-text" id="emptyLabel"></p>
                            <p class="card-text">
-                             <div class="container text-center" id="emptyLabel">
+                             <div class="container text-center"  id="resultTable">
                                  <div class="row">
-                                   <div class="col">
-                                     Empty
+                                   <div class="col" id="gmVinSearchResult">
+               
                                    </div>
                                  </div>
                              </div>
@@ -315,26 +318,20 @@
                                  </div>
                              </div>
                
-                             <div class="row" id="resultTable" style="display:none">
-                                 <div class="col">
-                                   <table class="table table-striped table-bordered table-hover">
-                                       <thead>
-                                         <tr>
-                                           <th scope="col">RPO</th>
-                                           <th scope="col">Description</th>
-                                         </tr>
-                                       </thead>
-                                       <tbody id="tableTbody">
-                                       </tbody>
-                                     </table>
-                                 </div>
-                             </div>
                            </p>
                        </div>
                      </div>
                  </div>
                
-               
+                 <div class="col-12 mt-2">
+                   <div class="card" >
+                     <div class="card-body">
+                         <p class="card-text">
+                           Have any questions or requests? Contact me: <a href="mailto:request@decoderpo.com" title="request@decoderpo.com">request@decoderpo.com</a>
+                         </p>     
+                     </div>
+                   </div>
+                 </div>
                </div>
                
 
