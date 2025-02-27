@@ -87,7 +87,7 @@
                              <ul class="nav nav-pills flex-column mb-auto ps-3">
                                <li class="nav-item">
                                  <a href="/" class="nav-link  link-dark " aria-current="page">
-                                   Decode RPO
+                                   Decode RPO Lookup
                                  </a>
                                </li>
                          
@@ -106,6 +106,12 @@
                                    Order Guide
                                  </a>
                                </li>
+                               <li> 
+                                 <a href="/gm_window_sticker.html" class="nav-link  active ">
+                                   GM Window Sticker Lookup
+                                 </a>
+                               </li>
+                         
                              </ul>
                          
                            </li>
@@ -224,7 +230,7 @@
                                <ul class="nav nav-pills flex-column mb-auto ps-3">
                                  <li class="nav-item">
                                    <a href="/" class="nav-link  link-dark " aria-current="page">
-                                     Decode RPO
+                                     Decode RPO Lookup
                                    </a>
                                  </li>
                            
@@ -243,6 +249,12 @@
                                      Order Guide
                                    </a>
                                  </li>
+                                 <li> 
+                                   <a href="/gm_window_sticker.html" class="nav-link  active ">
+                                     GM Window Sticker Lookup
+                                   </a>
+                                 </li>
+                           
                                </ul>
                            
                              </li>
@@ -257,21 +269,23 @@
                  <div class="col-12">
                      <div class="card" >
                        <div class="card-body">
-                           <h5 class="card-title">GM VIN Equipment Decoder</h5>
+                           <h5 class="card-title">Get a free copy of window sticker</h5>
                            <p class="card-text">
                              <div class="row">
                                  <div class="col">
                                    <label for="inputRpoCodes">
-                                     <p>Decode RPO Listing by VIN code. </p>
-                                     <p>Please provide your 17 character VIN to view and print your vehicle equipment sheet, which contains the standard and optional equipment when the vehicle was built.</p>
+                                     <p>Get a free copy of window sticker for your <span class="fw-bold">Chevrolet, Cadillac, GMC, Buick</span>.</p>
+                                     <p>Please provide your 17 character VIN to view and print your vehicle windows sticker, which contains the standard and optional equipment when the vehicle was built.</p>
+                                     <p>Your report comes straight from the manufacturer. We never store or even see your VIN.</p>
+                                     <p>Works only on <span class="fw-bold">2020+ production year GM models</span></p>
                                    </label>
                                  </div>
                              </div>
                              
                              <form class="row g-2 mt-1" id="GmVinCodeForm">
                                  <div class="col-9">
-                                   <input type="search" class="form-control" id="inputGmVinCode" value="1GBHK34N8LE219367"
-                                     placeholder="Example VIN: 2C3CDZBT6HH548819">
+                                   <input type="search" class="form-control" id="inputGmVinCode"
+                                     placeholder="Example VIN: 1GYKPCRS6LZ113343">
                                  </div>
                                  <div class="col-3">
                                    <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Search</button>
@@ -280,10 +294,10 @@
                            </p>
                            <p class="card-text" id="emptyLabel"></p>
                            <p class="card-text">
-                             <div class="container text-center"  id="resultTable">
+                             <div class="container text-center"  id="resultTable" style="display:none">
                                  <div class="row">
                                    <div class="col" id="gmVinSearchResult">
-               
+                                     
                                    </div>
                                  </div>
                              </div>
@@ -303,15 +317,6 @@
                      </div>
                  </div>
                
-                 <div class="col-12 mt-2">
-                   <div class="card" >
-                     <div class="card-body">
-                         <p class="card-text">
-                           Have any questions or requests? Contact me: <a href="mailto:request@decoderpo.com" title="request@decoderpo.com">request@decoderpo.com</a>
-                         </p>     
-                     </div>
-                   </div>
-                 </div>
                </div>
                
 
