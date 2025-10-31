@@ -273,11 +273,25 @@
                            <p class="card-text">
                              <div class="row">
                                  <div class="col">
-                                   <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
+                                   <label for="inputRpoCodes">Decode by:</label>
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="decodeByRpoRadio" value="rpo" CHECKED>
+                                     <label class="form-check-label" for="decodeByRpoRadio">RPO code</label>
+                                   </div>
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="decodeByVinRadio" value="vin" >
+                                     <label class="form-check-label" for="decodeByVinRadio">VIN code</label>
+                                   </div>
                                  </div>
                              </div>
-                             
-                             <form class="row g-2 mt-1" id="RPOCodesForm">
+               
+                             <div id="decodeByRpoForm">
+                               <div class="row">
+                                   <div class="col">
+                                     <label for="inputRpoCodes">Type or insert RPO Codes here, use comma or space delimiter.</label>
+                                   </div>
+                               </div>
+                               <form class="row g-2 mt-1" id="RPOCodesForm">
                                  <div class="col-9">
                                    <input type="search" class="form-control" id="inputRpoCodes"
                                      placeholder="Example RPO: AG2 AR9 CJ2 DM8">
@@ -286,6 +300,25 @@
                                    <button type="submit" class="btn btn-primary mb-3" id="btnDecodePro">Decode</button>
                                  </div>
                                </form>
+                             </div>
+               
+                             <div id="decodeByVinForm" style="display:none">
+                               <div class="row">
+                                   <div class="col">
+                                     <label for="inputRpoCodes">Type or insert single VIN code</label>
+                                   </div>
+                               </div>
+                               <form class="row g-2 mt-1" id="VinCodeForm">
+                                 <div class="col-9">
+                                   <input type="search" class="form-control" id="inputVinCode"
+                                     placeholder="Example VIN: 1G1FE1R71N0034059">
+                                 </div>
+                                 <div class="col-3">
+                                   <button type="submit" class="btn btn-primary mb-3" id="btnDecodeVin">Decode</button>
+                                 </div>
+                               </form>
+                             </div>
+               
                            </p>
                            <h6 class="card-title">Decoding results</h6>
                            <p class="card-text">
@@ -408,148 +441,148 @@
                                    <table class="table table-striped table-bordered table-hover">
                                        <tbody>
                                            <tr>
-                                             <th><a href="/pages/0.html#04E">04E</a></th>
-                                             <td class="text-break">TRIM COLOR SEAT MORELLO RED</td>
+                                             <th><a href="/pages/0.html#092">092</a></th>
+                                             <td class="text-break">Rear axle, 4.30 ratio</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/1.html#18H">18H</a></th>
-                                             <td class="text-break">TRIM COMBINATION CLOTH, GRAY MACAW (00) BRAZIL</td>
+                                             <th><a href="/pages/1.html#1ED">1ED</a></th>
+                                             <td class="text-break">SCHEDULE SEQUENCING 30</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/2.html#22M">22M</a></th>
-                                             <td class="text-break">PRIMARY COLOR,TEAL BLUE</td>
+                                             <th><a href="/pages/2.html#2B6">2B6</a></th>
+                                             <td class="text-break">MOLDING DOOR INTR FOIL DECOR</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/3.html#33B">33B</a></th>
-                                             <td class="text-break">TRIM COMBINATION CLOTH, CASHMERE (B) (06)</td>
+                                             <th><a href="/pages/3.html#3B2">3B2</a></th>
+                                             <td class="text-break">MOLDING I/P INTR, FILM BRUSHED STEEL</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/4.html#40Q">40Q</a></th>
-                                             <td class="text-break">MOLDING COLOR WHITE (91)</td>
+                                             <th><a href="/pages/4.html#4TW">4TW</a></th>
+                                             <td class="text-break">TIRE SPARE 8.00R19.5/F BL R/PE ST TL ALS (15560411)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/5.html#54U">54U</a></th>
-                                             <td class="text-break">PRIMARY COLOR,EXTERIOR,DARK GREEN BLUE MET</td>
+                                             <th><a href="/pages/5.html#5J4">5J4</a></th>
+                                             <td class="text-break">LABEL,TIRE PRESSURE</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/6.html#6CP">6CP</a></th>
-                                             <td class="text-break">COMPONENT FRT LH COMPUTER SEL SUSP (6CP)</td>
+                                             <th><a href="/pages/6.html#6TE">6TE</a></th>
+                                             <td class="text-break">COMPONENT FRT LH COMPUTER SEL SUSP (6TE)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/7.html#7BH">7BH</a></th>
-                                             <td class="text-break">COMPONENT FRT RH COMPUTER SEL SUSP (7BH)</td>
+                                             <th><a href="/pages/7.html#79I">79I</a></th>
+                                             <td class="text-break">INTERIOR TRIM VERY DK GRAY/MED TITANIUM</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/8.html#8A6">8A6</a></th>
-                                             <td class="text-break">DECAL STRIPE, AMBULANCE</td>
+                                             <th><a href="/pages/8.html#8XM">8XM</a></th>
+                                             <td class="text-break">COMPONENT RR LH COMPUTER SEL SUSP(8XM)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/9.html#9G4">9G4</a></th>
-                                             <td class="text-break">TIRE REAR DELETE 2 O/S (SPL ORDER)</td>
+                                             <th><a href="/pages/9.html#9Q8">9Q8</a></th>
+                                             <td class="text-break">CABLE DA MT TRANS SHIFT (UCBC)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/A.html#AAA">AAA</a></th>
-                                             <td class="text-break">EQUIPMENT STANDARD FOR ABOVE VEHICLES</td>
+                                             <th><a href="/pages/A.html#AHE">AHE</a></th>
+                                             <td class="text-break">Seat adjuster, driver power bolster</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/B.html#B31">B31</a></th>
-                                             <td class="text-break">Floor covering, Black rubberized-vinyl, front only</td>
+                                             <th><a href="/pages/B.html#BNP">BNP</a></th>
+                                             <td class="text-break">MOLDING WHL OPENING - DELETE</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/C.html#CFY">CFY</a></th>
-                                             <td class="text-break">PLAQUE INTR, DEDICATION, SPECIAL EDITION</td>
+                                             <th><a href="/pages/C.html#CWM">CWM</a></th>
+                                             <td class="text-break">Convenience Package</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/D.html#DM4">DM4</a></th>
-                                             <td class="text-break">MIRROR O/S LH, REMOTE CONTROL, RH MANUAL CONTROL</td>
+                                             <th><a href="/pages/D.html#D81">D81</a></th>
+                                             <td class="text-break">SPOILER,REAR,AERO WING</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/E.html#EC8">EC8</a></th>
-                                             <td class="text-break">WHEELBASE 135 INCH/3,365 MM</td>
+                                             <th><a href="/pages/E.html#EPQ">EPQ</a></th>
+                                             <td class="text-break">TRIM SEAT LEATHER, BEIGE</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/F.html#FEK">FEK</a></th>
-                                             <td class="text-break">FLEET INCENTIVE AMERICAN PRESIDENT LINES (D/H/W/3Z/7L- TRK CKGRVST)</td>
+                                             <th><a href="/pages/F.html#FCZ">FCZ</a></th>
+                                             <td class="text-break">TRIM DOOR LEATHER, NON PERF DAKAR OVER WIDE SQ PERF DAKAR</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/G.html#GY3">GY3</a></th>
-                                             <td class="text-break">RATIO TRANSAXLE FINAL DRIVE 4.29 (USE OPTION FV7)</td>
+                                             <th><a href="/pages/G.html#GS4">GS4</a></th>
+                                             <td class="text-break">STABILIZER SHAFT REAR HIGH GRAVITY</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/H.html#HAG">HAG</a></th>
-                                             <td class="text-break">PARTS PKG LEATHER *MERCHANDISING OPTION*</td>
+                                             <th><a href="/pages/H.html#HF7">HF7</a></th>
+                                             <td class="text-break">AXLE,HEAVY DUTY REAR,4.56 RATIO</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/I.html#IH4">IH4</a></th>
-                                             <td class="text-break">TRIM INTERIOR DESIGN (H4)</td>
+                                             <th><a href="/pages/I.html#IB5">IB5</a></th>
+                                             <td class="text-break">TRIM INTERIOR DESIGN (B5)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/J.html#J90">J90</a></th>
-                                             <td class="text-break">BRAKE HYD POWER, DUAL REAR WHEEL, 4 WHL DISC, W/O ABS</td>
+                                             <th><a href="/pages/J.html#J6B">J6B</a></th>
+                                             <td class="text-break">Calipers, Blue</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/K.html#K29">K29</a></th>
-                                             <td class="text-break">MODULE,POWERTRAIN CONTROL</td>
+                                             <th><a href="/pages/K.html#KPA">KPA</a></th>
+                                             <td class="text-break">Power outlet, 12-volt located in center console bin</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/L.html#LL2">LL2</a></th>
-                                             <td class="text-break">ENGINE,2.8L(2.8R),V6</td>
+                                             <th><a href="/pages/L.html#LVS">LVS</a></th>
+                                             <td class="text-break">POWER OPTION,CATERPILLAR 3116,6.6L,200 GROSS HP @ 2600 RPM</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/M.html#MUT">MUT</a></th>
-                                             <td class="text-break">TRANSMISSION,MAN 9 SPD,FULLER RT6609,DIRECT DRIVE</td>
+                                             <th><a href="/pages/M.html#MDT">MDT</a></th>
+                                             <td class="text-break">Moldings</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/N.html#NGH">NGH</a></th>
-                                             <td class="text-break">Front Drive Axle Actuator</td>
+                                             <th><a href="/pages/N.html#NVL">NVL</a></th>
+                                             <td class="text-break">PROVISIONS NATURAL GAS SECOND CYLINDER MOUNTING</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/O.html#OWY">OWY</a></th>
-                                             <td class="text-break">LOCAL GM OF EUROPE (OWY)</td>
+                                             <th><a href="/pages/O.html#OH4">OH4</a></th>
+                                             <td class="text-break">LOCAL GM OF EUROPE OH4</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/P.html#PY6">PY6</a></th>
-                                             <td class="text-break">WHEEL 16 X 6.5, 18 ROUND HOLES</td>
+                                             <th><a href="/pages/P.html#PX8">PX8</a></th>
+                                             <td class="text-break">WHEEL 17 X 9.5 FRT &amp; 18 X 10.5 RR, ALUMINUM, PAINTED</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/Q.html#Q9Y">Q9Y</a></th>
-                                             <td class="text-break">WHEEL 18 X 8, ALUMINUM, POLISHED, SPORT</td>
+                                             <th><a href="/pages/Q.html#QPB">QPB</a></th>
+                                             <td class="text-break">TIRE ALL P215/70R15 BW R/PE ST TL AL2 97S</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/R.html#R3C">R3C</a></th>
-                                             <td class="text-break">FRONT TIRE TREAD PREMIUM HIGHWAY</td>
+                                             <th><a href="/pages/R.html#RBH">RBH</a></th>
+                                             <td class="text-break">WHEEL 19 X 7, ALUMINUM, MACHINED</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/S.html#S7J">S7J</a></th>
-                                             <td class="text-break">DIRECT SALES PANTHER MARINE PRODUCTS</td>
+                                             <th><a href="/pages/S.html#SEV">SEV</a></th>
+                                             <td class="text-break">LPO, 22&quot; (55.9 cm) 6-Spoke Low Gloss Black Wheels with Machined Accents</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/T.html#T3B">T3B</a></th>
-                                             <td class="text-break">HEADLAMP FUNCTION PROJECTOR, HIGH BEAM (DO NOT USE AFTER MY 09 MAJ PROGS, USE HDL&amp;HDL CONTROL&amp;VCS FAM AS NEEDED)</td>
+                                             <th><a href="/pages/T.html#TEY">TEY</a></th>
+                                             <td class="text-break">FLEET SALES STATE OF LOUISIANA GO# D1329Y</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/U.html#UGC">UGC</a></th>
-                                             <td class="text-break">Lamps, turn signal indicators</td>
+                                             <th><a href="/pages/U.html#UY3">UY3</a></th>
+                                             <td class="text-break">TELEPHONE,MOBILE,S.E. SERIES</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/V.html#VUF">VUF</a></th>
-                                             <td class="text-break">HANDLING CHARGE FLINT ASM TO MASTERACK, ORTONVILLE, MI</td>
+                                             <th><a href="/pages/V.html#VYZ">VYZ</a></th>
+                                             <td class="text-break">ACCESSORY STRIPE PACKAGE, RALLY STRIPES - WHITE</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/W.html#WI4">WI4</a></th>
-                                             <td class="text-break">IDENTIFICATION EFFECTIVE POINT CONTROL - SEATS</td>
+                                             <th><a href="/pages/W.html#W9K">W9K</a></th>
+                                             <td class="text-break">PLANT CODE SZENTGOTTHARD, HUNGARY (USE SGH)</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/X.html#XG4">XG4</a></th>
-                                             <td class="text-break">LOCAL 0030055</td>
+                                             <th><a href="/pages/X.html#X4Q">X4Q</a></th>
+                                             <td class="text-break">SEO COLOR GREEN 26</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/Y.html#YSS">YSS</a></th>
-                                             <td class="text-break">TIRE REAR P275/55R20-111S BW TL ST AL2</td>
+                                             <th><a href="/pages/Y.html#Y05">Y05</a></th>
+                                             <td class="text-break">8.50 DIAMETER RING GEAR,DANA REAR AXLE</td>
                                            </tr>
                                            <tr>
-                                             <th><a href="/pages/Z.html#Z16">Z16</a></th>
-                                             <td class="text-break">APPEARANCE PACKAGE,GRAND SPORT EDITION</td>
+                                             <th><a href="/pages/Z.html#Z7A">Z7A</a></th>
+                                             <td class="text-break">MODEL CONVERSION SUNRUNNER</td>
                                            </tr>
                                        </tbody>
                                    </table>
@@ -580,7 +613,7 @@
                       2021 - <span id="year"></span> <a href="/" title="RPO Codes decoder">RPO Codes decoder</a>
                   </p>
                   <p>
-                    <a href="https://minipcguides.com/" title="Buying Guide and compare for Mini PCs">Buying Guide and compare for Mini PCs</a>
+                      <a href="https://minipcguides.com/" title="Buying Guide and compare for Mini PCs">Buying Guide and compare for Mini PCs</a>
                   </p>
                 </span>
             </div>
